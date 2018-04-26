@@ -12,17 +12,8 @@ a {
     justify-self: end;
 }
 
-
 .logo img {
     height: 60px;
-
-}
-
-
-
-.logo img:hover  {
- 
-    
 }
 
 
@@ -59,15 +50,40 @@ ul  {
     grid-template-rows: auto;
     grid-template-areas: 
         "logo . . . . . . . . . nav nav"
-        ". . name name name name name . . . . ."
-        ". . subname subname subname subname subname subname subname . . ."
+        ". . headshot headshot resume resume . . . . . ."
         ". . position position position position position position position . . ."
-        "chi chi chi chi chi chi chi chi chi chi chi chi"
-        "drag drag drag drag bud bud bud bud orion orion orion orion"
         "footnav footnav . . contact contact contact contact . . . footlogo"
         
 }
 
+.headshot {
+    grid-area: headshot;
+
+}
+
+.headshot img {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.resume {
+    grid-area: resume;
+    height: 40px;
+    border: 2px solid #2C1352;
+    border-radius: 6px;
+    background-color: white;
+    color: #2C1352;
+    font-size: 16px;
+    font-family: helvetica neue;    
+    font-weight: bold;
+    margin: 240px 10px 0px;
+    transition: .2s ease;
+}
+
+.resume:hover {
+  background: #2C1352;
+  color: white;
+}
 
 
 p {
@@ -75,28 +91,14 @@ p {
     margin: 0;
 }
 
-.name {
-    margin: 120px 0px 0px;
-    font-size: 48px;
-    letter-spacing: -2px;
-    grid-area: name;
-}
-
-.subname {
-    margin: 10px 0px;
-    font-size: 28px;
-    font-weight: 200;
-    grid-area: subname;
-
-}
 
 .position {  
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 200;
     line-height: 140%;
     letter-spacing: .5px;
     grid-area: position;
-    margin: 30px 0px 60px;
+    margin: 20px 0px 200px;
 }
 
 .background {
@@ -207,21 +209,3 @@ p {
      align-self: center;
 }
 
-
-/* .background {
-    height: 730px;
- 
-   
-    background-image: url(chicago.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain;
-    
-}
-
-li:hover {
-    box-sizing: border-box;
-    padding-bottom: 5px;
-    border-width: 100px;
-    border-bottom: 3px solid #3F2A5E;
-}
