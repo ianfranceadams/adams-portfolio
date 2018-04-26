@@ -1,0 +1,218 @@
+body {
+    margin: 100px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav {
+    grid-area: nav;
+    justify-self: end;
+}
+
+.logo img {
+    height: 60px;
+}
+
+
+ul  {
+    list-style-type: none;
+    line-height: 170%;
+    font-family: helvetica neue;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li span {
+    padding-bottom: 3px;
+    border-bottom: 3px solid transparent;
+    transition: border .2s ease-in;
+    
+}
+
+
+.nav li span:hover {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #FFE794;
+    
+}
+
+/* FFE794 523F6E */
+
+
+.container {
+    display: grid;
+    grid-gap: 0px 40px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo . . . . . . . . . nav nav"
+        ". . name name name name name . . . . ."
+        ". . subname subname subname subname subname subname subname . . ."
+        ". . position position position position position position position . . ."
+        "chi chi chi chi chi chi chi chi chi chi chi chi"
+        "drag drag drag drag bud bud bud bud orion orion orion orion"
+        "footnav footnav . . contact contact contact contact . . . footlogo"
+        
+}
+
+
+
+p {
+    font-family: helvetica neue;
+    margin: 0;
+}
+
+.name {
+    margin: 120px 0px 0px;
+    font-size: 48px;
+    letter-spacing: -2px;
+    grid-area: name;
+}
+
+.subname {
+    margin: 10px 0px;
+    font-size: 28px;
+    font-weight: 200;
+    grid-area: subname;
+
+}
+
+.position {  
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 140%;
+    letter-spacing: .5px;
+    grid-area: position;
+    margin: 30px 0px 60px;
+}
+
+.background {
+    grid-area: chi;
+}
+
+.background img {
+    width: 100%;
+    
+}
+
+.proj {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px 60px;
+    
+        
+}
+
+.drag {
+    grid-area: drag;
+    background-color: #384B21;
+    
+
+}
+
+.drag img {
+    height: 80px;
+    margin: 40%;
+    padding-right: 3%;
+}
+
+
+.bud {
+    grid-area: bud;
+    background-color: #141414;
+    
+}
+
+.bud img {
+    height: 90px;
+    margin: 30%;
+}
+
+.orion {
+    grid-area: orion;
+    background-color: #001b4c;
+}
+
+.orion img {
+    height: 60px;
+    margin: 25%;
+}
+
+.footnav {
+     grid-area: footnav;
+     justify-self: start;
+}
+
+.footnav li span {
+    padding-bottom: 3px;
+    border-bottom: 3px solid transparent;
+    transition: border .2s ease-in;
+}
+
+.footnav li span:hover {
+    padding-bottom: 3px;    
+    border-bottom: 3px solid #FFE794;
+
+}
+
+.contact {
+    grid-area: contact;
+    justify-self: center;
+    align-self: center;
+    font-family: helvetica neue;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: -.5px;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contact li {
+    display: inline;
+    margin: 0px 12px;
+}
+
+.contact a {
+    transition: all .15s ease;
+}
+
+.contact a:hover {
+   /* color: #3F2A5E; */
+    
+    color: #3F2A5E; 
+   /*  text-shadow: 0px 1px 6px #5F4881; */
+}
+
+/*FFE794   FFF3C7     523F6E   3F2A5E  2C1352 */
+
+.footlogo {
+     grid-area: footlogo;
+     justify-self: end;
+     align-self: center;
+}
+
+
+/* .background {
+    height: 730px;
+ 
+   
+    background-image: url(chicago.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    
+}
+
+li:hover {
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    border-width: 100px;
+    border-bottom: 3px solid #3F2A5E;
+}
