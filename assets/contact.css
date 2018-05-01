@@ -14,7 +14,7 @@ a {
 
 
 .logo img {
-    height: 60px;
+    height: 80px;
 
 }
 
@@ -60,14 +60,14 @@ ul  {
     grid-template-areas: 
         "logo . . . . . . . . . nav nav"
         ". . name name name name name . . . . ."
-        ". . subname subname subname subname subname subname subname . . ."
-        ". . position position position position position position position . . ."
-        "chi chi chi chi chi chi chi chi chi chi chi chi"
-        "drag drag drag drag bud bud bud bud orion orion orion orion"
+        ". . corn corn corn corn . . . . . ."
         "footnav footnav . . contact contact contact contact . . . footlogo"
         
 }
 
+.corn {
+    grid-area: corn;
+}
 
 
 p {
