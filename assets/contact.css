@@ -15,15 +15,13 @@ a {
 
 .logo img {
     height: 80px;
+    margin-left: -8px;
+    margin-top: -12px;
+    opacity: 1;    
 
 }
 
 
-
-.logo img:hover  {
- 
-    
-}
 
 
 ul  {
@@ -60,15 +58,72 @@ ul  {
     grid-template-areas: 
         "logo . . . . . . . . . nav nav"
         ". . name name name name name . . . . ."
-        ". . corn corn corn corn . . . . . ."
+        ". . form form form form corn corn corn corn corn ."
         "footnav footnav . . contact contact contact contact . . . footlogo"
         
 }
 
 .corn {
     grid-area: corn;
+    margin-top: 30px;
+    margin-bottom: 300px;
 }
 
+.form {
+    margin: 20px 0px;
+    grid-area: form;
+   
+}
+
+input, textarea, .send-button {
+     border: 1px solid black;
+     border-radius: 6px;
+     height: 60px;
+     width: 90%;
+     margin: 10px 0px;
+     font-family: helvetica neue;
+     font-weight: bold;
+     color: #2C1352;
+     padding-left: 20px;
+     font-size: 24px;
+     
+}
+
+::placeholder {
+    font-weight: 200;
+    color: black;
+    opacity: 1;
+    font-style: italic;
+    
+}
+
+textarea {
+    height: 200px;
+    padding: 15px 20px;
+    color: #2C1352;
+}
+
+textarea::placeholder {
+   
+    line-height: 130%;
+}
+
+
+
+
+
+.send-button {
+     border-width: 2px;
+     width: 70%;
+     color: white;
+     background: #2C1352;
+     font-size: 18px;
+     height: 50px;
+     letter-spacing: -.5px;
+     cursor: pointer;
+     
+}
+      
 
 p {
     font-family: helvetica neue;
@@ -205,6 +260,7 @@ p {
      grid-area: footlogo;
      justify-self: end;
      align-self: center;
+     opacity: 1;
 }
 
 
