@@ -49,6 +49,11 @@ ul  {
     
 }
 
+.nav li span:active {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #523F6E;
+    
+}
 /* FFE794 523F6E */
 
 
@@ -167,6 +172,12 @@ p {
     padding-bottom: 3px;    
     border-bottom: 3px solid #523F6E;
 
+}
+
+.footnav li span:active {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #523F6E;
+    
 }
 
 .contact {
