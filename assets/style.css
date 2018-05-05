@@ -79,10 +79,7 @@ ul  {
 
 
     
-     body {
-        margin: 50px 50px 20px;
-     }
-    
+     
     .container {
         grid-gap: 0px 20px;
         grid-template-areas: 
