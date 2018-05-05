@@ -41,7 +41,7 @@ ul  {
 .nav li span {
     padding-bottom: 3px;
     border-bottom: 3px solid transparent;
-    transition: border .2s ease-in;
+    transition: border .2s cubic-bezier(1, 0.04, 1, 1);
     
 }
 
@@ -227,7 +227,7 @@ p {
 .footnav li span {
     padding-bottom: 3px;
     border-bottom: 3px solid transparent;
-    transition: border .2s ease-in;
+    transition: border .2s cubic-bezier(1, 0.04, 1, 1);
 }
 
 .footnav li span:hover {
@@ -282,20 +282,60 @@ p {
 }
 
 
-/* .background {
-    height: 730px;
- 
-   
-    background-image: url(chicago.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain;
-    
-}
 
-li:hover {
-    box-sizing: border-box;
-    padding-bottom: 5px;
-    border-width: 100px;
-    border-bottom: 3px solid #3F2A5E;
+
+
+
+
+
+@media (max-width: 768px) {
+    
+     body {
+        margin: 50px 50px 30px;
+     }
+    
+    .container {
+        grid-gap: 0px 20px;
+        grid-template-areas: 
+        "logo . . . . . . . . . nav nav"
+        "name name name name name name name . . . . ."
+        "form form form form form form corn corn corn corn corn corn"
+        "footnav footnav . . contact contact contact contact . . . footlogo"
+        
+     }
+    
+    
+    
+    .corn {
+        
+        margin-left: 20px;
+    }
+    
+    .logo img {
+         height: 50px
+         
+     }
+    
+    .name {
+         margin-top: 100px;
+        
+    }
+    
+    .form {
+        margin-bottom: 120px;
+    }
+
+    input, textarea {
+        font-size: 22px;
+    }
+    
+    .contact li {
+        margin: 0px 8px;
+     }  
+
+    
+     .footlogo img {
+        height: 40px;
+     }
+
 }

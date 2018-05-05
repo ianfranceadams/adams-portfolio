@@ -33,7 +33,7 @@ ul  {
 .nav li span {
     padding-bottom: 3px;
     border-bottom: 3px solid transparent;
-    transition: border .2s ease-in;
+    transition: border .2s cubic-bezier(1, 0.04, 1, 1);
     
 }
 
@@ -172,7 +172,7 @@ p {
 .footnav li span {
     padding-bottom: 3px;
     border-bottom: 3px solid transparent;
-    transition: border .2s ease-in;
+    transition: border .2s cubic-bezier(1, 0.04, 1, 1);
 }
 
 .footnav li span:hover {
@@ -225,3 +225,61 @@ p {
      align-self: center;
 }
 
+.footlogo img {
+    
+    height: 50px;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    
+     body {
+        margin: 50px 50px 30px;
+     }
+    
+    .container {
+        grid-gap: 0px 20px;
+        grid-template-areas: 
+        "logo . . . . . . . . . nav nav"
+        ". headshot headshot . . . . . . . . ."
+        ". position position position position position position position position position . ."
+        "footnav footnav . . contact contact contact contact . . . footlogo"
+    
+     }
+    
+    .headshot img {
+         margin-top: 100px;
+
+    }
+    
+    .logo img {
+         height: 50px
+         
+     }
+    
+    .name {
+         margin-top: 40px;
+        
+    }
+
+    .position {
+         margin: 10px 0px 110px;
+         font-size: 20px;
+ 
+     }
+    
+    .contact li {
+        margin: 0px 8px;
+     }  
+
+    
+     .footlogo img {
+        height: 40px;
+     }
+
+}
