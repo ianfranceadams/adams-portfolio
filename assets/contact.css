@@ -15,6 +15,7 @@ a {
 .nav {
     grid-area: nav;
     justify-self: end;
+    margin-top: -8px;
 }
 
 
@@ -67,10 +68,10 @@ ul  {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-        "logo . . . . . . . . . nav nav"
+        "logo . . . . . . . . nav nav nav"
         ". . name name name name name . . . . ."
         ". . form form form form corn corn corn corn corn ."
-        "footnav footnav . . contact contact contact contact . . . footlogo"
+         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
         
 }
 
@@ -285,10 +286,10 @@ p {
 
 
 
+/* ------------------ iPad and portrait phones ------------------------*/
 
 
-
-@media (max-width: 768px) {
+@media (max-width: 825px) {
     
      body {
         margin: 50px 50px 30px;
@@ -297,10 +298,10 @@ p {
     .container {
         grid-gap: 0px 20px;
         grid-template-areas: 
-        "logo . . . . . . . . . nav nav"
+        "logo . . . . . . . . nav nav nav"
         "name name name name name name name . . . . ."
         "form form form form form form corn corn corn corn corn corn"
-        "footnav footnav . . contact contact contact contact . . . footlogo"
+        "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
         
      }
     
@@ -312,7 +313,8 @@ p {
     }
     
     .logo img {
-         height: 50px
+         margin-top: -5px;
+         height: 60px
          
      }
     
@@ -326,16 +328,109 @@ p {
     }
 
     input, textarea {
-        font-size: 22px;
+        font-size: 20px;
     }
-    
-    .contact li {
-        margin: 0px 8px;
-     }  
+     
 
     
      .footlogo img {
         height: 40px;
      }
 
+}
+
+
+/* ------------------ Landscape smaller phones ------------------------*/
+
+
+@media (max-width: 640px) {
+    
+    .container {
+        grid-gap: 0px 20px;
+        grid-template-areas: 
+        "logo . . . . . . . . nav nav nav"
+        "name name name name name name name . . . . ."
+        "form form form form form form corn corn corn corn corn corn"
+        "footnav footnav footnav contact contact contact contact contact contact contact . footlogo"
+        
+     }
+    
+    .drag img {
+       height: 45px;
+     }
+}
+
+
+/* ------------------ Bigger phones ------------------------*/
+
+
+@media (max-width: 414px) {
+    
+    body {
+        margin: 35px 35px 75px;
+     }
+    
+     .container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 0px 20px;
+        grid-template-areas: 
+        "logo nav nav nav nav nav"
+        "name name name name name name"
+        "form form form form form form"
+        "corn corn corn corn corn corn"
+        "contact contact contact contact contact contact"    
+        ". . footlogo footlogo . ."
+    
+     }
+    
+    .name {
+        margin-top: 70px;
+    }
+            
+    .form {
+       
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+    
+    textarea {
+        width: 85%;
+    }
+    .send-button {
+        padding: 0px;
+        width: 80%;
+    }
+    
+    .corn {
+        margin: 0px 0px 60px 0px;
+    }
+    
+    .footlogo {
+        margin-top: 70px;
+        justify-self: center;
+    }
+    
+     .footnav {
+        display: none;
+    }
+
+}
+
+
+
+
+
+/* ------------------ iPhone 5 / SE ------------------------*/
+
+
+@media (max-width: 320px) {
+    
+    body {
+        margin: 25px 25px 75px;
+     }
+    
+    .contact li {
+       margin: 0px 8px;
+   }
+    
 }

@@ -14,6 +14,7 @@ a {
 .nav {
     grid-area: nav;
     justify-self: end;
+    margin-top: -8px;   
 }
 
 
@@ -67,22 +68,15 @@ ul  {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-        "logo . . . . . . . . . nav nav"
+        "logo . . . . . . . . nav nav nav"
         ". . name name name name name . . . . ."
         ". . subname subname subname subname subname subname subname . . ."
         ". . position position position position position position position . . ."
         "chi chi chi chi chi chi chi chi chi chi chi chi"
         "drag drag drag drag bud bud bud bud orion orion orion orion"
-        "footnav footnav . . contact contact contact contact . . . footlogo"
+        "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
         
 }
-
-
-    
-     
-
-    
-
 
 
 p {
@@ -204,6 +198,7 @@ p {
     text-align: center;
     margin-bottom: 10px;
 }
+
 .contact li {
     display: inline;
     margin: 0px 12px;
@@ -238,7 +233,14 @@ p {
 
 
 
-@media (max-width: 768px) {
+
+
+
+/* ------------------ iPad and portrait phones ------------------------*/
+
+
+
+@media (max-width: 825px) {
     
      body {
         margin: 50px 50px 22px;
@@ -247,17 +249,18 @@ p {
     .container {
         grid-gap: 0px 20px;
         grid-template-areas: 
-        "logo . . . . . . . . . nav nav"
+        "logo . . . . . . . . nav nav nav"
         ". name name name name name name . . . . ."
         ". subname subname subname subname subname subname subname subname subname subname subname"
         ". position position position position position position position position position position ."
         "chi chi chi chi chi chi chi chi chi chi chi chi"
         "drag drag drag drag bud bud bud bud orion orion orion orion"
-        "footnav footnav . . contact contact contact contact . . . footlogo"
+        "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
     
      }
     
     .logo img {
+        
          height: 50px
          
      }
@@ -273,18 +276,14 @@ p {
      }
     
      .proj {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+       
         margin: 16px 0px 20px;
     } 
     
-    .contact li {
-        margin: 0px 8px;
-   }  
+    
     
     .drag img {
-       height: 55px;
+       height: 45px;
        margin: 35%;
      }
     
@@ -298,8 +297,125 @@ p {
      }
     
      .footlogo img {
-     height: 40px;
+       height: 40px;
   }
 
 
+}
+
+
+/* ------------------ Landscape phones ------------------------*/
+
+
+@media (max-width: 640px) {
+    
+    .container {
+        grid-gap: 0px 20px;
+        grid-template-areas: 
+        "logo . . . . . . . . nav nav nav"
+        ". name name name name name name . . . . ."
+        ". subname subname subname subname subname subname subname subname subname subname subname"
+        ". position position position position position position position position position position ."
+        "chi chi chi chi chi chi chi chi chi chi chi chi"
+        "drag drag drag drag bud bud bud bud orion orion orion orion"
+        "footnav footnav footnav contact contact contact contact contact contact contact . footlogo"
+    
+     }   
+    
+    .drag img {
+       height: 45px;
+     }
+}
+
+
+/* ------------------ Bigger phones ------------------------*/
+
+
+@media (max-width: 414px) {
+    
+    body {
+        margin: 35px 35px 75px;
+     }
+    
+     .container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 0px 20px;
+        grid-template-areas: 
+        "logo nav nav nav nav nav"
+        "name name name name name name"
+        "subname subname subname subname subname subname"
+        "position position position position position position"
+        "chi chi chi chi chi chi"
+        "drag drag drag drag drag drag"
+        "bud bud bud bud bud bud"
+        "orion orion orion orion orion orion"
+        "contact contact contact contact contact contact"
+        ". . footlogo footlogo . ."
+    
+     }
+    
+    .name {
+        margin-top: 60px;
+    }
+    
+    .background {
+        margin-bottom: 16px;
+    }
+    
+    .drag img {
+       height: 70px;
+       
+     }
+    
+     .bud img {
+       height: 80px;
+       margin: 35%;
+     }
+    
+    .orion img {
+       height: 60px;
+       margin: 40% 0%;
+     }
+    
+    .contact {
+        margin-top: 30px;
+    }
+    .footnav {
+        display: none;
+    }
+    
+    .footlogo {
+        margin-top: 70px;
+        justify-self: center;
+    }
+
+    
+}
+
+
+/* ------------------ iPhone 5 / SE ------------------------*/
+
+
+@media (max-width: 320px) {
+    
+    body {
+        margin: 25px 25px 75px;
+     }
+    
+    .proj {
+       
+        margin: 4px 0px 20px;
+    } 
+    
+    
+    .drag img {
+       height: 70px;
+       
+     }
+    
+
+    .contact li {
+       margin: 0px 8px;
+   }
+    
 }
