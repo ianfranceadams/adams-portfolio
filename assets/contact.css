@@ -69,8 +69,8 @@ ul  {
     grid-template-rows: auto;
     grid-template-areas: 
         "logo . . . . . . . . nav nav nav"
-        ". . name name name name name . . . . ."
-        ". . form form form form corn corn corn corn corn ."
+        ". name name name name name name . . . . ."
+        ". form form form form form corn corn corn corn corn ."
          "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
         
 }
