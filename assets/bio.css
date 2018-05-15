@@ -107,7 +107,7 @@ p {
     font-size: 22px;
     font-weight: 200;
     line-height: 140%;
-    letter-spacing: .5px;
+    letter-spacing: .4px;
     grid-area: position;
     margin: 20px 0px 200px;
 }
@@ -203,6 +203,7 @@ p {
     margin-bottom: 10px;
 }
 .contact li {
+    font-weight: normal;
     display: inline;
     margin: 0px 12px;
 }

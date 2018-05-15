@@ -104,6 +104,7 @@ input, textarea, .send-button {
 
 ::placeholder {
     font-weight: 200;
+    letter-spacing: .4px;
     color: black;
     opacity: 1;
     
@@ -127,6 +128,7 @@ textarea::placeholder {
 
 .send-button {
      border-width: 2px;
+     border-color: #2C1352;
      width: 70%;
      color: white;
      background: #2C1352;
@@ -176,50 +178,6 @@ p {
     
 }
 
-.proj {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px 0px 60px;
-    
-        
-}
-
-.drag {
-    grid-area: drag;
-    background-color: #384B21;
-    
-
-}
-
-.drag img {
-    height: 80px;
-    margin: 40%;
-    padding-right: 3%;
-}
-
-
-.bud {
-    grid-area: bud;
-    background-color: #141414;
-    
-}
-
-.bud img {
-    height: 90px;
-    margin: 30%;
-}
-
-.orion {
-    grid-area: orion;
-    background-color: #001b4c;
-}
-
-.orion img {
-    height: 60px;
-    margin: 25%;
-}
-
 .footnav {
      grid-area: footnav;
      justify-self: start;
@@ -254,10 +212,12 @@ p {
 }
 
 .contact p {
+   
     text-align: center;
     margin-bottom: 10px;
 }
 .contact li {
+    font-weight: normal;
     display: inline;
     margin: 0px 12px;
 }
