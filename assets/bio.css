@@ -62,7 +62,7 @@ ul  {
     grid-template-areas: 
         "logo . . . . . . . . nav nav nav"
         ". . headshot headshot resume resume . . . . . ."
-        ". . position position position position position position position . . ."
+        ". . position position position position position position . . . ."
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
         
 }

@@ -119,19 +119,16 @@ p {
 }
 
 .proj {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px 0px 60px;
-    
-        
+    margin: 30px 0px 60px;       
 }
 
 .drag {
     grid-area: drag;
     background-color: #384B21;
-    
-
 }
 
 .drag img {
@@ -140,7 +137,83 @@ p {
     padding-right: 3%;
 }
 
+.dragoverlay {
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: helvetica neue;
+    background-color: #292929;
+    opacity: 0;
+    transition: .7s ease;
+}
 
+
+
+.drag:hover .dragoverlay {
+    opacity: .9;
+   
+}
+
+.drag:hover img {
+    filter: blur(3px);
+    
+}
+
+
+.bud:hover .dragoverlay {
+    opacity: .95;
+}
+
+.bud:hover img {
+    filter: blur(3px);
+    
+}
+.orion:hover .dragoverlay {
+    opacity: .95;
+}
+.orion:hover img {
+    filter: blur(3px);
+    
+}
+
+
+.hovtext {
+    color: white;
+    
+}
+
+.hovtext ul {
+    font-size: 28px;
+    font-weight: 200;
+    list-style-type: disc;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+.hovtext p {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.send-button {
+     border-radius: 8px;
+     border-width: 2px;
+     border-color: white;
+     color: white;
+     padding: 0px 30px;
+     background: #292929;
+     font-weight: bold;
+     font-size: 18px;
+     height: 50px;
+     letter-spacing: -.5px;
+     cursor: pointer;
+     
+}
+      
 .bud {
     grid-area: bud;
     background-color: #141414;
