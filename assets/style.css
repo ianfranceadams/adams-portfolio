@@ -32,6 +32,7 @@ a {
 
 
 ul  {
+    
     list-style-type: none;
     line-height: 170%;
     font-family: helvetica neue;
@@ -41,6 +42,7 @@ ul  {
 }
 
 .nav li span {
+    
     padding-bottom: 3px;
     border-bottom: 3px solid transparent;
     transition: border .2s cubic-bezier(1, 0.04, 1, 1);
@@ -71,7 +73,7 @@ ul  {
         "logo . . . . . . . . nav nav nav"
         ". . name name name name name . . . . ."
         ". . subname subname subname subname subname subname subname . . ."
-        ". . position position position position position position position . . ."
+        ". . position position position position position position . . . ."
         "chi chi chi chi chi chi chi chi chi chi chi chi"
         "drag drag drag drag bud bud bud bud orion orion orion orion"
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
@@ -138,6 +140,7 @@ p {
 }
 
 .dragoverlay {
+   
     position: absolute;
     margin: 0;
     height: 100%;
@@ -161,16 +164,40 @@ p {
 }
 
 
-.bud:hover .dragoverlay {
-    opacity: .95;
+.budoverlay {
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: helvetica neue;
+    background-color: #141414;
+    opacity: 0;
+    transition: .7s ease;
+}
+
+
+.bud:hover .budoverlay {
+    opacity: .9;
 }
 
 .bud:hover img {
     filter: blur(3px);
     
 }
-.orion:hover .dragoverlay {
-    opacity: .95;
+
+.orionoverlay {
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: helvetica neue;
+    background-color: #001B4C;
+    opacity: 0;
+    transition: .7s ease;
+}
+
+.orion:hover .orionoverlay {
+    opacity: .9;
 }
 .orion:hover img {
     filter: blur(3px);
@@ -179,41 +206,82 @@ p {
 
 
 .hovtext {
+    display: grid;
+    justify-content: center; 
     color: white;
-    
+  
+   
 }
 
 .hovtext ul {
-    font-size: 28px;
+   
+    font-size: 20px;
     font-weight: 200;
-    list-style-type: disc;
-    margin-left: 60px;
-    margin-bottom: 20px;
+    list-style-type: none;
+    line-height: 200%;
+    text-align: center;
+    margin-bottom: 6%;
+    opacity: .9;
 }
 
 .hovtext p {
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0% 5% 5%;
+    text-align: center;
+    letter-spacing: -.5px;
+    line-height: 130%;
 }
 
 
 
 
-.send-button {
+.hovbutton {
+     text-align: center;
+     margin: 0 25%;
      border-radius: 8px;
-     border-width: 2px;
+     border-width: 1px;
      border-color: white;
      color: white;
-     padding: 0px 30px;
-     background: #292929;
+     padding: 12px 1% 14px;
      font-weight: bold;
      font-size: 18px;
-     height: 50px;
-     letter-spacing: -.5px;
-     cursor: pointer;
+     border-style: solid;
+     transition: .3s ease;
      
 }
-      
+
+
+
+.hovbutton:hover {
+    background: white;
+    color: #384B21;
+}
+
+.
+
+
+.bud-button {
+     background: #141414;
+}
+
+.bud-button:hover {
+    background: white;
+    color: #141414;
+}
+
+.orion-button {
+    background: #001B4C;
+}
+
+.orion-button:hover {
+    background: white;
+    color: #001B4C;
+}
+    
+
+
+
 .bud {
     grid-area: bud;
     background-color: #141414;
