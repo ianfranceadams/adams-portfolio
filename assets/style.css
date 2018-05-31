@@ -64,6 +64,15 @@ ul  {
 /* FFE794 523F6E */
 
 
+
+
+
+
+
+
+
+
+
 .container {
     display: grid;
     grid-gap: 0px 40px;
@@ -125,7 +134,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 34px 0px 60px;       
+    margin: 36px 0px 60px;       
 }
 
 .drag {
@@ -239,6 +248,7 @@ p {
 .hovbutton {
      text-align: center;
      margin: 0 25%;
+     border-style: solid;
      border-radius: 8px;
      border-width: 1px;
      border-color: white;
@@ -246,7 +256,6 @@ p {
      padding: 12px 1% 14px;
      font-weight: bold;
      font-size: 18px;
-     border-style: solid;
      transition: .3s ease;
      
 }
@@ -302,6 +311,15 @@ p {
     height: 60px;
     margin: 25%;
 }
+
+
+
+
+
+
+
+
+
 
 .footnav {
      grid-area: footnav;

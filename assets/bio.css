@@ -54,6 +54,13 @@ ul  {
 /* FFE794 523F6E */
 
 
+
+
+
+
+
+
+
 .container {
     display: grid;
     grid-gap: 0px 40px;
@@ -61,7 +68,7 @@ ul  {
     grid-template-rows: auto;
     grid-template-areas: 
         "logo . . . . . . . . nav nav nav"
-        ". . headshot headshot resume resume . . . . . ."
+        ". . headshot headshot headshot . . . . . . ."
         ". . position position position position position position . . . ."
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
         
@@ -112,58 +119,14 @@ p {
     margin: 20px 0px 200px;
 }
 
-.background {
-    grid-area: chi;
-}
-
-.background img {
-    width: 100%;
-    
-}
-
-.proj {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px 0px 60px;
-    
-        
-}
-
-.drag {
-    grid-area: drag;
-    background-color: #384B21;
-    
-
-}
-
-.drag img {
-    height: 80px;
-    margin: 40%;
-    padding-right: 3%;
-}
 
 
-.bud {
-    grid-area: bud;
-    background-color: #141414;
-    
-}
 
-.bud img {
-    height: 90px;
-    margin: 30%;
-}
 
-.orion {
-    grid-area: orion;
-    background-color: #001b4c;
-}
 
-.orion img {
-    height: 60px;
-    margin: 25%;
-}
+
+
+
 
 .footnav {
      grid-area: footnav;
@@ -327,7 +290,7 @@ p {
         grid-gap: 0px 20px;
         grid-template-areas: 
         "logo nav nav nav nav nav"
-        "headshot headshot headshot . . . "
+        "headshot headshot headshot headshot . . "
         "position position position position position position"
         "contact contact contact contact contact contact"
         ". . footlogo footlogo . ."
