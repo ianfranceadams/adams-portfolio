@@ -51,7 +51,7 @@ ul  {
 
 
 .nav li span:hover {
-    padding-bottom: 3px;
+    
     border-bottom: 3px solid #523F6E;
     
 }
@@ -91,13 +91,12 @@ ul  {
 
 
 p {
-    font-family: "helvetica neue", helvetica, arial, sans-serif;
     margin: 0;
 }
 
 .name {
     font-weight: normal;
-    margin: 120px 0px 0px;
+    margin: 120px 0px 7px;
     font-size: 48px;
     letter-spacing: -2px;
     grid-area: name;
@@ -118,7 +117,19 @@ p {
     line-height: 140%;
     letter-spacing: .4px;
     grid-area: position;
-    margin: 20px 0px 50px;
+    margin: 20px 0px 120px;
+}
+
+.see span {
+    font-weight: normal;
+    letter-spacing: -.4px;
+    padding-bottom: 1px;
+    border-bottom: 3px solid transparent;
+    transition: border .2s cubic-bezier(1, 0.04, 1, 1);
+}
+
+.see span:hover {
+    border-bottom: 3px solid #523F6E;
 }
 
 .background {

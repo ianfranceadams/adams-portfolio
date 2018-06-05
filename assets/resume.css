@@ -4,6 +4,7 @@ html {
 
 body {
     margin: 90px 100px 50px;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
 }
 
 a {
@@ -25,7 +26,6 @@ a {
 ul  {
     list-style-type: none;
     line-height: 170%;
-    font-family: helvetica neue;
     font-weight: bold;
     padding: 0;
     margin: 0;
@@ -71,26 +71,31 @@ ul  {
         ". . name name name . . . . . . ."
         ". subname subname subname subname . . . . . . ."
         ". . position position position . . . . . . ."
-        ". . rescontact rescontact rescontact . . . . . . ."
+        "rescontact rescontact rescontact rescontact rescontact . . . . . . ."
         ". . . . . edu edu edu . . . ."
         ". . . . . bloc bloc bloc bloc bloc bloc ."
         ". . . . . umn umn umn umn umn umn ."
-        ". . . . . skl skl exp exp exp exp ."
-        ". . . . . sklist sklist elist elist elist elist ."
-        ". . . . res res res res . . . ."
+        ". . . . . ncsa ncsa ncsa ncsa ncsa ncsa ."
+        ". . . . . skl skl skl exp exp exp ."
+        ". . . . . sklist sklist sklist elist elist elist ."
+        ". . . . . work work work . . . ."
+        ". . . . . inst inst inst inst inst inst ."
+        ". . . . . trk trk trk trk trk trk ."
+        ". . . . . trms trms trms trms trms trms ."
+        ". . . . . harv harv harv harv harv harv ."
+        ". . . res res res res res res . . ."
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
         
 }
 
 
 p {
-    font-family: helvetica neue;
     margin: 0;
 }
 
 
 .name {
-    margin: 100px 0px 5px;
+    margin: 100px 0px 10px;
     font-size: 48px;
     letter-spacing: -2px;
     grid-area: name;
@@ -131,7 +136,7 @@ p {
     grid-area: edu;
     font-size: 28px;
     letter-spacing: -.5px;
-    margin: 20px 0px;
+    margin: 30px 0px;
 }
 
 .bloc {
@@ -141,10 +146,20 @@ p {
     letter-spacing: .4px;
     line-height: 140%;
     margin-bottom: 15px;
+    
 }
 
 .umn {
     grid-area: umn;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: .4px;
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+
+.ncsa {
+    grid-area: ncsa;
     font-size: 20px;
     font-weight: 200;
     letter-spacing: .4px;
@@ -156,7 +171,7 @@ p {
     grid-area: skl;
     font-size: 28px;
     letter-spacing: -.5px;
-    margin: 20px 0px;
+    margin: 30px 0px;
 }
 
 .sklist {
@@ -165,13 +180,16 @@ p {
     font-size: 20px;
     line-height: 140%;
     letter-spacing: .4px;
+    margin-bottom: 10px;
+    
 }
 
 .exp {
     grid-area: exp;
     font-size: 28px;
     letter-spacing: -.5px;
-    margin: 20px 0px;
+    margin: 30px 0px;
+    margin-left: -40px;
 }
 
 .elist {
@@ -180,7 +198,64 @@ p {
     font-size: 20px;
     line-height: 140%;
     letter-spacing: .4px;
+     margin-left: -40px;
 }
+
+
+
+
+
+
+
+.work {
+    grid-area: work;
+    font-size: 28px;
+    letter-spacing: -.5px;
+    margin: 30px 0px;
+}
+
+.inst {
+    grid-area: inst;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: .4px;
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+
+.disc {
+    font-size: 18px;
+    margin: 10px 40px;
+    line-height: 140%;
+}
+
+.trk {
+    grid-area: trk;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: .4px;
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+
+.trms {
+    grid-area: trms;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: .4px;
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+
+.harv {
+    grid-area: harv;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: .4px;
+    line-height: 140%;
+  
+}
+
 
 
 .resume {
@@ -194,7 +269,7 @@ p {
     font-family: helvetica neue;    
     font-weight: bold;
     line-height: 130%;
-    margin: 240px 0px 100px;
+    margin: 90px 0px 100px;
     text-align: center;
     transition: .2s ease;
 }
