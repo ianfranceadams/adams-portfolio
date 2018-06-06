@@ -388,15 +388,36 @@ p {
         grid-gap: 0px 20px;
         grid-template-areas: 
         "logo . . . . . . . . nav nav nav"
-        ". headshot headshot headshot headshot . . . . . . ."
-        ". position position position position position position position position position . ."
+        "name name name name name . . . . . . ."
+        "subname subname subname subname subname . . . . . . ."
+        ". position position position position . . . . . . ."
+        "rescontact rescontact rescontact rescontact rescontact . . . . . . ."
+        ". . . . . edu edu edu . . . ."
+        ". . . . . bloc bloc bloc bloc bloc bloc bloc"
+        ". . . . . umn umn umn umn umn umn umn"
+        ". . . . . ncsa ncsa ncsa ncsa ncsa ncsa ncsa"
+        ". . . . . skl skl skl skl exp exp exp"
+        ". . . . . sklist sklist sklist sklist elist elist ."
+        ". . . . . work work work work work . ."
+        ". . . . . inst inst inst inst inst inst inst"
+        ". . . . . trk trk trk trk trk trk trk"
+        ". . . . . trms trms trms trms trms trms trms"
+        ". . . . . harv harv harv harv harv harv harv"
+        ". . . res res res res res res . . ."
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
     
      }
     
-    .headshot img {
-         margin-top: 100px;
-
+    .subname {
+        font-size: 24px;
+    }
+    
+    .position {
+        font-size: 22px;
+    }
+    
+    .rescontact {
+        font-size: 18px;
     }
     
     .logo img {
@@ -404,16 +425,23 @@ p {
          
      }
     
+    .edu, .skills, .exp, .work {
+        margin: 20px 0px;
+    }
+    
+    .exp {
+        margin-left: 0px;
+    }  
+    
+    .elist {
+        margin-left: 0px;
+    }
+    
     .name {
          margin-top: 40px;
         
     }
 
-    .position {
-         margin: 10px 0px 110px;
-         font-size: 20px;
- 
-     }
 
     
      .footlogo img {
@@ -426,18 +454,57 @@ p {
 /* ------------------ Landscape smaller phones ------------------------*/
 
 
-@media (max-width: 640px) {
+@media (max-width: 670px) {
     
     .container {
         grid-gap: 0px 20px;
         grid-template-areas: 
         "logo . . . . . . . . nav nav nav"
-        ". headshot headshot headshot headshot . . . . . . ."
-        ". position position position position position position position position position position ."
+        "name name name name name . . . . . . ."
+        "subname subname subname subname subname . . . . . . ."
+        "position position position position position . . . . . . ."
+        "rescontact rescontact rescontact rescontact rescontact . . . . . . ."
+        ". . . . edu edu edu edu . . . ."
+        ". . . . bloc bloc bloc bloc bloc bloc bloc bloc"
+        ". . . . umn umn umn umn umn umn umn umn"
+        ". . . . ncsa ncsa ncsa ncsa ncsa ncsa ncsa ncsa"
+        ". . . . skl skl skl skl skl skl exp exp"
+        ". . . . sklist sklist sklist sklist sklist sklist elist elist"
+        ". . . . work work work work work work work ."
+        ". . . . inst inst inst inst inst inst inst inst"
+        ". . . . trk trk trk trk trk trk trk trk"
+        ". . . . trms trms trms trms trms trms trms trms"
+        ". . . . harv harv harv harv harv harv harv harv"
+        ". . res res res res res res res res . ."
         "footnav footnav footnav contact contact contact contact contact contact contact . footlogo"
     
      }
     
+    
+        
+    .rescontact, .bloc, .umn, .ncsa, .sklist, .elist, .inst, .trk, .trms, .harv {
+        font-size: 16px;
+    }
+    
+    .edu, .skills, .exp, .work {
+        margin: 20px 0px;
+    }
+    
+    .elist, .exp {
+        margin-left: -60px;
+    }
+    
+    .inst, .trk, .trms {
+        margin-bottom: 10px;
+    }
+    
+    .disc {
+        font-size: 16px;
+    }
+    
+    .resume {
+        margin: 50px 0px 60px;
+    }
     
 }
 
@@ -449,7 +516,7 @@ p {
 @media (max-width: 414px) {
     
     body {
-        margin: 35px 35px 75px;
+        margin: 25px 25px 75px;
      }
     
      .container {
@@ -457,23 +524,42 @@ p {
         grid-gap: 0px 20px;
         grid-template-areas: 
         "logo nav nav nav nav nav"
-        "headshot headshot headshot . . . "
+         "name name name name name name"
+        "subname subname subname subname subname subname"
         "position position position position position position"
-        "contact contact contact contact contact contact"
+        "rescontact rescontact rescontact rescontact rescontact rescontact"
+        "edu edu edu edu edu edu"
+        "bloc bloc bloc bloc bloc bloc"
+        "umn umn umn umn umn umn"
+        "ncsa ncsa ncsa ncsa ncsa ncsa"
+        "skl skl skl skl     exp exp"
+        "sklist sklist sklist sklist elist elist"
+        "work work work work work work"
+        "inst inst inst inst inst inst"
+        "trk trk trk trk trk trk"
+        "trms trms trms trms trms trms"
+        "harv harv harv harv harv harv"
+        "res res res res res res"
+        "contact contact contact contact contact contact"    
         ". . footlogo footlogo . ."
     
      }
     
-    .headshot img {
-        margin-top: 50px;
-    }  
     
-    .position {
-         margin: 10px 0px 50px;
+    .name, .subname, .position, .rescontact {
+        text-align: center;
         
     }
     
-     .footnav {
+    .sklist, .elist {
+        font-size: 16px;
+    }
+    
+    .elist, .exp {
+        margin-left: -50px;
+    }
+    
+    .footnav {
         display: none;
     }
     
@@ -499,6 +585,40 @@ p {
     body {
         margin: 25px 25px 75px;
      }
+    
+    .container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 0px 20px;
+        grid-template-areas: 
+        "logo nav nav nav nav nav"
+         "name name name name name name"
+        "subname subname subname subname subname subname"
+        "position position position position position position"
+        "rescontact rescontact rescontact rescontact rescontact rescontact"
+        "edu edu edu edu edu edu"
+        "bloc bloc bloc bloc bloc bloc"
+        "umn umn umn umn umn umn"
+        "ncsa ncsa ncsa ncsa ncsa ncsa"
+        "skl skl skl skl skl skl"
+        "sklist sklist sklist sklist sklist sklist"
+        "exp exp exp exp exp exp"
+        "elist elist elist elist elist elist"
+        "work work work work work work"
+        "inst inst inst inst inst inst"
+        "trk trk trk trk trk trk"
+        "trms trms trms trms trms trms"
+        "harv harv harv harv harv harv"
+        "res res res res res res"
+        "contact contact contact contact contact contact"    
+        ". . footlogo footlogo . ."
+    
+     }
+    
+    
+     .elist, .exp {
+        margin-left: 0px;
+    }
+
     
     .contact li {
        margin: 0px 8px;
