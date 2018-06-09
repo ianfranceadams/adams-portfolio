@@ -279,7 +279,7 @@ p {
     color: #384B21;
 }
 
-.
+
 
 
 .bud-button {
@@ -531,6 +531,10 @@ p {
         margin-top: 60px;
     }
     
+    .subname {
+        margin: 10px 0px 15px;
+    }
+    
     .background {
         margin-bottom: 16px;
     }
@@ -549,6 +553,83 @@ p {
        height: 60px;
        margin: 40% 0%;
      }
+    
+    
+    
+    
+    .dragoverlay, .budoverlay, .orionoverlay {
+      height: 89%;
+    }
+    
+    .drag:click .dragoverlay {
+    opacity: .9;
+   
+    }
+
+    .drag:click img {
+    filter: blur(3px);
+    
+    }
+    
+    .bud:click .budoverlay {
+    opacity: .9;
+   
+    }
+
+    .bud:click img {
+    filter: blur(3px);
+    
+    } 
+    
+    .orion:click .orionoverlay {
+    opacity: .9;
+   
+    }
+
+    .drag:click img {
+    filter: blur(3px);
+    
+    }
+    
+    
+    
+    .dragoverlay:click .dragoverlay {
+        opacity: 0;
+    }
+    
+    .hovtext p, .hovtext ul {
+        font-size: 16px;
+    }
+ 
+    .hovbutton {
+        font-size: 14px;
+        
+    }
+    
+    .hovbutton:active {
+    background: white;
+    color: #384B21;
+}
+    
+    .orion-button:active {
+    background: white;
+    color: #001B4C;
+} 
+    
+    .bud-button:active {
+    background: white;
+    color: #141414;
+}
+    
+    
+    
+    .hovtext p {
+        margin-top: -10%;
+    }
+    
+    
+    
+    
     
     .contact {
         margin-top: 30px;
@@ -586,7 +667,20 @@ p {
        
      }
     
-
+     
+    .hovtext p {
+        margin-top: -1%;
+        margin-bottom: 0;
+    }
+    
+    .hovtext ul {
+        margin-bottom: 2%;
+    }
+    
+    .hovbutton {
+        padding: 10px 0% 11px;
+    }
+    
     .contact li {
        margin: 0px 8px;
    }

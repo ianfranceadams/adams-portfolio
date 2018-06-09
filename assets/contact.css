@@ -104,7 +104,6 @@ input, textarea, .send-button {
 
 ::placeholder {
     font-weight: 200;
-    letter-spacing: .4px;
     color: black;
     opacity: 1;
     
