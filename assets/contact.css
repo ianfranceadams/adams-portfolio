@@ -103,11 +103,15 @@ input, textarea, .send-button {
 }
 
 ::placeholder {
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
     font-weight: 200;
     color: black;
-    opacity: 1;
-    
-    
+    opacity: 1; 
+}
+
+::-moz-placeholder {
+    margin: 10px 0px;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
 }
 
 textarea {
@@ -118,6 +122,14 @@ textarea {
 }
 
 textarea::placeholder {
+    line-height: 130%;
+}
+
+textarea::-moz-placeholder {
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-weight: 200;
+    color: black;
+    opacity: 1;
     line-height: 130%;
 }
 

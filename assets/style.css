@@ -122,6 +122,7 @@ p {
 
 .see span {
     font-weight: normal;
+    cursor: pointer;
     letter-spacing: -.4px;
     padding-bottom: 1px;
     border-bottom: 3px solid transparent;
