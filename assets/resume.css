@@ -305,7 +305,7 @@ p {
     line-height: 130%;
     margin: 90px 50px 100px;
     text-align: center;
-    transition: .2s ease;
+    transition: .3s ease;
 }
 
 .resume:hover {

@@ -1,0 +1,468 @@
+html {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+            
+
+}
+
+body {
+    margin: 90px 100px 50px;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav {
+    grid-area: nav;
+    justify-self: end;
+    margin-top: -8px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+
+ul  {
+    list-style-type: none;
+    line-height: 170%;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li span {
+    padding-bottom: 3px;
+    border-bottom: 3px solid transparent;
+    transition: border .2s cubic-bezier(1, 0.04, 1, 1);
+    
+}
+
+
+.nav li span:hover {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #523F6E;
+    
+}
+
+.nav li span:active {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #523F6E;
+    
+}
+
+/* FFE794 523F6E */
+
+
+
+
+
+
+
+
+
+.container {
+    display: grid;
+    grid-gap: 0px 40px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+       "logo . . . . . . . . nav nav nav"
+        "ban ban ban . case case case case . . . ."
+        "ban ban ban . dlogo dlogo dlogo dlogo . . . ."
+        "ban ban ban position position position position position position . . ."
+        ". . . . resume resume resume resume . . . ."
+        "home home home home home home home home home home home home"
+        ". . . . chal chal chal chal . . . ."
+        ". . . chalp chalp chalp chalp chalp chalp . . ."
+        ". . . . sol sol sol sol . . . ."
+        ". . . solp solp solp solp solp solp . . ."
+        "home2 home2 home2 home2 coffee1 coffee1 coffee1 coffee1 ethi ethi ethi ethi"       
+        "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
+        
+}
+
+
+.case {
+    grid-area: case;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 140%;
+    letter-spacing: .4px;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.dlogo {
+    grid-area: dlogo;
+    
+}
+
+.dlogo img {
+    margin-top: 30px;
+    width: 100%;
+    margin-left: -20px;
+}
+
+.position {  
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 160%;
+    letter-spacing: .4px;
+    grid-area: position;
+    margin: 80px 0px 0px 30px;
+}
+
+.ban {
+    grid-area: ban;
+}
+
+.ban img {
+    width: 100%;
+    opacity: .4;
+    transform: rotate(20deg);
+}
+
+
+
+.resume {
+    grid-area: resume;
+    border: 2px solid #2C1352;
+    border-radius: 8px;
+    background-color: white;
+    color: #2C1352;
+    font-size: 16px;
+    font-family: helvetica neue;    
+    font-weight: bold;
+    text-align: center;
+
+    padding: 12px 10px 14px;
+    margin: 60px 40px 0px;
+    transition: .2s ease;
+}
+
+.resume:hover {
+  background: #2C1352;
+  color: white;
+}
+
+
+.home {
+     grid-area: home;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+ 
+    
+}
+
+.home img {
+    margin-top: 100px;
+    width: 120%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+} 
+
+.chal {
+    grid-area: chal;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 160%;
+    letter-spacing: .4px;
+    text-align: center;
+    margin: 100px 0px 70px;
+}
+
+.chalp {  
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 160%;
+    letter-spacing: .4px;
+    grid-area: chalp;
+
+}
+
+
+.sol {
+    grid-area: sol;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 160%;
+    letter-spacing: .4px;
+    text-align: center;
+    margin: 100px 0px 70px;
+}
+
+.solp {  
+    grid-area: solp;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 160%;
+    letter-spacing: .4px;
+
+}
+
+.coffee1 {
+    grid-area: coffee1;
+    
+}
+
+.coffee1 img {
+    margin-top: 100px;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.home2 {
+    grid-area: home2;
+    
+}
+
+.home2 img {
+    margin-top: 100px;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.ethi {
+    grid-area: ethi;
+    
+}
+
+.ethi img {
+    margin-top: 100px;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footnav {
+     grid-area: footnav;
+     justify-self: start;
+}
+
+.footnav li span {
+    padding-bottom: 3px;
+    border-bottom: 3px solid transparent;
+    transition: border .2s cubic-bezier(1, 0.04, 1, 1);
+}
+
+.footnav li span:hover {
+    padding-bottom: 3px;    
+    border-bottom: 3px solid #523F6E;
+
+}
+
+.footnav li span:active {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #523F6E;
+    
+}
+
+.contact {
+    grid-area: contact;
+    justify-self: center;
+    align-self: center;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: -.5px;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contact li {
+    font-weight: normal;
+    display: inline;
+    margin: 0px 12px;
+}
+
+.contact a {
+    transition: all .15s ease;
+}
+
+.contact a:hover {
+
+    
+    color: #523F6E; 
+   /*  text-shadow: 0px 1px 6px #5F4881; */
+}
+
+/*FFE794   FFF3C7     523F6E   3F2A5E  2C1352 */
+
+.footlogo {
+     grid-area: footlogo;
+     justify-self: end;
+     align-self: center;
+}
+
+.footlogo img {
+    
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------ iPad and landscape phones ------------------------*/
+
+
+
+@media (max-width: 825px) {
+    
+     body {
+        margin: 50px 50px 30px;
+     }
+    
+    .container {
+        grid-gap: 0px 20px;
+        grid-template-areas: 
+        "logo . . . . . . . . nav nav nav"
+        ". headshot headshot headshot headshot . . . . . . ."
+        ". position position position position position position position position position . ."
+        "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
+    
+     }
+    
+    .headshot img {
+         margin-top: 100px;
+
+    }
+    
+    .logo img {
+         height: 50px
+         
+     }
+    
+    .name {
+         margin-top: 40px;
+        
+    }
+
+    .position {
+         margin: 10px 0px 110px;
+         font-size: 20px;
+ 
+     }
+
+    
+     .footlogo img {
+        height: 40px;
+     }
+
+}
+
+
+/* ------------------ Landscape smaller phones ------------------------*/
+
+
+@media (max-width: 640px) {
+    
+    .container {
+        grid-gap: 0px 20px;
+        grid-template-areas: 
+        "logo . . . . . . . . nav nav nav"
+        ". headshot headshot headshot headshot . . . . . . ."
+        ". position position position position position position position position position position ."
+        "footnav footnav footnav contact contact contact contact contact contact contact . footlogo"
+    
+     }
+    
+    
+}
+
+
+
+/* ------------------ Bigger phones ------------------------*/
+
+
+@media (max-width: 414px) {
+    
+    body {
+        margin: 35px 35px 75px;
+     }
+    
+     .container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 0px 20px;
+        grid-template-areas: 
+        "logo nav nav nav nav nav"
+        "headshot headshot headshot headshot . . "
+        "position position position position position position"
+        "contact contact contact contact contact contact"
+        ". . footlogo footlogo . ."
+    
+     }
+    
+    .headshot img {
+        margin-top: 50px;
+    }  
+    
+    .position {
+         margin: 10px 0px 50px;
+        
+    }
+    
+     .footnav {
+        display: none;
+    }
+    
+    .footlogo {
+        margin-top: 70px;
+        justify-self: center;
+    }
+
+}
+
+
+/* ------------------ Galaxy S5 & iPhone 6, etc ------------------------*/
+
+
+
+
+
+/* ------------------ iPhone 5 / SE ------------------------*/
+
+
+@media (max-width: 320px) {
+    
+    body {
+        margin: 25px 25px 75px;
+     }
+    
+    .contact li {
+       margin: 0px 8px;
+   }
+    
+}
