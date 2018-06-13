@@ -265,6 +265,7 @@ p {
 .inst span, .trk span, .trms span, .harv span {
     font-weight: normal;
     letter-spacing: -.5px;
+    border-bottom: 1px black solid;
 }
 
 .other {

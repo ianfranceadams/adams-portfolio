@@ -25,6 +25,11 @@ a {
     height: 60px;
 }
 
+p {
+    font-weight: 200;
+    letter-spacing: .4px;
+}
+
 
 ul  {
     list-style-type: none;
@@ -80,7 +85,13 @@ ul  {
         ". . . chalp chalp chalp chalp chalp chalp . . ."
         ". . . . sol sol sol sol . . . ."
         ". . . solp solp solp solp solp solp . . ."
-        "home2 home2 home2 home2 coffee1 coffee1 coffee1 coffee1 ethi ethi ethi ethi"       
+        ". . . . prot prot prot prot . . . ."
+        "home2 home2 home2 home2 coffee1 coffee1 coffee1 coffee1 ethi ethi ethi ethi" 
+        ". . . . pro pro pro pro . . . ."
+        ". . . prop prop prop prop prop prop . . ."
+        "surv surv surv surv pers pers pers pers pers pers pers pers" 
+        ". . . flowp flowp flowp flowp flowp flowp . . ."
+        ". flow flow flow flow flow flow flow flow flow flow ." 
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
         
 }
@@ -138,7 +149,6 @@ ul  {
     font-family: helvetica neue;    
     font-weight: bold;
     text-align: center;
-
     padding: 12px 10px 14px;
     margin: 60px 40px 0px;
     transition: .2s ease;
@@ -151,8 +161,7 @@ ul  {
 
 
 .home {
-     grid-area: home;
-
+    grid-area: home;
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -206,28 +215,54 @@ ul  {
 
 }
 
+.prot {
+    grid-area: prot;
+    border: 2px solid #2C1352;
+    border-radius: 8px;
+    background-color: white;
+    color: #2C1352;
+    font-size: 16px;
+    font-family: helvetica neue;    
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 10px 14px;
+    margin: 60px 40px 0px;
+    transition: .2s ease;
+}
+
+.prot:hover {
+  background: #2C1352;
+  color: white;
+}
+
+
 .coffee1 {
     grid-area: coffee1;
     
 }
 
-.coffee1 img {
-    margin-top: 100px;
-    width: 100%;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-
-}
 
 .home2 {
     grid-area: home2;
     
 }
 
-.home2 img {
+.home2 img, .coffee1 img, .ethi img, .surv img, .pers img {
     margin-top: 100px;
     width: 100%;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 
+}
+
+.flow img {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.home2 p, .coffee1 p, .ethi p, .surv p, .pers p {
+    margin-top: 20px;
+    text-align: center;
+    line-height: 140%;
 }
 
 .ethi {
@@ -235,13 +270,69 @@ ul  {
     
 }
 
-.ethi img {
-    margin-top: 100px;
-    width: 100%;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+.surv {
+    grid-area: surv;
+    
+}
+
+.pers {
+    grid-area: pers;
+    
+}
+
+/*
+.tsk1 img {
+    width: 80%;
+}
+
+.tsk2 {
+    grid-area: tsk2;
+}
+
+.tsk2 {
+    grid-area: tsk2;
+} */
+
+.flow {
+    grid-area: flow;
+    
+}
+
+.pro {
+    grid-area: pro;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 160%;
+    letter-spacing: .4px;
+    text-align: center;
+    margin: 100px 0px 70px;
+}
+
+.prop {  
+    grid-area: prop;
+    
 
 }
 
+.flowp {
+    grid-area: flowp;
+    margin: 150px 0px 60px;
+    
+}
+
+.prop, .flowp  {
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 160%;
+    letter-spacing: .4px;
+
+}
+
+.prop span, .flowp span {
+    font-weight: normal;
+    letter-spacing: -.4px;
+    color: #384B21;
+}
 
 
 
@@ -289,7 +380,7 @@ ul  {
     letter-spacing: -.5px;
 }
 
-.contact p {
+.contact h3 {
     text-align: center;
     margin-bottom: 10px;
 }
