@@ -265,7 +265,7 @@ p {
 .inst span, .trk span, .trms span, .harv span {
     font-weight: normal;
     letter-spacing: -.5px;
-    border-bottom: 1px black solid;
+    border-bottom: 2px black solid;
 }
 
 .other {
@@ -432,7 +432,7 @@ p {
         "position position position position position umn umn umn umn umn umn ."
         "rescontact rescontact rescontact rescontact rescontact ncsa ncsa ncsa ncsa ncsa ncsa ."
         ". . . . . skl skl exp exp exp exp exp"
-        ". . . . . sklist sklist sklist sklist elist elist ."
+        ". . . . . sklist sklist sklist sklist elist elist elist"
         ". . . . . work work work work work . ."
         ". . . . . inst inst inst inst inst inst ."
         ". . . . . trk trk trk trk trk trk trk"

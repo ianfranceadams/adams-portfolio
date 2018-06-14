@@ -125,13 +125,11 @@ p {
     cursor: pointer;
     letter-spacing: -.4px;
     padding-bottom: 1px;
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid black;
     transition: border .2s cubic-bezier(1, 0.04, 1, 1);
 }
 
-.see span:hover {
-    border-bottom: 3px solid #523F6E;
-}
+
 
 .background {
     grid-area: chi;

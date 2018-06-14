@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    margin: 90px 100px 50px;
+    
     font-family: "helvetica neue", helvetica, arial, sans-serif;
 
 }
@@ -70,6 +70,7 @@ ul  {
 
 
 .container {
+    margin: 90px 100px 50px;
     display: grid;
     grid-gap: 0px 40px;
     grid-template-columns: repeat(12, 1fr);
@@ -80,15 +81,13 @@ ul  {
         "ban ban ban . dlogo dlogo dlogo dlogo . . . ."
         "ban ban ban position position position position position position . . ."
         ". . . . resume resume resume resume . . . ."
-        "home home home home home home home home home home home home"
-        ". . . . chal chal chal chal . . . ."
-        ". . . chalp chalp chalp chalp chalp chalp . . ."
-        ". . . . sol sol sol sol . . . ."
-        ". . . solp solp solp solp solp solp . . ."
+        ". chal chal chal chal . . sol sol sol sol ."
+        "chalp chalp chalp chalp chalp chalp solp solp solp solp solp solp"
         ". . . . prot prot prot prot . . . ."
         "home2 home2 home2 home2 coffee1 coffee1 coffee1 coffee1 ethi ethi ethi ethi" 
         ". . . . pro pro pro pro . . . ."
-        ". . . prop prop prop prop prop prop . . ."
+        ". . prop prop prop prop prop prop prop prop . ."
+        ". . comp comp comp comp comp comp comp comp . ."
         "surv surv surv surv pers pers pers pers pers pers pers pers" 
         ". . . flowp flowp flowp flowp flowp flowp . . ."
         ". flow flow flow flow flow flow flow flow flow flow ." 
@@ -160,19 +159,22 @@ ul  {
 }
 
 
-.home {
-    grid-area: home;
+
+    
+    
+   /* grid-area: home;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center; */
 
- 
+
     
-}
+
 
 .home img {
-    margin-top: 100px;
-    width: 120%;
+    margin-top: 30px;
+    margin-bottom: -100px;
+    width: 100%;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 } 
 
@@ -191,6 +193,7 @@ ul  {
     font-weight: 200;
     line-height: 160%;
     letter-spacing: .4px;
+    margin-right: 20px;
     grid-area: chalp;
 
 }
@@ -212,6 +215,7 @@ ul  {
     font-weight: 200;
     line-height: 160%;
     letter-spacing: .4px;
+    margin-left: 20px;
 
 }
 
@@ -270,6 +274,12 @@ ul  {
     
 }
 
+.comp {
+    grid-area: comp;
+    margin: 50px 0px;
+}
+
+
 .surv {
     grid-area: surv;
     
@@ -316,11 +326,11 @@ ul  {
 
 .flowp {
     grid-area: flowp;
-    margin: 150px 0px 60px;
+    margin: 200px 0px 100px;
     
 }
 
-.prop, .flowp  {
+.prop, .flowp, .comp  {
     font-size: 24px;
     font-weight: 200;
     line-height: 160%;
@@ -328,7 +338,7 @@ ul  {
 
 }
 
-.prop span, .flowp span {
+.prop span, .flowp span, .comp span, .sol span {
     font-weight: normal;
     letter-spacing: -.4px;
     color: #384B21;
