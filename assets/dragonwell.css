@@ -85,12 +85,18 @@ ul  {
         "chalp chalp chalp chalp chalp chalp solp solp solp solp solp solp"
         ". . . . prot prot prot prot . . . ."
         "home2 home2 home2 home2 coffee1 coffee1 coffee1 coffee1 ethi ethi ethi ethi" 
-        ". . . . pro pro pro pro . . . ."
+        ". . pro pro pro pro pro pro pro pro . ."
         ". . prop prop prop prop prop prop prop prop . ."
-        ". . comp comp comp comp comp comp comp comp . ."
+        ". peets peets peets cbtl cbtl cbtl cbtl mcnt mcnt mcnt ." 
+        ". . . comp comp comp comp comp comp . . ."
         "surv surv surv surv pers pers pers pers pers pers pers pers" 
-        ". . . flowp flowp flowp flowp flowp flowp . . ."
+        ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
         ". flow flow flow flow flow flow flow flow flow flow ." 
+        "flow3 flow3 flow3 flow3 flow3 flow3 flow2 flow2 flow2 flow2 flow2 flow2"
+        ". . bran bran bran bran bran bran bran bran . ."
+        ". . branp branp branp branp branp branp branp branp . ."
+        ". tsk1 tsk1 tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 tsk2 tsk2 ."
+        ". . branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 . ."
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
         
 }
@@ -259,11 +265,12 @@ ul  {
 }
 
 .flow img {
-    margin-top: 100px;
+    margin: 100px 0px;
     width: 100%;
 }
 
-.home2 p, .coffee1 p, .ethi p, .surv p, .pers p {
+.home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
+.peets p, .cbtl p, .mcnt p {
     margin-top: 20px;
     text-align: center;
     line-height: 140%;
@@ -274,9 +281,38 @@ ul  {
     
 }
 
+
+
+
+.peets {
+    grid-area: peets;
+    margin-top: 10px;
+   
+}
+
+.cbtl {
+    grid-area: cbtl;
+    margin-top: 50px;
+}
+
+
+.mcnt {
+    grid-area: mcnt;
+}
+
+
+.peets img, .cbtl img, .mcnt img, .flow2 img, .flow3 img, .tsk2 img {
+     width: 100%;
+}
+
+.peets p, .cbtl p, .mcnt p {
+    font-size: 20px;
+    
+}
+
 .comp {
     grid-area: comp;
-    margin: 50px 0px;
+    margin: 90px 0px 10px;        ;
 }
 
 
@@ -290,18 +326,6 @@ ul  {
     
 }
 
-/*
-.tsk1 img {
-    width: 80%;
-}
-
-.tsk2 {
-    grid-area: tsk2;
-}
-
-.tsk2 {
-    grid-area: tsk2;
-} */
 
 .flow {
     grid-area: flow;
@@ -320,15 +344,28 @@ ul  {
 
 .prop {  
     grid-area: prop;
+    margin-bottom: 100px;
     
 
 }
 
 .flowp {
     grid-area: flowp;
-    margin: 200px 0px 100px;
+    margin: 180px 0px 80px;
     
 }
+
+
+.flow2 {
+    grid-area: flow2;
+    margin-bottom: 100px
+}
+
+.flow3 {
+    grid-area: flow3;
+     margin-bottom: 100px   
+}
+
 
 .prop, .flowp, .comp  {
     font-size: 24px;
@@ -344,9 +381,48 @@ ul  {
     color: #384B21;
 }
 
+.bran {
+    grid-area: bran;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 160%;
+    letter-spacing: .4px;
+    text-align: center;
+    margin: -20px 0px 70px;
+}
+
+.branp {  
+    grid-area: branp;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 160%;
+    letter-spacing: .4px;
+    
+}
 
 
+.tsk1 img {
+    width: 80%;
+}
 
+.tsk1 {
+    grid-area: tsk1;
+    margin: 60px 0px;
+}
+
+.tsk2 {
+    grid-area: tsk2;
+    margin-top: 60px;
+} 
+
+.branp2 {  
+    grid-area: branp2;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 160%;
+    letter-spacing: .4px;
+    
+}
 
 
 
