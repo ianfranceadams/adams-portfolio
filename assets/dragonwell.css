@@ -95,8 +95,17 @@ ul  {
         "flow3 flow3 flow3 flow3 flow3 flow3 flow2 flow2 flow2 flow2 flow2 flow2"
         ". . bran bran bran bran bran bran bran bran . ."
         ". . branp branp branp branp branp branp branp branp . ."
-        ". tsk1 tsk1 tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 tsk2 tsk2 ."
-        ". . branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 . ."
+        ". . . tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 . . ."
+        ". . . branp2 branp2 branp2 branp2 branp2 branp2 . . ."
+        ". colors colors colors colors colors colors clogos clogos clogos clogos . "
+        ". clogo clogo clogo clogo clogo clogo clogos clogos clogos clogos ."
+        ". . . . stylec stylec stylec stylec . . . ."
+        ". . . wirep wirep wirep wirep wirep wirep . . ."
+        "wires wires wires wires wires wires wires wires wires wires wires wires"
+        ". . . abtest abtest abtest abtest abtest abtest . . ."
+        ". abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic ."
+        ". . . mockp mockp mockp mockp mockp mockp . . ."
+        ". utest utest utest utest utest utest utest utest utest utest ."
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
         
 }
@@ -270,10 +279,11 @@ ul  {
 }
 
 .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-.peets p, .cbtl p, .mcnt p {
+.peets p, .cbtl p, .mcnt p, .stylec {
     margin-top: 20px;
     text-align: center;
     line-height: 140%;
+    font-size: 18px;
 }
 
 .ethi {
@@ -301,7 +311,8 @@ ul  {
 }
 
 
-.peets img, .cbtl img, .mcnt img, .flow2 img, .flow3 img, .tsk2 img {
+.peets img, .cbtl img, .mcnt img, .flow2 img, .flow3 img, .tsk2 img,
+.colors img, .clogo img, .clogos img, .wires img, .abpic img, .utest img {
      width: 100%;
 }
 
@@ -367,7 +378,7 @@ ul  {
 }
 
 
-.prop, .flowp, .comp  {
+.prop, .flowp, .comp, .wirep, .abtest, .mockp  {
     font-size: 24px;
     font-weight: 200;
     line-height: 160%;
@@ -375,7 +386,8 @@ ul  {
 
 }
 
-.prop span, .flowp span, .comp span, .sol span {
+.prop span, .flowp span, .comp span, .sol span, .wirep span,
+.abtest span, .mockp span {
     font-weight: normal;
     letter-spacing: -.4px;
     color: #384B21;
@@ -423,6 +435,62 @@ ul  {
     letter-spacing: .4px;
     
 }
+
+.colors {
+    grid-area: colors;
+    margin-top: 60px;
+}
+
+.clogo {
+    grid-area: clogo;
+    margin-right: 30px;
+}
+
+.clogos {
+    grid-area: clogos;
+    margin-top: 60px;
+}
+
+.clogos img {
+    margin-top: -2px;
+}
+
+.stylec {
+    grid-area: stylec;
+    margin: 20px 0px 90px;
+}
+
+.wirep {
+    grid-area: wirep;
+}
+
+.wires {
+    grid-area: wires;
+    margin: 80px 0px;
+}
+
+.abtest {
+    grid-area: abtest;
+}
+
+.abpic {
+    grid-area: abpic;
+    margin: 100px 0px;
+}
+
+.mockp {
+    grid-area: mockp;
+}
+
+.utest {
+    grid-area: utest;
+    margin: 100px 0px;
+}
+
+
+
+
+
 
 
 
