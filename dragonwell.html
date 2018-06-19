@@ -59,6 +59,28 @@
      
      </div>
      
+     <div class="csnav">    
+       <ul>
+         <li>
+             <a onclick="scrollProj()">
+               <span>Overview</span>
+             </a>
+         </li><li>
+              <a onclick="scrollProj2()">
+               <span>Process</span>
+             </a>
+         </li><li>
+             <a onclick="scrollProj3()">
+               <span>Branding</span>
+             </a>
+           </li><li>
+             <a onclick="scrollProj4()">
+               <span>Conclusion</span>
+             </a>
+         </li>
+       </ul>     
+     </div>    
+     
      <div class="ban"> 
          
          <img src="images/bancha.png">
@@ -231,7 +253,18 @@
        <img src="images/utest.png">
     </div>
     
+    <h3 class="conc"> Conclusion </h3>
+     
+    <p class="concp"> Creating Dragonwell Tea & Coffee proved to be a formidable challenge, given the complexity of something as previously unassuming as an online tea and coffee shop.&nbsp; The slow and steady process of research and testing, however, made my purpose increasingly clear.&nbsp; Thanks to repetitions in the wireframing, mockup, and prototyping stages, a respectable design came into view that should begin to be worthy of most tea and coffee drinkers.&nbsp; It meets their needs in terms of overall navigational clarity, product detail, and visual enjoyment. <br> <br>
+
+    Through this process, I learned the importance of testing, and, indeed, the pleasure of it.&nbsp; As a user-centered designer, I’m thankful to not have to make too many “shots in the dark”, but rather come up with a couple design ideas and consult potential users on what would be most usable and/or visually agreeable before proceeding.&nbsp; Soliciting comments on my A/B tests allowed for especially valuable insights.&nbsp; I would have liked to have done much more of this testing throughout the process, and particularly more sketching and brainstorming early on.  <br> <br>
     
+    Designer John Maeda in his DesignInTech reports helpfully distinguishes “classical designers”, who are an authority in creating what is “perfect, crafted, and complete”, from “computational designers”, who employ design thinking in service of work that is never complete and always open to fresh analysis and further testing in a constantly changing world.&nbsp; While I need to move on to new things for now, as a member of the latter category of designers, I know Dragonwell is far from and truly never “final.”&nbsp; I also see that throughout its creation, I could have opened any number of elements and assumptions up to testing earlier and more constantly during the process.&nbsp; In this way, I would have merely skillfully facilitated the creation of an authentically and deeply user-centered product that steadily emerged almost of its own accord, as free as possible of unexamined assumptions.
+    </p>
+    
+     <a class="prot2" href="https://invis.io/PYGLY3OMUFK" target="new">
+         Click to view InVision prototype 
+     </a>
     
     
     
@@ -300,6 +333,32 @@
     
     <script>
         document.addEventListener("touchstart", function() {},false);
+        
+         function scrollProj() {
+             document.querySelector('.chal').scrollIntoView({ 
+              behavior: 'smooth', block: 'start' 
+                  
+          });
+        } 
+        
+        function scrollProj2() {
+             document.querySelector('.pro').scrollIntoView({ 
+              behavior: 'smooth', block: 'start'  
+                 
+          });
+        } 
+        
+        function scrollProj3() {
+             document.querySelector('.bran').scrollIntoView({ 
+              behavior: 'smooth', block: 'start'  
+          });
+        } 
+        
+        function scrollProj4() {
+             document.querySelector('.conc').scrollIntoView({ 
+              behavior: 'smooth', block: 'start'  
+          });
+        }
     </script>
     
 </body>

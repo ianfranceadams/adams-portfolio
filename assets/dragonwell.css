@@ -79,7 +79,8 @@ ul  {
        "logo . . . . . . . . nav nav nav"
         "ban ban ban . case case case case . . . ."
         "ban ban ban . dlogo dlogo dlogo dlogo . . . ."
-        "ban ban ban position position position position position position . . ."
+        "ban ban ban csnav csnav csnav csnav csnav csnav . . ."
+        ". . . position position position position position position . . ."
         ". . . . resume resume resume resume . . . ."
         ". chal chal chal chal . . sol sol sol sol ."
         "chalp chalp chalp chalp chalp chalp solp solp solp solp solp solp"
@@ -96,7 +97,7 @@ ul  {
         ". . bran bran bran bran bran bran bran bran . ."
         ". . branp branp branp branp branp branp branp branp . ."
         ". . . tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 . . ."
-        ". . . branp2 branp2 branp2 branp2 branp2 branp2 . . ."
+        ". . branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 . ."
         ". colors colors colors colors colors colors clogos clogos clogos clogos . "
         ". clogo clogo clogo clogo clogo clogo clogos clogos clogos clogos ."
         ". . . . stylec stylec stylec stylec . . . ."
@@ -106,6 +107,9 @@ ul  {
         ". abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic ."
         ". . . mockp mockp mockp mockp mockp mockp . . ."
         ". utest utest utest utest utest utest utest utest utest utest ."
+        ". . conc conc conc conc conc conc conc conc . ."
+        ". . concp concp concp concp concp concp concp concp . ."
+        ". . . . prot2 prot2 prot2 prot2 . . . ."
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
         
 }
@@ -132,13 +136,60 @@ ul  {
     margin-left: -20px;
 }
 
+.csnav {
+    grid-area: csnav;
+    justify-self: center;
+    margin: 60px 0px 50px;
+    
+}
+
+.csnav li {
+    display: inline;
+    margin: 40px 40px;
+    
+}
+
+.csnav a {
+    color: #405824;
+    cursor: pointer;
+}
+
+.csnav ul {
+    line-height: 250%;
+    font-size: 18px;
+}
+
+.csnav li span {
+    padding-bottom: 3px;
+    border-bottom: 3px solid transparent;
+    transition: border .2s cubic-bezier(1, 0.04, 1, 1);
+    
+}
+
+
+.csnav li span:hover {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #405824;
+    
+}
+
+.csnav li span:active {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #405824;
+    
+}
+
+
+
+
+
 .position {  
     font-size: 24px;
     font-weight: 200;
     line-height: 160%;
     letter-spacing: .4px;
     grid-area: position;
-    margin: 80px 0px 0px 30px;
+    margin: 0px 0px 0px 30px;
 }
 
 .ban {
@@ -152,9 +203,11 @@ ul  {
 }
 
 
-
 .resume {
     grid-area: resume;
+}
+
+.resume, .prot, .prot2 {
     border: 2px solid #2C1352;
     border-radius: 8px;
     background-color: white;
@@ -168,7 +221,7 @@ ul  {
     transition: .2s ease;
 }
 
-.resume:hover {
+.resume:hover, .prot:hover, .prot2:hover {
   background: #2C1352;
   color: white;
 }
@@ -176,11 +229,7 @@ ul  {
 
 
     
-    
-   /* grid-area: home;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
+
 
 
     
@@ -236,23 +285,10 @@ ul  {
 
 .prot {
     grid-area: prot;
-    border: 2px solid #2C1352;
-    border-radius: 8px;
-    background-color: white;
-    color: #2C1352;
-    font-size: 16px;
-    font-family: helvetica neue;    
-    font-weight: bold;
-    text-align: center;
-    padding: 12px 10px 14px;
-    margin: 60px 40px 0px;
-    transition: .2s ease;
+
 }
 
-.prot:hover {
-  background: #2C1352;
-  color: white;
-}
+
 
 
 .coffee1 {
@@ -378,7 +414,7 @@ ul  {
 }
 
 
-.prop, .flowp, .comp, .wirep, .abtest, .mockp  {
+.prop, .flowp, .comp, .wirep, .abtest, .mockp, .branp, .concp  {
     font-size: 24px;
     font-weight: 200;
     line-height: 160%;
@@ -393,23 +429,23 @@ ul  {
     color: #384B21;
 }
 
-.bran {
-    grid-area: bran;
+.bran, .conc {
     font-size: 32px;
     font-weight: 200;
     line-height: 160%;
     letter-spacing: .4px;
     text-align: center;
-    margin: -20px 0px 70px;
+    margin: 0px 0px 70px;
 }
+
+.bran {
+    grid-area: bran;
+}
+
 
 .branp {  
     grid-area: branp;
-    font-size: 24px;
-    font-weight: 200;
-    line-height: 160%;
-    letter-spacing: .4px;
-    
+   
 }
 
 
@@ -487,8 +523,19 @@ ul  {
     margin: 100px 0px;
 }
 
+.conc {
+    grid-area: conc;
+}
 
+.concp {
+    grid-area: concp;
+    margin-bottom: 20px;
+}
 
+.prot2 {
+    grid-area: prot2;
+    margin-bottom: 150px;
+}
 
 
 
@@ -586,42 +633,149 @@ ul  {
 
 @media (max-width: 825px) {
     
-     body {
-        margin: 50px 50px 30px;
-     }
+     
     
     .container {
+        margin: 50px 50px 30px;
         grid-gap: 0px 20px;
         grid-template-areas: 
         "logo . . . . . . . . nav nav nav"
-        ". headshot headshot headshot headshot . . . . . . ."
-        ". position position position position position position position position position . ."
+        "ban ban ban . case case case case . . . ."
+        "ban ban ban dlogo dlogo dlogo dlogo dlogo dlogo . . ."
+        "ban ban ban . . . . . . . . ."
+        ". csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav ."
+        ". . . position position position position position position . . ."
+        ". . resume resume resume resume resume resume resume resume . ."
+        ". chal chal chal chal . . sol sol sol sol ."
+        "chalp chalp chalp chalp chalp chalp solp solp solp solp solp solp"
+        ". . prot prot prot prot prot prot prot prot . ."
+        "home2 home2 home2 home2 coffee1 coffee1 coffee1 coffee1 ethi ethi ethi ethi" 
+        ". . pro pro pro pro pro pro pro pro . ."
+        ". prop prop prop prop prop prop prop prop prop prop ."
+        "peets peets peets cbtl cbtl cbtl cbtl cbtl mcnt mcnt mcnt mcnt" 
+        ". . comp comp comp comp comp comp comp comp . ."
+        "surv surv surv surv pers pers pers pers pers pers pers pers" 
+        ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
+        ". flow flow flow flow flow flow flow flow flow flow ." 
+        "flow3 flow3 flow3 flow3 flow3 flow3 flow2 flow2 flow2 flow2 flow2 flow2"
+        ". . bran bran bran bran bran bran bran bran . ."
+        ". branp branp branp branp branp branp branp branp branp branp ."
+        ". . . tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 . . ."
+        ". branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 ."
+        ". colors colors colors colors colors colors clogos clogos clogos clogos . "
+        ". clogo clogo clogo clogo clogo clogo clogos clogos clogos clogos ."
+        ". . . . stylec stylec stylec stylec . . . ."
+        ". . wirep wirep wirep wirep wirep wirep wirep wirep . ."
+        "wires wires wires wires wires wires wires wires wires wires wires wires"
+        ". . abtest abtest abtest abtest abtest abtest abtest abtest . ."
+        "abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic"
+        ". . mockp mockp mockp mockp mockp mockp mockp mockp . ."
+        "utest utest utest utest utest utest utest utest utest utest utest utest"
+        ". . conc conc conc conc conc conc conc conc . ."
+        ". concp concp concp concp concp concp concp concp concp concp ."
+        ". . prot2 prot2 prot2 prot2 prot2 prot2 prot2 prot2 . ."
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
     
      }
     
-    .headshot img {
-         margin-top: 100px;
-
-    }
-    
+  
     .logo img {
          height: 50px
          
      }
     
+    
+    
     .name {
          margin-top: 40px;
         
     }
+    
+    
+    .csnav li {
+  
+        margin: 40px 30px;
+    }
 
     .position {
-         margin: 10px 0px 110px;
+         margin: 10px 0px 10px;
          font-size: 20px;
  
      }
-
     
+    .resume {
+        margin-top: 30px;
+    }
+    
+    .chal, .sol {
+         margin: 90px 0px 30px; 
+        
+    }
+    
+    .chalp {
+        margin-right: 10px;
+    }
+    
+    .solp {
+        margin-left: 10px;
+    }
+    
+    .pro, .conc, .bran {
+        margin: 40px 0px 40px;
+        line-height: 120%;
+    }
+    
+    .cbtl {
+        margin-top: 35px;
+    }
+    
+    .comp {
+         margin: 70px 0px 0px;
+    }
+    
+    .pers img, .surv img {
+         margin-top: 80px;
+    }
+       
+
+     .chalp, .solp, .prop, .flowp, .comp, .wirep, 
+     .abtest, .mockp, .branp, .concp, .branp2  {
+        font-size: 18px;
+
+    }
+    
+    .flowp {
+        margin: 80px 0px;
+    }
+    
+    .flow3, .flow2, .flow, .flow img {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    
+     .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
+     .peets p, .cbtl p, .mcnt p, .stylec {
+       line-height: 150%;
+       font-size: 14px;
+    }
+    
+    
+    .wires {
+        margin: 40px -30px;
+            
+    }
+    
+    .abpic {
+        margin: 50px 0px 40px
+    } 
+    
+    .utest {
+        margin: 60px 0px 20px;
+    }
+    
+    .prot2 {
+        margin-bottom: 100px;
+    }
      .footlogo img {
         height: 40px;
      }
@@ -632,14 +786,46 @@ ul  {
 /* ------------------ Landscape smaller phones ------------------------*/
 
 
-@media (max-width: 640px) {
+@media (max-width: 670px) {
     
     .container {
         grid-gap: 0px 20px;
         grid-template-areas: 
-        "logo . . . . . . . . nav nav nav"
-        ". headshot headshot headshot headshot . . . . . . ."
-        ". position position position position position position position position position position ."
+       "logo . . . . . . . . nav nav nav"
+        "ban ban ban . case case case case . . . ."
+        "ban ban ban dlogo dlogo dlogo dlogo dlogo dlogo . . ."
+        "ban ban ban . . . . . . . . ."
+        ". csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav ."
+        ". . . position position position position position position . . ."
+        ". . resume resume resume resume resume resume resume resume . ."
+        ". chal chal chal chal . . sol sol sol sol ."
+        "chalp chalp chalp chalp chalp chalp solp solp solp solp solp solp"
+        ". . prot prot prot prot prot prot prot prot . ."
+        "home2 home2 home2 home2 coffee1 coffee1 coffee1 coffee1 ethi ethi ethi ethi" 
+        ". . pro pro pro pro pro pro pro pro . ."
+        ". prop prop prop prop prop prop prop prop prop prop ."
+        "peets peets peets cbtl cbtl cbtl cbtl cbtl mcnt mcnt mcnt mcnt" 
+        ". . comp comp comp comp comp comp comp comp . ."
+        "surv surv surv surv pers pers pers pers pers pers pers pers" 
+        ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
+        ". flow flow flow flow flow flow flow flow flow flow ." 
+        "flow3 flow3 flow3 flow3 flow3 flow3 flow2 flow2 flow2 flow2 flow2 flow2"
+        ". . bran bran bran bran bran bran bran bran . ."
+        ". branp branp branp branp branp branp branp branp branp branp ."
+        ". . . tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 . . ."
+        ". branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 ."
+        ". colors colors colors colors colors colors clogos clogos clogos clogos . "
+        ". clogo clogo clogo clogo clogo clogo clogos clogos clogos clogos ."
+        ". . . . stylec stylec stylec stylec . . . ."
+        ". . wirep wirep wirep wirep wirep wirep wirep wirep . ."
+        "wires wires wires wires wires wires wires wires wires wires wires wires"
+        ". . abtest abtest abtest abtest abtest abtest abtest abtest . ."
+        "abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic"
+        ". . mockp mockp mockp mockp mockp mockp mockp mockp . ."
+        "utest utest utest utest utest utest utest utest utest utest utest utest"
+        ". . conc conc conc conc conc conc conc conc . ."
+        ". concp concp concp concp concp concp concp concp concp concp ."
+        ". . prot2 prot2 prot2 prot2 prot2 prot2 prot2 prot2 . ."
         "footnav footnav footnav contact contact contact contact contact contact contact . footlogo"
     
      }
@@ -654,34 +840,172 @@ ul  {
 
 @media (max-width: 414px) {
     
-    body {
-        margin: 35px 35px 75px;
-     }
+    
     
      .container {
+        margin: 35px 35px 75px;
         grid-template-columns: repeat(6, 1fr);
         grid-gap: 0px 20px;
         grid-template-areas: 
         "logo nav nav nav nav nav"
-        "headshot headshot headshot headshot . . "
+        "ban ban ban . . ."    
+        "case case case case case case"
+        "dlogo dlogo dlogo dlogo dlogo dlogo"
+        "csnav csnav csnav csnav csnav csnav"
         "position position position position position position"
+        "resume resume resume resume resume resume"
+        "chal chal chal chal chal chal"
+        "chalp chalp chalp chalp chalp chalp"    
+        "sol sol sol sol sol sol"
+        "solp solp solp solp solp solp"
+        "prot prot prot prot prot prot"
+        "home2 home2 home2 home2 home2 home2" 
+        "coffee1 coffee1 coffee1 coffee1 coffee1 coffee1" 
+        "ethi ethi ethi ethi ethi ethi" 
+        "pro pro pro pro pro pro"
+        "prop prop prop prop prop prop"
+        "peets peets peets peets peets peets" 
+        "cbtl cbtl cbtl cbtl cbtl cbtl" 
+        "mcnt mcnt mcnt mcnt mcnt mcnt" 
+        "comp comp comp comp comp comp"
+        "surv surv surv surv surv surv"
+        "pers pers pers pers pers pers" 
+        "flowp flowp flowp flowp flowp flowp"
+        "flow flow flow flow flow flow" 
+        "flow2 flow2 flow2 flow2 flow2 flow2"     
+        "flow3 flow3 flow3 flow3 flow3 flow3"
+        "bran bran bran bran bran bran"
+        "branp branp branp branp branp branp"
+        "tsk1 tsk1 tsk1 tsk2 tsk2 tsk2"
+        "branp2 branp2 branp2 branp2 branp2 branp2"
+        "colors colors colors colors colors colors" 
+        "clogos clogos clogos clogos clogos clogos"
+        "clogo clogo clogo clogo clogo clogo"
+        "stylec stylec stylec stylec stylec stylec"
+        "wirep wirep wirep wirep wirep wirep"
+        "wires wires wires wires wires wires"
+        "abtest abtest abtest abtest abtest abtest"
+        "abpic abpic abpic abpic abpic abpic"
+        "mockp mockp mockp mockp mockp mockp"
+        "utest utest utest utest utest utest"
+        "conc conc conc conc conc conc"
+        "concp concp concp concp concp concp"
+        "prot2 prot2 prot2 prot2 prot2 prot2"  
         "contact contact contact contact contact contact"
         ". . footlogo footlogo . ."
     
      }
     
-    .headshot img {
-        margin-top: 50px;
-    }  
+    .ban {
+        margin: 0px -20px -110px 0px;
+    }
+      
+    .csnav li {
+        margin: 40px 30px;
+    }
+    
+   .home img {
+   
+        margin: -10px 0px 0px;
+    }
     
     .position {
-         margin: 10px 0px 50px;
+         margin: 10px 0px 0px;
+    }
+    
+    .chal {
+        margin: 20px 0px 30px; 
+    }
+    
+    .sol, .pro, .conc, .bran {
+        margin: 40px 0px 30px;
+        line-height: 120%;
+    }
+    
+    
+   .chalp, .solp, .prop, .flowp, .comp, .wirep, .abtest, .mockp, .branp, .concp, .branp2  {
+        font-size: 16px;
+        margin: 0;
+
+    }
+    
+   .resume, .prot, .prot2 {
+        margin: 40px 10px 0px;
+        line-height: 140%;
+        padding: 8px 10px 10px;
+    }
+    
+   .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
+   .peets p, .cbtl p, .mcnt p, .stylec {
+       line-height: 150%;
+       font-size: 14px;
+    }
+    
+    .home2 img, .coffee1 img, .ethi img, .surv img, .pers img {
+       margin-top: 50px;
         
     }
     
-     .footnav {
+    .peets, .cbtl, .mcnt, .wires {
+        margin: 20px 0px;
+    }
+    
+    .abpic {
+        margin: 30px 0px 25px
+    }
+    
+    .peets {
+        margin-top: 40px;
+    }
+    
+    .mcnt {
+        margin-bottom: 50px;
+    }
+    
+    .pers p {
+        margin-bottom: 40px;
+    }
+    
+    .flow3, .flow2, .flow, .flow img {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    
+    .tsk1 {
+        margin: 30px 0px;
+    }
+    
+    .tsk1 img {
+        width: 100%;
+    }
+    
+    .clogo {
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+    
+    .clogos, .colors {
+        margin-top: 20px;
+    }
+    
+    .stylec {
+        margin-bottom: 40px;
+    }
+    
+    .utest {
+        margin: 50px 0px 0px;
+    }
+    
+    .prot2 {
+        margin-bottom: 50px;
+        
+    }
+    
+    
+    .footnav {
         display: none;
     }
+    
     
     .footlogo {
         margin-top: 70px;
@@ -702,9 +1026,17 @@ ul  {
 
 @media (max-width: 320px) {
     
-    body {
+     .container {
         margin: 25px 25px 75px;
+     }  
+    
+    .csnav li {
+    margin: 30px 25px;
      }
+    
+    .dlogo img {
+        margin-left: -10px;
+    }
     
     .contact li {
        margin: 0px 8px;

@@ -165,11 +165,12 @@
     <script>
         document.addEventListener("touchstart", function() {},false);
         
-        function scrollProj() {
+      function scrollProj() {
              document.querySelector('.proj').scrollIntoView({ 
-              behavior: 'smooth' 
+              behavior: 'smooth', block: 'start' 
+                  
           });
-        }
+        } 
             
     </script>
     
