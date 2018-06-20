@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="158px" viewBox="0 0 51 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-Copy-3" transform="translate(0.000000, -63.000000)" fill="#FC03BE">
+            <g id="Group-3-Copy-2" transform="translate(0.000000, 63.000000)">
+                <path d="M3,11 L9,11 C10.6568542,11 12,12.5506235 12,14.4634146 L12,149.536585 C12,151.449376 10.6568542,153 9,153 L3,153 C1.34314575,153 0,151.449376 1.48281067e-13,149.536585 L0,14.4634146 C0,12.5506235 1.34314575,11 3,11 Z" id="Rectangle-2-Copy-17"></path>
+                <path d="M42,11 L48,11 C49.6568542,11 51,12.5506235 51,14.4634146 L51,149.536585 C51,151.449376 49.6568542,153 48,153 L42,153 C40.3431458,153 39,151.449376 39,149.536585 L39,14.4634146 C39,12.5506235 40.3431458,11 42,11 Z" id="Rectangle-2-Copy-16"></path>
+                <path d="M21.75,0 L29.25,0 C31.3210678,0 33,1.93275982 33,4.31693989 L33,153.68306 C33,156.06724 31.3210678,158 29.25,158 L21.75,158 C19.6789322,158 18,156.06724 18,153.68306 L18,4.31693989 C18,1.93275982 19.6789322,0 21.75,0 Z" id="Rectangle-2-Copy-15"></path>
+            </g>
+        </g>
+    </g>
+</svg>

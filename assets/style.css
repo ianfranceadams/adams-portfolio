@@ -442,14 +442,13 @@ p {
         
     }
     .position {
-         margin: 0px 10px 40px 0px;
-         font-size: 20px
+        margin: 0px 10px 40px 0px;
+        font-size: 20px
  
      }
     
      .proj {
-       
-        margin: 16px 0px 20px;
+        margin: 16px 0px 60px;
     } 
     
     
@@ -467,6 +466,29 @@ p {
     .orion img {
        height: 50px;
      }
+    
+    .dragoverlay, .budoverlay, .orionoverlay {
+        height: 80%
+    }
+    
+    .hovtext ul, .hovtext p, .hovbutton {
+        font-size: 12px;
+    
+    }
+    
+    .hovtext ul {
+        margin-bottom: 3%;   
+    }
+    
+    .hovtext p {
+        margin-top: -15%;
+        margin-bottom: 2%;
+    }
+    
+    .hovbutton {
+        margin: 0 20%;
+        padding: 8px 0px;
+    }
     
      .footlogo img {
        height: 40px;
@@ -537,6 +559,10 @@ p {
     .background {
         margin-bottom: 16px;
     }
+    
+    .proj {
+    margin: 16px 0px 20px;
+}
     
     .drag img {
        height: 70px;
@@ -626,8 +652,13 @@ p {
         margin-top: -10%;
     }
     
-    
-    
+    .hovtext ul {
+    margin: 5% 0% 7%;
+}
+    .hovbutton {
+        margin: 0px 25%;
+        padding: 10px 0% 11px;
+    }
     
     
     .contact {
@@ -673,12 +704,9 @@ p {
     }
     
     .hovtext ul {
-        margin-bottom: 2%;
+        margin: 2% 0% 3%;
     }
     
-    .hovbutton {
-        padding: 10px 0% 11px;
-    }
     
     .contact li {
        margin: 0px 8px;

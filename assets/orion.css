@@ -79,7 +79,7 @@ ul  {
        "logo . . . . . . . . nav nav nav"
         "ban ban ban . case case case case . . . ."
         "ban ban ban . dlogo dlogo dlogo dlogo . . . ."
-        "ban ban ban csnav csnav csnav csnav csnav csnav . . ."
+        ". . csnav csnav csnav csnav csnav csnav csnav csnav . ."
         ". . . position position position position position position . . ."
         ". . . . resume resume resume resume . . . ."
         ". chal chal chal chal . . sol sol sol sol ."
@@ -133,7 +133,7 @@ ul  {
 .dlogo img {
     margin-top: 30px;
     width: 100%;
-    margin-left: -20px;
+   
 }
 
 .csnav {
@@ -150,7 +150,7 @@ ul  {
 }
 
 .csnav a {
-    color: #405824;
+    color: #001B4C;
     cursor: pointer;
 }
 
@@ -169,18 +169,15 @@ ul  {
 
 .csnav li span:hover {
     padding-bottom: 3px;
-    border-bottom: 3px solid #405824;
+    border-bottom: 3px solid #001B4C;
     
 }
 
 .csnav li span:active {
     padding-bottom: 3px;
-    border-bottom: 3px solid #405824;
+    border-bottom: 3px solid #001B4C;
     
 }
-
-
-
 
 
 .position {  
@@ -190,6 +187,7 @@ ul  {
     letter-spacing: .4px;
     grid-area: position;
     margin: 0px 0px 0px 30px;
+    
 }
 
 .ban {
@@ -197,9 +195,11 @@ ul  {
 }
 
 .ban img {
-    width: 100%;
-    opacity: .4;
-    transform: rotate(20deg);
+    width: 180%;
+    opacity: .1;
+    margin-left: -80px;
+    margin-top: -20px;
+    
 }
 
 
@@ -208,7 +208,7 @@ ul  {
 }
 
 .resume, .prot, .prot2 {
-    border: 2px solid #2C1352;
+    border: 2px solid #001B4C;
     border-radius: 8px;
     background-color: white;
     color: #2C1352;
@@ -222,7 +222,7 @@ ul  {
 }
 
 .resume:hover, .prot:hover, .prot2:hover {
-  background: #2C1352;
+  background: #001B4C;
   color: white;
 }
 
@@ -426,7 +426,7 @@ ul  {
 .abtest span, .mockp span {
     font-weight: normal;
     letter-spacing: -.4px;
-    color: #384B21;
+    color: #001b4c;
 }
 
 .bran, .conc {
@@ -899,7 +899,22 @@ ul  {
     .ban {
         margin: 0px -20px -110px 0px;
     }
+    
+    .ban img {
+        width: 130%;
+        opacity: .1;
+        margin-left: -20px;
+        margin-top: 0px;
+}
       
+    .dlogo img {
+        margin-top: 20px;   
+    }
+    
+    .csnav {
+        margin: 40px 0px 20px;
+    }
+    
     .csnav li {
         margin: 40px 30px;
     }
@@ -1033,10 +1048,7 @@ ul  {
     .csnav li {
     margin: 30px 25px;
      }
-    
-    .dlogo img {
-        margin-left: -10px;
-    }
+ 
     
     .contact li {
        margin: 0px 8px;

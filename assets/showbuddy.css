@@ -77,9 +77,9 @@ ul  {
     grid-template-rows: auto;
     grid-template-areas: 
        "logo . . . . . . . . nav nav nav"
-        "ban ban ban . case case case case . . . ."
-        "ban ban ban . dlogo dlogo dlogo dlogo . . . ."
-        "ban ban ban csnav csnav csnav csnav csnav csnav . . ."
+        "ban ban . . case case case case . . . ."
+        "ban ban . . dlogo dlogo dlogo dlogo . . . ."
+        "ban ban csnav csnav csnav csnav csnav csnav csnav csnav . ."
         ". . . position position position position position position . . ."
         ". . . . resume resume resume resume . . . ."
         ". chal chal chal chal . . sol sol sol sol ."
@@ -96,11 +96,9 @@ ul  {
         "flow3 flow3 flow3 flow3 flow3 flow3 flow2 flow2 flow2 flow2 flow2 flow2"
         ". . bran bran bran bran bran bran bran bran . ."
         ". . branp branp branp branp branp branp branp branp . ."
-        ". . . tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 . . ."
+        ". tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 tsk2 tsk3 tsk3 tsk3 ."
         ". . branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 . ."
-        ". colors colors colors colors colors colors clogos clogos clogos clogos . "
-        ". clogo clogo clogo clogo clogo clogo clogos clogos clogos clogos ."
-        ". . . . stylec stylec stylec stylec . . . ."
+        ". colors colors colors colors colors colors colors colors colors colors . "
         ". . . wirep wirep wirep wirep wirep wirep . . ."
         "wires wires wires wires wires wires wires wires wires wires wires wires"
         ". . . abtest abtest abtest abtest abtest abtest . . ."
@@ -122,7 +120,7 @@ ul  {
     line-height: 140%;
     letter-spacing: .4px;
     text-align: center;
-    margin-top: 120px;
+    margin: 120px 0px 10px;
 }
 
 .dlogo {
@@ -133,7 +131,7 @@ ul  {
 .dlogo img {
     margin-top: 30px;
     width: 100%;
-    margin-left: -20px;
+   
 }
 
 .csnav {
@@ -150,7 +148,7 @@ ul  {
 }
 
 .csnav a {
-    color: #405824;
+    color: #141414;
     cursor: pointer;
 }
 
@@ -169,13 +167,13 @@ ul  {
 
 .csnav li span:hover {
     padding-bottom: 3px;
-    border-bottom: 3px solid #405824;
+    border-bottom: 3px solid #141414;
     
 }
 
 .csnav li span:active {
     padding-bottom: 3px;
-    border-bottom: 3px solid #405824;
+    border-bottom: 3px solid #141414;
     
 }
 
@@ -190,6 +188,7 @@ ul  {
     letter-spacing: .4px;
     grid-area: position;
     margin: 0px 0px 0px 30px;
+    
 }
 
 .ban {
@@ -197,9 +196,10 @@ ul  {
 }
 
 .ban img {
-    width: 100%;
-    opacity: .4;
-    transform: rotate(20deg);
+    width: 180%;
+    opacity: .5;
+    margin-left: -30px;
+    margin-top: 0px
 }
 
 
@@ -208,10 +208,10 @@ ul  {
 }
 
 .resume, .prot, .prot2 {
-    border: 2px solid #2C1352;
+    border: 2px solid #141414;
     border-radius: 8px;
     background-color: white;
-    color: #2C1352;
+    color: #141414;
     font-size: 16px;
     font-family: helvetica neue;    
     font-weight: bold;
@@ -222,7 +222,7 @@ ul  {
 }
 
 .resume:hover, .prot:hover, .prot2:hover {
-  background: #2C1352;
+  background: #141414;
   color: white;
 }
 
@@ -347,8 +347,9 @@ ul  {
 }
 
 
-.peets img, .cbtl img, .mcnt img, .flow2 img, .flow3 img, .tsk2 img,
-.colors img, .clogo img, .clogos img, .wires img, .abpic img, .utest img {
+.peets img, .cbtl img, .mcnt img, .flow2 img, .flow3 img, .tsk1 img, .tsk2 img,
+.colors img, .clogo img, .clogos img, .wires img, .abpic img, .utest img,
+.tsk3 img {
      width: 100%;
 }
 
@@ -426,7 +427,7 @@ ul  {
 .abtest span, .mockp span {
     font-weight: normal;
     letter-spacing: -.4px;
-    color: #384B21;
+    color: #141414;
 }
 
 .bran, .conc {
@@ -449,10 +450,6 @@ ul  {
 }
 
 
-.tsk1 img {
-    width: 80%;
-}
-
 .tsk1 {
     grid-area: tsk1;
     margin: 60px 0px;
@@ -462,6 +459,16 @@ ul  {
     grid-area: tsk2;
     margin-top: 60px;
 } 
+
+.tsk3 {
+    grid-area: tsk3;
+    margin-top: 60px;
+} 
+
+
+.tsk1, .tsk2, .tsk3 {
+    opacity: .8;
+}
 
 .branp2 {  
     grid-area: branp2;
@@ -474,7 +481,7 @@ ul  {
 
 .colors {
     grid-area: colors;
-    margin-top: 60px;
+    margin: 60px 0px;
 }
 
 .clogo {
@@ -877,6 +884,7 @@ ul  {
         "bran bran bran bran bran bran"
         "branp branp branp branp branp branp"
         "tsk1 tsk1 tsk1 tsk2 tsk2 tsk2"
+        "tsk3 tsk3 tsk3 tsk3 tsk3 tsk3"
         "branp2 branp2 branp2 branp2 branp2 branp2"
         "colors colors colors colors colors colors" 
         "clogos clogos clogos clogos clogos clogos"
@@ -900,6 +908,20 @@ ul  {
         margin: 0px -20px -110px 0px;
     }
       
+    .ban img {
+        width: 110%;
+        opacity: .5;
+        margin-left: -30px;
+        margin-top: -10px;
+    }
+    
+    .case {
+        margin: 60px 0px -10px;
+    }
+    
+    .csnav {
+            margin: 30px 0px 20px;
+    }
     .csnav li {
         margin: 40px 30px;
     }
@@ -975,6 +997,10 @@ ul  {
         margin: 30px 0px;
     }
     
+    .tsk3 {
+        margin: -10px 0px 30px;
+    }
+    
     .tsk1 img {
         width: 100%;
     }
@@ -1034,10 +1060,7 @@ ul  {
     margin: 30px 25px;
      }
     
-    .dlogo img {
-        margin-left: -10px;
-    }
-    
+
     .contact li {
        margin: 0px 8px;
    }
