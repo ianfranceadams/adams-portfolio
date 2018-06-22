@@ -406,6 +406,49 @@ p {
 
 
 
+@media (max-width: 1200px) {
+    
+     body {
+        margin: 50px 50px 22px;
+     }
+    
+    .container {
+        grid-gap: 0px 20px;
+        grid-template-areas: 
+        "logo . . . . . . . . nav nav nav"
+        ". name name name name name name . . . . ."
+        ". subname subname subname subname subname subname subname subname subname subname subname"
+        ". position position position position position position position position position position ."
+        "chi chi chi chi chi chi chi chi chi chi chi chi"
+        "drag drag drag drag bud bud bud bud orion orion orion orion"
+        "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
+    
+     }
+    
+    .dragoverlay, .budoverlay, .orionoverlay {
+    
+    }
+    
+    .hovtext ul, .hovtext p, .hovbutton {
+        font-size: 18px;
+    
+    }
+    
+    .hovtext ul {
+        margin: 4% 0 6%;   
+    }
+    
+    .hovtext p {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    
+    .hovbutton {
+        margin: 0 20%;
+        padding: 10px 0px 13px;
+    }
+    
+
 
 
 /* ------------------ iPad and portrait phones ------------------------*/

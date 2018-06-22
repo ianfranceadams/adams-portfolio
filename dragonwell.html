@@ -62,19 +62,19 @@
      <div class="csnav">    
        <ul>
          <li>
-             <a onclick="scrollProj()">
+             <a class="offset" onclick="scrollProj()">
                <span>Overview</span>
              </a>
          </li><li>
-              <a onclick="scrollProj2()">
+              <a class="offset" onclick="scrollProj2()">
                <span>Process</span>
              </a>
          </li><li>
-             <a onclick="scrollProj3()">
+             <a class="offset" onclick="scrollProj3()">
                <span>Branding</span>
              </a>
            </li><li>
-             <a onclick="scrollProj4()">
+             <a class="offset" onclick="scrollProj4()">
                <span>Conclusion</span>
              </a>
          </li>
@@ -253,6 +253,8 @@
        <img src="images/utest.png">
     </div>
     
+   
+    
     <h3 class="conc"> Conclusion </h3>
      
     <p class="concp"> Creating Dragonwell Tea & Coffee proved to be a formidable challenge, given the complexity of something as previously unassuming as an online tea and coffee shop.&nbsp; The slow and steady process of research and testing, however, made my purpose increasingly clear.&nbsp; Thanks to repetitions in the wireframing, mockup, and prototyping stages, a respectable design came into view that should begin to be worthy of most tea and coffee drinkers.&nbsp; It meets their needs in terms of overall navigational clarity, product detail, and visual enjoyment. <br> <br>
@@ -335,30 +337,44 @@
         document.addEventListener("touchstart", function() {},false);
         
          function scrollProj() {
-             document.querySelector('.chal').scrollIntoView({ 
-              behavior: 'smooth', block: 'start' 
+             document.querySelector('.chalp').scrollIntoView({ 
+              behavior: 'smooth', block: 'center' 
                   
           });
         } 
         
         function scrollProj2() {
-             document.querySelector('.pro').scrollIntoView({ 
-              behavior: 'smooth', block: 'start'  
+             document.querySelector('.prop').scrollIntoView({ 
+              behavior: 'smooth', block: 'center'  
                  
           });
         } 
         
         function scrollProj3() {
-             document.querySelector('.bran').scrollIntoView({ 
-              behavior: 'smooth', block: 'start'  
+             document.querySelector('.branp').scrollIntoView({ 
+              behavior: 'smooth', block: 'center'  
           });
         } 
         
         function scrollProj4() {
              document.querySelector('.conc').scrollIntoView({ 
-              behavior: 'smooth', block: 'start'  
+              behavior: 'smooth', block: 'center'  
           });
         }
+        
+        
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.querySelector('.csnav');
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+         if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+         navbar.classList.remove("sticky");
+        } 
+       }
     </script>
     
 </body>
