@@ -110,6 +110,7 @@ ul  {
         ". . conc conc conc conc conc conc conc conc . ."
         ". . concp concp concp concp concp concp concp concp . ."
         ". . . . prot2 prot2 prot2 prot2 . . . ."
+        ". . . . back back back back . . . ."
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
         
 }
@@ -161,7 +162,7 @@ ul  {
     font-size: 18px;
 }
 
-.csnav li span {
+.csnav li span, .back span {
     padding-bottom: 3px;
     border-bottom: 3px solid transparent;
     transition: border .2s cubic-bezier(1, 0.04, 1, 1);
@@ -169,13 +170,13 @@ ul  {
 }
 
 
-.csnav li span:hover {
+.csnav li span:hover, .back span:hover {
     padding-bottom: 3px;
     border-bottom: 3px solid #405824;
     
 }
 
-.csnav li span:active {
+.csnav li span:active, .back a span:hover {
     padding-bottom: 3px;
     border-bottom: 3px solid #405824;
     
@@ -184,11 +185,11 @@ ul  {
 
 .sticky {
     position: fixed;
-    top: 0px;
+    top: -60px;
+    left: 0px;
     width: 100%;
     text-align: center;
     background: white;
-    margin: 0 0 0 -100px;
     padding: 17px 0px 20px;
     opacity: .95;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
@@ -552,7 +553,17 @@ ul  {
 
 .prot2 {
     grid-area: prot2;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
+}
+
+.back {
+    grid-area: back;
+    text-align: center;
+    font-weight: bold;
+    color: #405824;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 170px;
 }
 
 
@@ -692,12 +703,13 @@ ul  {
         ". . conc conc conc conc conc conc conc conc . ."
         ". concp concp concp concp concp concp concp concp concp concp ."
         ". . prot2 prot2 prot2 prot2 prot2 prot2 prot2 prot2 . ."
+        ". . . . back back back back . . . ."    
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
     
      }
     
-        .sticky {
-        margin-left: -50px;
+    .sticky {
+        
     }
     
   
@@ -716,7 +728,7 @@ ul  {
     
     .csnav li {
   
-        margin: 40px 30px;
+        margin: 40px 25px;
     }
 
     .position {
@@ -848,9 +860,14 @@ ul  {
         ". . conc conc conc conc conc conc conc conc . ."
         ". concp concp concp concp concp concp concp concp concp concp ."
         ". . prot2 prot2 prot2 prot2 prot2 prot2 prot2 prot2 . ."
+        ". . back back back back back back back back . ."     
         "footnav footnav footnav contact contact contact contact contact contact contact . footlogo"
     
      }
+    
+    .csnav li {
+        margin: 40px 25px;
+    }
     
 
 }
@@ -913,6 +930,7 @@ ul  {
         "conc conc conc conc conc conc"
         "concp concp concp concp concp concp"
         "prot2 prot2 prot2 prot2 prot2 prot2"  
+        "back back back back back back" 
         "contact contact contact contact contact contact"
         ". . footlogo footlogo . ."
     
@@ -921,10 +939,37 @@ ul  {
     .ban {
         margin: 0px -20px -110px 0px;
     }
-      
-    .csnav li {
-        margin: 40px 30px;
+    
+    .csnav ul {
+        margin-left: 30px;
     }
+    
+    .sticky {
+        text-align: left;
+        
+    }  
+    
+    .sticky li {
+        margin-left: 0px;
+        margin-right: 70px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        
+    }
+    
+    .sticky ul {
+        line-height: 200%;
+        margin-left: 80px;
+    }
+    
+   
+
+    .sticky {
+        padding: 8px 0px 10px;
+      
+    }
+    
+    
     
    .home img {
    
@@ -932,8 +977,8 @@ ul  {
     }
     
     .position {
-         margin: 10px 0px 0px;
-    }
+    margin: 0px 0px 0px 15px;
+}
     
     .chal {
         margin: 20px 0px 30px; 
@@ -1023,6 +1068,11 @@ ul  {
         
     }
     
+    .back {
+        margin-bottom: 50px;
+    
+    }
+    
     
     .footnav {
         display: none;
@@ -1040,7 +1090,15 @@ ul  {
 /* ------------------ Galaxy S5 & iPhone 6, etc ------------------------*/
 
 
-
+@media (max-width: 375px) {
+    .csnav ul {
+        margin-left: 15px;
+    }
+    
+    .sticky ul {
+        margin-left: 60px;
+    }
+}
 
 
 /* ------------------ iPhone 5 / SE ------------------------*/
@@ -1052,9 +1110,18 @@ ul  {
         margin: 25px 25px 75px;
      }  
     
+     .csnav ul {
+        margin-left: 0px;
+    }
+    
     .csnav li {
-    margin: 30px 25px;
+       margin: 30px 25px;
      }
+    
+    .sticky ul {
+        margin-left: 20px;
+       
+    }
     
     .dlogo img {
         margin-left: -10px;
