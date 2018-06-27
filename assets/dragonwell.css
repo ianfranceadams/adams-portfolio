@@ -869,6 +869,9 @@ ul  {
         margin: 40px 25px;
     }
     
+    .sticky {
+        padding: 6px 0px 8px;
+    }
 
 }
 

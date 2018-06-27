@@ -178,10 +178,10 @@ p {
    
 }
 
-.drag:hover img {
+ .drag:hover img {
     filter: blur(3px);
     
-}
+}  
 
 
 .budoverlay {
@@ -398,6 +398,13 @@ p {
 .footlogo img {
     height: 50px;
 }
+
+
+
+
+
+
+
 
 
 
@@ -626,18 +633,16 @@ p {
     
     
     .dragoverlay, .budoverlay, .orionoverlay {
-      height: 89%;
+       height: 89%;
     }
     
     .drag:click .dragoverlay {
-    opacity: .9;
+       opacity: .9;
+   
    
     }
 
-    .drag:click img {
-    filter: blur(3px);
-    
-    }
+  
     
     .bud:click .budoverlay {
     opacity: .9;
@@ -654,10 +659,10 @@ p {
    
     }
 
-    .drag:click img {
+  /* .drag:click img {
     filter: blur(3px);
     
-    }
+    }  */
     
     
     
