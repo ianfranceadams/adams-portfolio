@@ -108,6 +108,7 @@ ul  {
         ". . conc conc conc conc conc conc conc conc . ."
         ". . concp concp concp concp concp concp concp concp . ."
         ". . . . prot2 prot2 prot2 prot2 . . . ."
+        ". . . . back back back back . . . ."
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
         
 }
@@ -157,7 +158,7 @@ ul  {
     font-size: 18px;
 }
 
-.csnav li span {
+.csnav li span, .back span {
     padding-bottom: 3px;
     border-bottom: 3px solid transparent;
     transition: border .2s cubic-bezier(1, 0.04, 1, 1);
@@ -165,13 +166,13 @@ ul  {
 }
 
 
-.csnav li span:hover {
+.csnav li span:hover, .back span:hover {
     padding-bottom: 3px;
     border-bottom: 3px solid #141414;
     
 }
 
-.csnav li span:active {
+.csnav li span:active, .back span:active {
     padding-bottom: 3px;
     border-bottom: 3px solid #141414;
     
@@ -541,14 +542,18 @@ ul  {
 
 .prot2 {
     grid-area: prot2;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
 }
 
-
-
-
-
-
+.back {
+    grid-area: back;
+    text-align: center;
+    font-weight: bold;
+    color: #405824;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 170px;
+}
 
 
 
@@ -681,6 +686,7 @@ ul  {
         ". . conc conc conc conc conc conc conc conc . ."
         ". concp concp concp concp concp concp concp concp concp concp ."
         ". . prot2 prot2 prot2 prot2 prot2 prot2 prot2 prot2 . ."
+               ". . . . back back back back . . . ."  
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
     
      }
@@ -833,6 +839,7 @@ ul  {
         ". . conc conc conc conc conc conc conc conc . ."
         ". concp concp concp concp concp concp concp concp concp concp ."
         ". . prot2 prot2 prot2 prot2 prot2 prot2 prot2 prot2 . ."
+               ". . . . back back back back . . . ."  
         "footnav footnav footnav contact contact contact contact contact contact contact . footlogo"
     
      }
@@ -899,6 +906,7 @@ ul  {
         "conc conc conc conc conc conc"
         "concp concp concp concp concp concp"
         "prot2 prot2 prot2 prot2 prot2 prot2"  
+        "back back back back back back"
         "contact contact contact contact contact contact"
         ". . footlogo footlogo . ."
     
@@ -1027,6 +1035,10 @@ ul  {
         
     }
     
+    .back {
+        margin-bottom: 50px;
+    
+    }
     
     .footnav {
         display: none;
