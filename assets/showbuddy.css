@@ -104,6 +104,7 @@ ul  {
         "wires wires wires wires wires wires wires wires wires wires wires wires"
         ". . . abtest abtest abtest abtest abtest abtest . . ."
         ". abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic ."
+        ". change1 change1 change1 change1 change1 change2 change2 change2 change2 change2 ."
         ". . . mockp mockp mockp mockp mockp mockp . . ."
         ". utest utest utest utest utest utest utest utest utest utest ."
         ". . conc conc conc conc conc conc conc conc . ."
@@ -316,11 +317,23 @@ ul  {
 }
 
 .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-.peets p, .cbtl p, .mcnt p, .stylec {
+.peets p, .cbtl p, .mcnt p, .stylec, .wires p, .abpic p, 
+.change1 p, .change2 p {
     margin-top: 20px;
     text-align: center;
     line-height: 140%;
     font-size: 18px;
+}
+
+.wires p, .abpic p {
+    margin-top: 40px;
+    padding: 0px 20%;
+   
+}
+
+.change1 p, .change2 p {
+    padding: 0 5%;
+    
 }
 
 .ethi {
@@ -359,10 +372,26 @@ ul  {
 
 
 .peets img, .flow2 img, .tsk1 img, .tsk2 img,
-.colors img, .clogo img, .clogos img, .wires img, .abpic img, .utest img,
+.colors img, .clogo img, .clogos img, .abpic img, .utest img,
 .tsk3 img {
      width: 100%;
 }
+
+.wires img {
+    width: 100%;
+    margin-left: 5px;
+}
+
+#sbwire2 {
+     margin: 80px 0px 0px;
+    
+}
+
+#sbwire3 {
+     margin: 60px 0px 0px;
+    
+}
+
 
 .peets p, .cbtl p, .mcnt p {
     font-size: 20px;
@@ -516,7 +545,7 @@ ul  {
 
 .wires {
     grid-area: wires;
-    margin: 80px 0px;
+    margin: 100px 0px 115px;
 }
 
 .abtest {
@@ -525,7 +554,26 @@ ul  {
 
 .abpic {
     grid-area: abpic;
-    margin: 100px 0px;
+    margin: 100px 0px 60px;
+    
+}
+
+.change1 img {
+    width: 70%;
+    margin: 10% 15% 0;
+}
+.change2 img {
+    width: 70%;
+    margin: 10% 15% 0;
+}
+
+.change1 {
+    grid-area: change1;
+}
+
+.change2 {
+    grid-area: change2;
+    margin-bottom: 140px;
 }
 
 .mockp {
