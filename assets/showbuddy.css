@@ -88,17 +88,18 @@ ul  {
         "home2 home2 home2 home2 coffee1 coffee1 coffee1 coffee1 ethi ethi ethi ethi" 
         ". . pro pro pro pro pro pro pro pro . ."
         ". . prop prop prop prop prop prop prop prop . ."
-        ". peets peets peets cbtl cbtl cbtl cbtl mcnt mcnt mcnt ." 
+        ". peets peets peets peets cbtl cbtl cbtl mcnt mcnt mcnt ." 
         ". . . comp comp comp comp comp comp . . ."
-        "surv surv surv surv pers pers pers pers pers pers pers pers" 
+        "surv surv surv surv surv surv pers pers pers pers pers pers" 
         ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
-        ". flow flow flow flow flow flow flow flow flow flow ." 
-        "flow3 flow3 flow3 flow3 flow3 flow3 flow2 flow2 flow2 flow2 flow2 flow2"
+        "flow flow flow flow flow flow flow flow flow flow flow flow" 
+        ". flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 .    "
         ". . bran bran bran bran bran bran bran bran . ."
         ". . branp branp branp branp branp branp branp branp . ."
         ". tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 tsk2 tsk3 tsk3 tsk3 ."
         ". . branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 . ."
         ". colors colors colors colors colors colors colors colors colors colors . "
+        ". . stylec stylec stylec stylec stylec stylec stylec stylec . ."
         ". . . wirep wirep wirep wirep wirep wirep . . ."
         "wires wires wires wires wires wires wires wires wires wires wires wires"
         ". . . abtest abtest abtest abtest abtest abtest . . ."
@@ -233,14 +234,13 @@ ul  {
 
 
 
-    
 
 
 .home img {
-    margin-top: 30px;
-    margin-bottom: -100px;
-    width: 100%;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    margin: 30px 3% -100px;
+    width: 94%;
+    
+    
 } 
 
 .chal {
@@ -311,7 +311,7 @@ ul  {
 }
 
 .flow img {
-    margin: 100px 0px;
+    margin: 0px 0px;
     width: 100%;
 }
 
@@ -333,22 +333,32 @@ ul  {
 
 .peets {
     grid-area: peets;
-    margin-top: 10px;
+    margin-top: 50px;
    
 }
 
 .cbtl {
     grid-area: cbtl;
-    margin-top: 50px;
+    
+    
 }
 
+.cbtl img {
+    margin: 50px 35% 0px;
+    width: 30%;
+}
 
 .mcnt {
     grid-area: mcnt;
 }
 
+.mcnt img {
+    margin: 50px 35% 0px;
+    width: 30%;
+}
 
-.peets img, .cbtl img, .mcnt img, .flow2 img, .flow3 img, .tsk1 img, .tsk2 img,
+
+.peets img, .flow2 img, .tsk1 img, .tsk2 img,
 .colors img, .clogo img, .clogos img, .wires img, .abpic img, .utest img,
 .tsk3 img {
      width: 100%;
@@ -407,13 +417,11 @@ ul  {
 
 .flow2 {
     grid-area: flow2;
+    margin-top: -100px;
     margin-bottom: 60px
 }
 
-.flow3 {
-    grid-area: flow3;
-     margin-bottom: 60px   
-}
+
 
 
 .prop, .flowp, .comp, .wirep, .abtest, .mockp, .branp, .concp  {
@@ -453,7 +461,7 @@ ul  {
 
 .tsk1 {
     grid-area: tsk1;
-    margin: 60px 0px;
+    margin: 60px 0px 80px;
 }
 
 .tsk2 {
@@ -467,9 +475,7 @@ ul  {
 } 
 
 
-.tsk1, .tsk2, .tsk3 {
-    opacity: .8;
-}
+
 
 .branp2 {  
     grid-area: branp2;
@@ -482,7 +488,7 @@ ul  {
 
 .colors {
     grid-area: colors;
-    margin: 60px 0px;
+    margin: 90px 0px 0px;
 }
 
 .clogo {
@@ -669,7 +675,7 @@ ul  {
         "surv surv surv surv pers pers pers pers pers pers pers pers" 
         ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
         ". flow flow flow flow flow flow flow flow flow flow ." 
-        "flow3 flow3 flow3 flow3 flow3 flow3 flow2 flow2 flow2 flow2 flow2 flow2"
+        "flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2"
         ". . bran bran bran bran bran bran bran bran . ."
         ". branp branp branp branp branp branp branp branp branp branp ."
         ". . . tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 . . ."
@@ -761,7 +767,7 @@ ul  {
         margin: 80px 0px;
     }
     
-    .flow3, .flow2, .flow, .flow img {
+    .flow2, .flow, .flow img {
         margin-top: 0px;
         margin-bottom: 10px;
     }
@@ -822,7 +828,7 @@ ul  {
         "surv surv surv surv pers pers pers pers pers pers pers pers" 
         ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
         ". flow flow flow flow flow flow flow flow flow flow ." 
-        "flow3 flow3 flow3 flow3 flow3 flow3 flow2 flow2 flow2 flow2 flow2 flow2"
+        "flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2"
         ". . bran bran bran bran bran bran bran bran . ."
         ". branp branp branp branp branp branp branp branp branp branp ."
         ". . . tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 . . ."
@@ -887,7 +893,6 @@ ul  {
         "flowp flowp flowp flowp flowp flowp"
         "flow flow flow flow flow flow" 
         "flow2 flow2 flow2 flow2 flow2 flow2"     
-        "flow3 flow3 flow3 flow3 flow3 flow3"
         "bran bran bran bran bran bran"
         "branp branp branp branp branp branp"
         "tsk1 tsk1 tsk1 tsk2 tsk2 tsk2"
@@ -996,7 +1001,7 @@ ul  {
         margin-bottom: 40px;
     }
     
-    .flow3, .flow2, .flow, .flow img {
+    .flow2, .flow, .flow img {
         margin-top: 30px;
         margin-bottom: 0px;
     }
