@@ -332,6 +332,7 @@ ul  {
 }
 
 .change1 p, .change2 p {
+    margin-top: 40px;
     padding: 0 5%;
     
 }
