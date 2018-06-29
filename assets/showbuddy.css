@@ -96,6 +96,7 @@ ul  {
         ". flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 .    "
         ". . bran bran bran bran bran bran bran bran . ."
         ". . branp branp branp branp branp branp branp branp . ."
+        ". . . marq marq marq marq marq marq . . ."
         ". tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 tsk2 tsk3 tsk3 tsk3 ."
         ". . branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 . ."
         ". colors colors colors colors colors colors colors colors colors colors . "
@@ -131,10 +132,9 @@ ul  {
     
 }
 
-.dlogo img {
-    margin-top: 30px;
-    width: 100%;
-   
+   .dlogo img {
+      margin: 30px 10% 0px;
+      width: 80%;
 }
 
 .csnav {
@@ -180,7 +180,17 @@ ul  {
     
 }
 
-
+.sticky {
+    position: fixed;
+    top: -60px;
+    left: 0px;
+    width: 100vw;
+    text-align: center;
+    background: white;
+    padding: 17px 0px 20px;
+    opacity: .95;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
 
 
 
@@ -199,9 +209,8 @@ ul  {
 }
 
 .ban img {
-    width: 180%;
+    width: 140%;
     opacity: .5;
-    margin-left: -30px;
     margin-top: 0px
 }
 
@@ -318,21 +327,26 @@ ul  {
 
 .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
 .peets p, .cbtl p, .mcnt p, .stylec, .wires p, .abpic p, 
-.change1 p, .change2 p {
+.change1 p, .change2 p, .marq p {
     margin-top: 20px;
     text-align: center;
     line-height: 140%;
     font-size: 18px;
 }
 
+.marq p {
+    margin-top: 0px;
+    font-size: 14px;
+}
+
 .wires p, .abpic p {
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 0px 20%;
    
 }
 
 .change1 p, .change2 p {
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 0 5%;
     
 }
@@ -381,15 +395,17 @@ ul  {
 .wires img {
     width: 100%;
     margin-left: 5px;
+   
 }
 
 #sbwire2 {
-     margin: 80px 0px 0px;
+     margin: 10% 0px 0px;
+     -webkit-filter: grayscale(100%);
     
 }
 
 #sbwire3 {
-     margin: 60px 0px 0px;
+     margin: 10% 0px 0px;
     
 }
 
@@ -401,7 +417,7 @@ ul  {
 
 .comp {
     grid-area: comp;
-    margin: 90px 0px 10px;        ;
+    margin: 80px 0px 10px;        ;
 }
 
 
@@ -428,12 +444,12 @@ ul  {
     line-height: 160%;
     letter-spacing: .4px;
     text-align: center;
-    margin: 100px 0px 70px;
+    margin: 100px 0px 60px;
 }
 
 .prop {  
     grid-area: prop;
-    margin-bottom: 100px;
+    margin-bottom: 5%;
     
 
 }
@@ -475,7 +491,7 @@ ul  {
     line-height: 160%;
     letter-spacing: .4px;
     text-align: center;
-    margin: 0px 0px 70px;
+    margin: 0px 0px 60px;
 }
 
 .bran {
@@ -488,6 +504,13 @@ ul  {
    
 }
 
+.marq {
+    grid-area: marq;
+}
+
+.marq img {
+    width: 100%;
+}
 
 .tsk1 {
     grid-area: tsk1;
@@ -570,11 +593,12 @@ ul  {
 
 .change1 {
     grid-area: change1;
+    margin: 10% 0;
 }
 
 .change2 {
     grid-area: change2;
-    margin-bottom: 140px;
+    margin: 10% 0;
 }
 
 .mockp {
@@ -725,16 +749,17 @@ ul  {
         ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
         ". flow flow flow flow flow flow flow flow flow flow ." 
         "flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2"
-        ". . bran bran bran bran bran bran bran bran . ."
+        ". . bran bran bran bran bran bran bran bran . ."    
         ". branp branp branp branp branp branp branp branp branp branp ."
-        ". . . tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 . . ."
+        ". . . marq marq marq marq marq marq . . ."
+        ". tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 tsk2 tsk3 tsk3 tsk3 ."
         ". branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 ."
-        ". colors colors colors colors colors colors clogos clogos clogos clogos . "
-        ". clogo clogo clogo clogo clogo clogo clogos clogos clogos clogos ."
-        ". . . . stylec stylec stylec stylec . . . ."
+        ". colors colors colors colors colors colors colors colors colors colors . "
+        ". . stylec stylec stylec stylec stylec stylec stylec stylec . ."
         ". . wirep wirep wirep wirep wirep wirep wirep wirep . ."
         "wires wires wires wires wires wires wires wires wires wires wires wires"
         ". . abtest abtest abtest abtest abtest abtest abtest abtest . ."
+        ". change1 change1 change1 change1 change1 change2 change2 change2 change2 change2 ."
         "abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic"
         ". . mockp mockp mockp mockp mockp mockp mockp mockp . ."
         "utest utest utest utest utest utest utest utest utest utest utest utest"
@@ -752,6 +777,12 @@ ul  {
          
      }
     
+    .ban img {
+         width: 140%;
+         opacity: .5;
+         margin-left: -10%;
+         margin-top: 0px;
+    }
     
     
     .name {
@@ -759,7 +790,7 @@ ul  {
         
     }
     
-    
+   
     .csnav li {
   
         margin: 40px 30px;
@@ -797,9 +828,7 @@ ul  {
         margin-top: 35px;
     }
     
-    .comp {
-         margin: 70px 0px 0px;
-    }
+    
     
     .pers img, .surv img {
          margin-top: 80px;
@@ -847,6 +876,8 @@ ul  {
      .footlogo img {
         height: 40px;
      }
+    
+    
 
 }
 
@@ -863,7 +894,7 @@ ul  {
         "ban ban ban . case case case case . . . ."
         "ban ban ban dlogo dlogo dlogo dlogo dlogo dlogo . . ."
         "ban ban ban . . . . . . . . ."
-        ". csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav ."
+        "csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav"
         ". . . position position position position position position . . ."
         ". . resume resume resume resume resume resume resume resume . ."
         ". chal chal chal chal . . sol sol sol sol ."
@@ -880,7 +911,8 @@ ul  {
         "flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2"
         ". . bran bran bran bran bran bran bran bran . ."
         ". branp branp branp branp branp branp branp branp branp branp ."
-        ". . . tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 . . ."
+        ". marq marq marq marq marq marq marq marq marq marq ."   
+        ". . . tsk1 tsk1 tsk2 tsk2 tsk3 tsk3 . . ."
         ". branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 ."
         ". colors colors colors colors colors colors clogos clogos clogos clogos . "
         ". clogo clogo clogo clogo clogo clogo clogos clogos clogos clogos ."
@@ -889,6 +921,7 @@ ul  {
         "wires wires wires wires wires wires wires wires wires wires wires wires"
         ". . abtest abtest abtest abtest abtest abtest abtest abtest . ."
         "abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic"
+        "change1 change1 change1 change1 change1 change1 change2 change2 change2 change2 change2 change2"
         ". . mockp mockp mockp mockp mockp mockp mockp mockp . ."
         "utest utest utest utest utest utest utest utest utest utest utest utest"
         ". . conc conc conc conc conc conc conc conc . ."
@@ -899,6 +932,18 @@ ul  {
     
      }
     
+    .csnav li {
+        margin: 40px 25px;
+    }
+    
+    .sticky {
+        padding: 3px 0px 6px;
+    
+    }
+    
+    .sticky li {
+        font-size: 16px;
+    }
     
 }
 
@@ -944,6 +989,7 @@ ul  {
         "flow2 flow2 flow2 flow2 flow2 flow2"     
         "bran bran bran bran bran bran"
         "branp branp branp branp branp branp"
+        "marq marq marq marq marq marq"
         "tsk1 tsk1 tsk1 tsk2 tsk2 tsk2"
         "tsk3 tsk3 tsk3 tsk3 tsk3 tsk3"
         "branp2 branp2 branp2 branp2 branp2 branp2"
@@ -955,6 +1001,8 @@ ul  {
         "wires wires wires wires wires wires"
         "abtest abtest abtest abtest abtest abtest"
         "abpic abpic abpic abpic abpic abpic"
+        "change1 change1 change1 change1 change1 change1"    
+        "change2 change2 change2 change2 change2 change2"    
         "mockp mockp mockp mockp mockp mockp"
         "utest utest utest utest utest utest"
         "conc conc conc conc conc conc"
@@ -971,9 +1019,9 @@ ul  {
     }
       
     .ban img {
-        width: 110%;
+        width: 90%;
         opacity: .5;
-        margin-left: -30px;
+        margin-left: -15%;
         margin-top: -10px;
     }
     
@@ -982,15 +1030,41 @@ ul  {
     }
     
     .csnav {
-            margin: 30px 0px 20px;
+            margin: 60px 0px 20px;
     }
     .csnav li {
         margin: 40px 30px;
     }
     
+    
+    .csnav ul {
+        margin-left: 30px;
+    }
+    
+    .sticky {
+        text-align: left;
+        
+    }  
+    
+    .sticky li {
+        margin-left: 0px;
+        margin-right: 70px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        
+    }
+    
+    .sticky ul {
+        line-height: 200%;
+        margin-left: 80px;
+    }
+    
+
+    
+    
    .home img {
    
-        margin: -10px 0px 0px;
+        margin: -10px 3% 0px;
     }
     
     .position {
@@ -1020,7 +1094,7 @@ ul  {
     }
     
    .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-   .peets p, .cbtl p, .mcnt p, .stylec {
+   .peets p, .cbtl p, .mcnt p, .stylec, .wires p, .abpic p, .change1 p, .change2 p {
        line-height: 130%;
        font-size: 14px;
     }
@@ -1030,12 +1104,20 @@ ul  {
         
     }
     
+    .cbtl img, .mcnt img {
+        margin-top: 5%;
+    }
+    
     .peets, .cbtl, .mcnt, .wires {
         margin: 20px 0px;
     }
     
     .abpic {
-        margin: 30px 0px 25px
+        margin: 30px 0px -5%;
+    }
+    
+    .change2 {
+        margin-top: -5%;
     }
     
     .peets {
@@ -1051,7 +1133,7 @@ ul  {
     }
     
     .flow2, .flow, .flow img {
-        margin-top: 30px;
+        margin-top: -10px;
         margin-bottom: 0px;
     }
     
@@ -1080,6 +1162,10 @@ ul  {
         margin-bottom: 40px;
     }
     
+    .wires p, .abpic p, .change1 p, .change2 p {
+        padding: 0;
+        
+    }
     .utest {
         margin: 50px 0px 0px;
     }
@@ -1109,6 +1195,15 @@ ul  {
 
 /* ------------------ Galaxy S5 & iPhone 6, etc ------------------------*/
 
+@media (max-width: 375px) {
+    .csnav ul {
+        margin-left: 15px;
+    }
+    
+    .sticky ul {
+        margin-left: 60px;
+    }
+}
 
 
 
@@ -1122,13 +1217,23 @@ ul  {
         margin: 25px 25px 75px;
      }  
     
+      .csnav ul {
+        margin-left: 0px;
+    }
+    
     .csnav li {
-    margin: 30px 25px;
+       margin: 30px 25px;
      }
+    
     
 
     .contact li {
        margin: 0px 8px;
    }
+    
+    .sticky ul {
+        margin-left: 20px;
+       
+    }
     
 }

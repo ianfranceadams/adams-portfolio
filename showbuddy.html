@@ -62,19 +62,19 @@
      <div class="csnav">    
        <ul>
          <li>
-             <a onclick="scrollProj()">
+             <a onclick="scrollProj(x)">
                <span>Overview</span>
              </a>
          </li><li>
-              <a onclick="scrollProj2()">
+              <a onclick="scrollProj2(x)">
                <span>Process</span>
              </a>
          </li><li>
-             <a onclick="scrollProj3()">
+             <a onclick="scrollProj3(x)">
                <span>Branding</span>
              </a>
            </li><li>
-             <a onclick="scrollProj4()">
+             <a onclick="scrollProj4(x)">
                <span>Conclusion</span>
              </a>
          </li>
@@ -129,7 +129,7 @@
      
      <div class="coffee1">
        <img src="images/sbcsoscreen.png">
-         <p>  List view showcasing expanded view of concert details.&nbsp; Tap location and date bar to open edit screen.&nbsp; Green button leads to in-app browser with actual venue's concert details page.&nbsp; Underlined venue name would open user's mapping application for directions. </p>
+         <p>  List view showcasing expanded view of concert details.&nbsp; Tap location and date bar to open edit screen.&nbsp; Green button leads to in-app browser with actual venue's concert details page.&nbsp; Tapping underlined venue name would open user's mapping application for directions. </p>
      </div>
         
      <div class="ethi">
@@ -152,7 +152,7 @@
     
      <div class="peets">
        <img src="images/bandsintown.jpg">
-         <p> Most significant competitor that syncs with social media and users' own music libraries.&nbsp; Best for users focused on particular artists rather than on making more open, spontaneous plans.&nbsp; Some app reviews complained about search complexity.  </p>
+         <p> <a href="https://www.bandsintown.com/" target="new" style="border-bottom: 1px #141414 solid">Most significant competitor</a> that syncs with social media and users' own music libraries.&nbsp; Best for users focused on particular artists rather than on making more open, spontaneous plans.&nbsp; Some app reviews complained about search complexity.  </p>
     </div>
 
   
@@ -163,7 +163,7 @@
     
      <div class="mcnt">
        <img src="images/loudie.png">
-         <p> <a href="https://www.loudie.com/" target="new" style="border-bottom: 1px #141414 solid">Loudie</a> is very socially oriented and successfully emphasizes spontaneity, although at the expense of search precision.&nbsp; It appears to only be set up for a handful of major cities at this point. </p>
+         <p> <a href="https://www.loudie.com/" target="new" style="border-bottom: 1px #141414 solid">Loudie</a> is very socially oriented and successfully emphasizes spontaneity, although at the expense of search precision.&nbsp; It appears to only be set up for a couple major cities at this point. </p>
     </div>
      
 
@@ -202,7 +202,11 @@
     <p class="branp">As ShowBuddy moved farther along the design process, I developed a brand aesthetic based on the bold, bright aesthetic of vintage neon theater signs.<br> <br>
      </p>
      
-     
+     <div class="marq">
+       <img src="images/marquee.jpg">
+         <p> Marquee during Night on Broadway - Copyright © 2017 Mike Hume/<a href="https://theatre.mikehume.com/Theatre-Photography/Orpheum-Los-Angeles.aspx" target="new" style="border-bottom: 1px #141414 solid">historictheatrephotos.com</a></p>
+    </div>
+    
      <div class="tsk1">
        <img src="images/IMG_7465.png">
     </div>
@@ -217,7 +221,7 @@
     
     
     
-    <p class="branp2"> Thanks to sketching, a logo quickly came together.&nbsp; While the wide marquee look was a fun start, an experimental transposition of it in Sketch revealed the final version that was more conveniently square but still featuring the neon light shape.&nbsp; From here, the neon color scheme is an obvious inclination, with neon green a good complement to the pink.&nbsp; A black background with bold white text evokes the feeling of rock concert posters.&nbsp; I arrived at the Avenir Next Condensed Bold typeface when searching for something comparable to the interchangable plastic lettering of old backlit signs. </p>
+    <p class="branp2"> Thanks to sketching, a logo quickly came together.&nbsp; While the wide marquee look was a fun start, an experimental transposition of it in <a href="https://sketchapp.com/" target="new" style="border-bottom: 1px #141414 solid">Sketch</a> revealed the final version that was more conveniently square but still featuring the neon light shape.&nbsp; From here, the neon color scheme is an obvious inclination, with neon green a good complement to the pink.&nbsp; <a href="https://color.adobe.com/create/color-wheel/" target="new" style="border-bottom: 1px #141414 solid">Adobe Color CC</a>'s color wheel helped with making these choices.&nbsp; A black background with bold white text evokes the feeling of older rock concert posters along with the neon scheme.&nbsp; I arrived at the Avenir Next Condensed Bold typeface when searching for something comparable to the interchangable plastic lettering of old backlit signs. </p>
      
     <div class="colors">
        <img src="images/ShowBuddyStyleGuide.png">
@@ -232,10 +236,10 @@
      </p>
     
      <div class="wires">
-       <img src="images/SBLoFi.png">
+       <img src="images/SBLoFi.png" style="filter: grayscale(100%)">
        <img id="sbwire2" src="images/SB1st6UIScreens.png">   
          <p> First user interface design iteration featuring appropriate navigation bars and toolbars. </p>
-       <img id="sbwire3" src="images/SBSearchUpdates.png"> 
+       <img id="sbwire3" src="images/SBSearchUpdates.png">
          <p> Further progress featuring a <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/steppers/" target="new" style="border-bottom: 1px #141414 solid">stepper</a> control for easily setting one's distance radius and <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/switches/" target="new" style="border-bottom: 1px #141414 solid">switches</a> (rather than check boxes) for clearly turning on and off various preferences. </p>
     </div>
      
@@ -334,31 +338,139 @@
  </div> 
     
     <script>
-        document.addEventListener("touchstart", function() {},false);
+           document.addEventListener("touchstart", function() {},false);
         
-         function scrollProj() {
-             document.querySelector('.chal').scrollIntoView({ 
-              behavior: 'smooth', block: 'start' 
-                  
-          });
+        
+//Sticky Nav
+        
+        
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.querySelector('.csnav');
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+         if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+         navbar.classList.remove("sticky");
         } 
+       }
         
-        function scrollProj2() {
-             document.querySelector('.pro').scrollIntoView({ 
-              behavior: 'smooth', block: 'start'  
-                 
+        
+        
+    
+        
+        
+                           //Menu Click and Scrolls:
+        
+        
+        
+        
+//Responsive Overview Section     
+
+        
+        
+              function scrollProj(x) {
+    if (x.matches) { // If screen is small
+        document.querySelector('.home').scrollIntoView({ 
+              behavior: 'smooth', block: 'center'  
           });
-        } 
-        
-        function scrollProj3() {
-             document.querySelector('.bran').scrollIntoView({ 
-              behavior: 'smooth', block: 'start'  
+    
+    } else {  // normal size
+        document.querySelector('.solp').scrollIntoView({ 
+              behavior: 'smooth', block: 'end'  
           });
-        } 
+    
+       }
         
-        function scrollProj4() {
-             document.querySelector('.conc').scrollIntoView({ 
-              behavior: 'smooth', block: 'start'  
+   }
+
+        var x = window.matchMedia("(max-width: 670px)");
+        x.addListener(scrollProj); // Attach listener function on state changes
+        
+        
+        
+        
+        
+//Responsive Process Section       
+        
+        
+        function scrollProj2(x) {
+    if (x.matches) { // If screen is small
+        document.querySelector('.pro').scrollIntoView({   
+              behavior: 'smooth', block: 'center'  
+          });
+    
+    } else {  // normal size
+        document.querySelector('.pro').scrollIntoView({ 
+              behavior: 'smooth', block: 'center'  
+          });
+    
+       }
+        
+   }
+
+        var x = window.matchMedia("(max-width: 670px)");
+        x.addListener(scrollProj2); // Attach listener function on state changes
+        
+        
+        
+        
+        
+        
+//Responsive Branding Section       
+        
+        
+              function scrollProj3(x) {
+    if (x.matches) { // If screen is small
+        document.querySelector('.bran').scrollIntoView({ 
+              behavior: 'smooth', block: 'center'  
+          });
+    
+    } else {  // normal size
+        document.querySelector('.bran').scrollIntoView({ 
+              behavior: 'smooth', block: 'center'  
+          });
+    
+       }
+        
+   }
+
+        var x = window.matchMedia("(max-width: 670px)");
+        x.addListener(scrollProj3); // Attach listener function on state changes
+        
+        
+        
+        
+//Responsive Conclusion Section      
+        
+        
+              function scrollProj4(x) {
+    if (x.matches) { // If screen is small
+        document.querySelector('.conc').scrollIntoView({ 
+              behavior: 'smooth', block: 'center'  
+          });
+    
+    } else {  // normal size
+        document.querySelector('.conc').scrollIntoView({ 
+              behavior: 'smooth', block: 'center'  
+          });
+    
+       }
+        
+   }
+
+        var x = window.matchMedia("(max-width: 670px)");
+        x.addListener(scrollProj4); // Attach listener function on state changes
+        
+        
+        
+//Back to top   
+        
+        function scrollProj5() {
+             document.querySelector('.logo').scrollIntoView({ 
+              behavior: 'smooth', block: 'end'  
           });
         }
     </script>

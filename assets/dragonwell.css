@@ -708,9 +708,6 @@ ul  {
     
      }
     
-    .sticky {
-        
-    }
     
   
     .logo img {
@@ -870,7 +867,12 @@ ul  {
     }
     
     .sticky {
-        padding: 6px 0px 8px;
+        padding: 3px 0px 6px;
+    
+    }
+    
+    .sticky li {
+        font-size: 16px;
     }
 
 }
@@ -967,10 +969,7 @@ ul  {
     
    
 
-    .sticky {
-        padding: 8px 0px 10px;
-      
-    }
+    
     
     
     
