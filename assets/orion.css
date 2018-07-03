@@ -85,21 +85,21 @@ ul  {
         ". chal chal chal chal . . sol sol sol sol ."
         "chalp chalp chalp chalp chalp chalp solp solp solp solp solp solp"
         ". . . . prot prot prot prot . . . ."
-        "home2 home2 home2 home2 coffee1 coffee1 coffee1 coffee1 ethi ethi ethi ethi" 
+        "home2 home2 home2 home2 home2 home2 ethi ethi ethi ethi ethi ethi" 
+        "coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1"
         ". . pro pro pro pro pro pro pro pro . ."
         ". . prop prop prop prop prop prop prop prop . ."
-        ". peets peets peets cbtl cbtl cbtl cbtl mcnt mcnt mcnt ." 
+        "peets peets peets peets cbtl cbtl cbtl cbtl mcnt mcnt mcnt mcnt" 
         ". . . comp comp comp comp comp comp . . ."
-        "surv surv surv surv pers pers pers pers pers pers pers pers" 
+        "surv surv surv pers pers pers pers pers pers pers pers pers" 
         ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
-        ". flow flow flow flow flow flow flow flow flow flow ." 
-        "flow3 flow3 flow3 flow3 flow3 flow3 flow2 flow2 flow2 flow2 flow2 flow2"
+        "flow flow flow flow flow flow flow flow flow flow flow flow" 
         ". . bran bran bran bran bran bran bran bran . ."
         ". . branp branp branp branp branp branp branp branp . ."
-        ". . . tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 . . ."
+        ". . . tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 . . ."
         ". . branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 . ."
-        ". colors colors colors colors colors colors clogos clogos clogos clogos . "
-        ". clogo clogo clogo clogo clogo clogo clogos clogos clogos clogos ."
+        ". colors colors colors colors colors colors colors colors colors colors . "
+        ". clogo clogo clogo clogo clogo clogo clogo clogo clogo clogo ."
         ". . . . stylec stylec stylec stylec . . . ."
         ". . . wirep wirep wirep wirep wirep wirep . . ."
         "wires wires wires wires wires wires wires wires wires wires wires wires"
@@ -212,7 +212,7 @@ ul  {
     border: 2px solid #001B4C;
     border-radius: 8px;
     background-color: white;
-    color: #2C1352;
+    color: #001B4C;
     font-size: 16px;
     font-family: helvetica neue;    
     font-weight: bold;
@@ -303,11 +303,16 @@ ul  {
     
 }
 
-.home2 img, .coffee1 img, .ethi img, .surv img, .pers img {
+.home2 img, .ethi img, .surv img, .pers img {
     margin-top: 100px;
     width: 100%;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 
+}
+
+.coffee1 img {
+    margin: 0px 10% 0px;
+    width: 80%;
 }
 
 .flow img {
@@ -333,13 +338,12 @@ ul  {
 
 .peets {
     grid-area: peets;
-    margin-top: 10px;
    
 }
 
 .cbtl {
     grid-area: cbtl;
-    margin-top: 50px;
+    
 }
 
 
@@ -348,7 +352,7 @@ ul  {
 }
 
 
-.peets img, .cbtl img, .mcnt img, .flow2 img, .flow3 img, .tsk2 img,
+.peets img, .mcnt img, .flow2 img, .flow3 img, .tsk2 img,
 .colors img, .clogo img, .clogos img, .wires img, .abpic img, .utest img {
      width: 100%;
 }
@@ -356,6 +360,11 @@ ul  {
 .peets p, .cbtl p, .mcnt p {
     font-size: 20px;
     
+}
+
+.cbtl img {
+    width: 70%;
+    margin: 0 15%;
 }
 
 .comp {
@@ -452,6 +461,7 @@ ul  {
 
 .tsk1 img {
     width: 80%;
+    margin: 0 10%;
 }
 
 .tsk1 {
@@ -475,18 +485,14 @@ ul  {
 
 .colors {
     grid-area: colors;
-    margin-top: 60px;
+    margin: 80px 7% 50px;
 }
 
 .clogo {
     grid-area: clogo;
-    margin-right: 30px;
+    margin-left: 2%;
 }
 
-.clogos {
-    grid-area: clogos;
-    margin-top: 60px;
-}
 
 .clogos img {
     margin-top: -2px;

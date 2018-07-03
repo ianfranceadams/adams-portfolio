@@ -134,7 +134,7 @@
         
      <div class="ethi">
        <img src="images/sbprofileedit.png">  
-         <p>Profile screen for users with an account to edit their basic info and location preferences using <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/switches/" target="new" style="border-bottom: 1px #141414 solid">switches</a>.&nbsp; Also a switch for users needing to filter out 21+ shows. </p>
+         <p id="cow">Profile screen for users with an account to edit their basic info and location preferences using <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/switches/" target="new" style="border-bottom: 1px #141414 solid">switches</a>.&nbsp; Also a switch for users needing to filter out 21+ shows. </p>
      </div>
      
      
@@ -257,7 +257,7 @@
     
     <div class="change2">
     <img src="images/SBSearchScreen.png">    
-        <p> Another user's feedback led to this simplified search screen design.&nbsp; She noted that not all users will want advanced genre search options, so best to have them beyond an advanced search button to prevent feeling overwhelmed with too many choices.  </p>
+        <p id="bird"> Another user's feedback led to this simplified search screen design.&nbsp; She noted that not all users will want advanced genre search options, so best to have them beyond an advanced search button to prevent feeling overwhelmed with too many choices.  </p>
     </div> 
     
     
@@ -378,7 +378,7 @@
           });
     
     } else {  // normal size
-        document.querySelector('.solp').scrollIntoView({ 
+        document.querySelector('.prot').scrollIntoView({ 
               behavior: 'smooth', block: 'end'  
           });
     
@@ -398,12 +398,12 @@
         
         function scrollProj2(x) {
     if (x.matches) { // If screen is small
-        document.querySelector('.pro').scrollIntoView({   
+        document.getElementById('cow').scrollIntoView({   
               behavior: 'smooth', block: 'center'  
           });
     
     } else {  // normal size
-        document.querySelector('.pro').scrollIntoView({ 
+        document.querySelector('.prop').scrollIntoView({ 
               behavior: 'smooth', block: 'center'  
           });
     
@@ -424,13 +424,13 @@
         
               function scrollProj3(x) {
     if (x.matches) { // If screen is small
-        document.querySelector('.bran').scrollIntoView({ 
+        document.querySelector('.flow2').scrollIntoView({ 
               behavior: 'smooth', block: 'center'  
           });
     
     } else {  // normal size
-        document.querySelector('.bran').scrollIntoView({ 
-              behavior: 'smooth', block: 'center'  
+        document.querySelector('.marq').scrollIntoView({ 
+              behavior: 'smooth', block: 'end'  
           });
     
        }
@@ -448,13 +448,13 @@
         
               function scrollProj4(x) {
     if (x.matches) { // If screen is small
-        document.querySelector('.conc').scrollIntoView({ 
+        document.getElementById('bird').scrollIntoView({ 
               behavior: 'smooth', block: 'center'  
           });
     
     } else {  // normal size
-        document.querySelector('.conc').scrollIntoView({ 
-              behavior: 'smooth', block: 'center'  
+        document.querySelector('.back').scrollIntoView({ 
+              behavior: 'smooth', block: 'end'  
           });
     
        }
