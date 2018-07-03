@@ -157,7 +157,7 @@ ul  {
 
 .csnav ul {
     line-height: 250%;
-    font-size: 18px;
+    font-size: 1em;
 }
 
 .csnav li span, .back span {
@@ -394,13 +394,12 @@ ul  {
 
 .wires img {
     width: 100%;
-    margin-left: 5px;
    
 }
 
 #sbwire2 {
      margin: 10% 0px 0px;
-     -webkit-filter: grayscale(100%);
+   
     
 }
 
@@ -743,7 +742,7 @@ ul  {
         "home2 home2 home2 home2 coffee1 coffee1 coffee1 coffee1 ethi ethi ethi ethi" 
         ". . pro pro pro pro pro pro pro pro . ."
         ". prop prop prop prop prop prop prop prop prop prop ."
-        "peets peets peets cbtl cbtl cbtl cbtl cbtl mcnt mcnt mcnt mcnt" 
+        "peets peets peets peets cbtl cbtl cbtl cbtl mcnt mcnt mcnt mcnt" 
         ". . comp comp comp comp comp comp comp comp . ."
         "surv surv surv surv pers pers pers pers pers pers pers pers" 
         ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
@@ -792,8 +791,11 @@ ul  {
     
    
     .csnav li {
-  
-        margin: 40px 30px;
+          margin: 40px 30px;
+    }
+    
+    .sticky {
+        padding: 10px 0px 12px;
     }
 
     .position {
@@ -824,9 +826,7 @@ ul  {
         line-height: 120%;
     }
     
-    .cbtl {
-        margin-top: 35px;
-    }
+   
     
     
     
@@ -851,7 +851,7 @@ ul  {
     }
     
      .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-     .peets p, .cbtl p, .mcnt p, .stylec {
+     .peets p, .cbtl p, .mcnt p, .stylec, .wires p, .change1 p, .change2 p {
        line-height: 150%;
        font-size: 14px;
     }
@@ -895,7 +895,7 @@ ul  {
         "ban ban ban dlogo dlogo dlogo dlogo dlogo dlogo . . ."
         "ban ban ban . . . . . . . . ."
         "csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav"
-        ". . . position position position position position position . . ."
+        ". . position position position position position position position position . ."
         ". . resume resume resume resume resume resume resume resume . ."
         ". chal chal chal chal . . sol sol sol sol ."
         "chalp chalp chalp chalp chalp chalp solp solp solp solp solp solp"
@@ -903,20 +903,19 @@ ul  {
         "home2 home2 home2 home2 coffee1 coffee1 coffee1 coffee1 ethi ethi ethi ethi" 
         ". . pro pro pro pro pro pro pro pro . ."
         ". prop prop prop prop prop prop prop prop prop prop ."
-        "peets peets peets cbtl cbtl cbtl cbtl cbtl mcnt mcnt mcnt mcnt" 
+        "peets peets peets peets cbtl cbtl cbtl cbtl mcnt mcnt mcnt mcnt" 
         ". . comp comp comp comp comp comp comp comp . ."
-        "surv surv surv surv pers pers pers pers pers pers pers pers" 
+        "surv surv surv surv surv pers pers pers pers pers pers pers" 
         ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
-        ". flow flow flow flow flow flow flow flow flow flow ." 
+        "flow flow flow flow flow flow flow flow flow flow flow flow" 
         "flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2"
         ". . bran bran bran bran bran bran bran bran . ."
         ". branp branp branp branp branp branp branp branp branp branp ."
         ". marq marq marq marq marq marq marq marq marq marq ."   
-        ". . . tsk1 tsk1 tsk2 tsk2 tsk3 tsk3 . . ."
+        ". tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 tsk3 tsk3 tsk3 tsk3 ."
         ". branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 ."
-        ". colors colors colors colors colors colors clogos clogos clogos clogos . "
-        ". clogo clogo clogo clogo clogo clogo clogos clogos clogos clogos ."
-        ". . . . stylec stylec stylec stylec . . . ."
+        "colors colors colors colors colors colors colors colors colors colors colors colors "
+        ". stylec stylec stylec stylec stylec stylec stylec stylec stylec stylec ."
         ". . wirep wirep wirep wirep wirep wirep wirep wirep . ."
         "wires wires wires wires wires wires wires wires wires wires wires wires"
         ". . abtest abtest abtest abtest abtest abtest abtest abtest . ."
@@ -943,6 +942,14 @@ ul  {
     
     .sticky li {
         font-size: 16px;
+    }
+    
+    .prot2 {
+    margin-bottom: 70px;
+    margin-top: 40px;
+}
+    .back {
+       margin-bottom: 90px;
     }
     
 }
@@ -1030,7 +1037,7 @@ ul  {
     }
     
     .csnav {
-            margin: 60px 0px 20px;
+            margin: 35px 0px 20px;
     }
     .csnav li {
         margin: 40px 30px;
@@ -1043,20 +1050,24 @@ ul  {
     
     .sticky {
         text-align: left;
+        top: -35px;
         
     }  
+    
+   
     
     .sticky li {
         margin-left: 0px;
         margin-right: 70px;
         margin-bottom: 0px;
         margin-top: 0px;
+        font-size: 16px;
         
     }
     
     .sticky ul {
         line-height: 200%;
-        margin-left: 80px;
+        margin-left: 95px;
     }
     
 
@@ -1196,12 +1207,9 @@ ul  {
 /* ------------------ Galaxy S5 & iPhone 6, etc ------------------------*/
 
 @media (max-width: 375px) {
-    .csnav ul {
-        margin-left: 15px;
-    }
-    
+   
     .sticky ul {
-        margin-left: 60px;
+        margin-left: 75px;
     }
 }
 
