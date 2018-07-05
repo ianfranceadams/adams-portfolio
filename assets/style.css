@@ -605,6 +605,7 @@ p {
     
     .subname {
         margin: 10px 0px 15px;
+        line-height: 130%;
     }
     
     .background {

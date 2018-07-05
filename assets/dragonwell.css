@@ -227,10 +227,10 @@ ul  {
 }
 
 .resume, .prot, .prot2 {
-    border: 2px solid #2C1352;
+    border: 2px solid #571200;
     border-radius: 8px;
     background-color: white;
-    color: #2C1352;
+    color: #571200;
     font-size: 16px;
     font-family: helvetica neue;    
     font-weight: bold;
@@ -241,7 +241,7 @@ ul  {
 }
 
 .resume:hover, .prot:hover, .prot2:hover {
-  background: #2C1352;
+  background: #571200;
   color: white;
 }
 
@@ -329,12 +329,11 @@ ul  {
 }
 
 .flow img {
-    margin: 100px 0px;
     width: 100%;
 }
 
 .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-.peets p, .cbtl p, .mcnt p, .stylec {
+.peets p, .cbtl p, .mcnt p, .stylec, .flow p {
     margin-top: 20px;
     text-align: center;
     line-height: 140%;
@@ -395,7 +394,12 @@ ul  {
 
 .flow {
     grid-area: flow;
-    
+    margin: 100px 0px;
+}
+
+.flow p {
+    margin-top: 40px;
+    padding: 0 20%;
 }
 
 .pro {
@@ -920,7 +924,8 @@ ul  {
         "flow3 flow3 flow3 flow3 flow3 flow3"
         "bran bran bran bran bran bran"
         "branp branp branp branp branp branp"
-        "tsk1 tsk1 tsk1 tsk2 tsk2 tsk2"
+        "tsk1 tsk1 tsk1 tsk1 tsk1 tsk1"
+        "tsk2 tsk2 tsk2 tsk2 tsk2 tsk2"    
         "branp2 branp2 branp2 branp2 branp2 branp2"
         "colors colors colors colors colors colors" 
         "clogos clogos clogos clogos clogos clogos"
@@ -963,7 +968,7 @@ ul  {
     }
     
     .sticky ul {
-        line-height: 170%;
+        line-height: 200%;
         margin-left: 80px;
     }
     
@@ -1005,7 +1010,7 @@ ul  {
     }
     
    .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-   .peets p, .cbtl p, .mcnt p, .stylec {
+   .peets p, .cbtl p, .mcnt p, .stylec, .flow p {
        line-height: 130%;
        font-size: 14px;
     }
@@ -1043,6 +1048,13 @@ ul  {
     .tsk1 {
         margin: 30px 0px;
     }
+    
+    .tsk2 {
+       margin-top: 0px;
+       margin-bottom: 30px;
+       
+    }
+    
     
     .tsk1 img {
         width: 100%;
