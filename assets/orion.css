@@ -107,7 +107,7 @@ ul  {
         "wires2 wires2 wires2 wires2 wires2 wires2 wires2 wires2 wires2 wires2 wires2 wires2"
         "wires3 wires3 wires3 wires3 wires3 wires3 wires3 wires3 wires3 wires3 wires3 wires3"
         ". . . abtest abtest abtest abtest abtest abtest . . ."
-        ". abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic ."
+        "abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic"
         ". . . mockp mockp mockp mockp mockp mockp . . ."
         ". utest utest utest utest utest utest utest utest utest utest ."
         ". . conc conc conc conc conc conc conc conc . ."
@@ -325,7 +325,7 @@ ul  {
 }
 
 .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-.peets p, .cbtl p, .mcnt p, .stylec, .wires p, .wires2 p, .wires3 p {
+.peets p, .cbtl p, .mcnt p, .stylec, .wires p, .wires2 p, .wires3 p, .abpic p {
     margin-top: 20px;
     text-align: center;
     line-height: 140%;
@@ -530,7 +530,7 @@ ul  {
     width: 23%;
 }
 
-.wires p, .wires2 p, .wires3 p {
+.wires p, .wires2 p, .wires3 p, .abpic p {
     margin-top: 35px;
     padding: 0px 20%;
 }
@@ -578,6 +578,13 @@ ul  {
 .abpic {
     grid-area: abpic;
     margin: 100px 0px;
+}
+
+.abpic img {
+    width: 47%;
+    margin: 1%;
+         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+
 }
 
 .mockp {
