@@ -871,7 +871,7 @@ ul  {
     
     }
     
-    .sticky li {
+    .sticky ul {
         font-size: 16px;
     }
 
@@ -963,7 +963,7 @@ ul  {
     }
     
     .sticky ul {
-        line-height: 200%;
+        line-height: 170%;
         margin-left: 80px;
     }
     
@@ -1098,7 +1098,7 @@ ul  {
     }
     
     .sticky ul {
-        margin-left: 60px;
+        margin-left: 77px;
     }
 }
 

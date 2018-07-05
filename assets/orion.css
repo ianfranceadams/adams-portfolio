@@ -94,6 +94,7 @@ ul  {
         "surv surv surv pers pers pers pers pers pers pers pers pers" 
         ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
         "flow flow flow flow flow flow flow flow flow flow flow flow" 
+        "flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2" 
         ". . bran bran bran bran bran bran bran bran . ."
         ". . branp branp branp branp branp branp branp branp . ."
         ". . . tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 . . ."
@@ -103,6 +104,8 @@ ul  {
         ". . . . stylec stylec stylec stylec . . . ."
         ". . . wirep wirep wirep wirep wirep wirep . . ."
         "wires wires wires wires wires wires wires wires wires wires wires wires"
+        "wires2 wires2 wires2 wires2 wires2 wires2 wires2 wires2 wires2 wires2 wires2 wires2"
+        "wires3 wires3 wires3 wires3 wires3 wires3 wires3 wires3 wires3 wires3 wires3 wires3"
         ". . . abtest abtest abtest abtest abtest abtest . . ."
         ". abpic abpic abpic abpic abpic abpic abpic abpic abpic abpic ."
         ". . . mockp mockp mockp mockp mockp mockp . . ."
@@ -294,6 +297,7 @@ ul  {
 
 .coffee1 {
     grid-area: coffee1;
+   
     
 }
 
@@ -311,17 +315,17 @@ ul  {
 }
 
 .coffee1 img {
-    margin: 0px 10% 0px;
+    margin: 50px 10% 0px;
     width: 80%;
 }
 
 .flow img {
-    margin: 100px 0px;
+    margin: 70px 0px 50px;
     width: 100%;
 }
 
 .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-.peets p, .cbtl p, .mcnt p, .stylec {
+.peets p, .cbtl p, .mcnt p, .stylec, .wires p, .wires2 p, .wires3 p {
     margin-top: 20px;
     text-align: center;
     line-height: 140%;
@@ -415,7 +419,7 @@ ul  {
 
 .flow2 {
     grid-area: flow2;
-    margin-bottom: 60px
+    margin-bottom: 15%;
 }
 
 .flow3 {
@@ -500,7 +504,7 @@ ul  {
 
 .stylec {
     grid-area: stylec;
-    margin: 20px 0px 90px;
+    margin: -10px 0px 90px;
 }
 
 .wirep {
@@ -509,8 +513,63 @@ ul  {
 
 .wires {
     grid-area: wires;
-    margin: 80px 0px;
+    margin: 110px 0px 70px;
 }
+
+.wires img {
+    margin: 0 1%;
+}
+
+.wires img:nth-child(1) {
+    width: 35%;
+} 
+.wires img:nth-child(2) {
+    width: 35%;
+}
+.wires img:nth-child(3) {
+    width: 23%;
+}
+
+.wires p, .wires2 p, .wires3 p {
+    margin-top: 35px;
+    padding: 0px 20%;
+}
+
+.wires2 {
+   grid-area: wires2;
+    margin-bottom: 100px;
+}
+
+.wires2 img {
+   margin: 0 1%;
+}
+
+.wires2 img:nth-child(1) {
+    width: 23%;
+} 
+.wires2 img:nth-child(2) {
+    width: 35%;
+}
+.wires2 img:nth-child(3) {
+    width: 35%;
+}
+
+
+.wires3 {
+   grid-area: wires3;
+    margin-bottom: 100px;
+}
+
+.wires3 img {
+   margin: 2%;
+    width: 45%;
+     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
 
 .abtest {
     grid-area: abtest;
@@ -676,10 +735,10 @@ ul  {
         "flow3 flow3 flow3 flow3 flow3 flow3 flow2 flow2 flow2 flow2 flow2 flow2"
         ". . bran bran bran bran bran bran bran bran . ."
         ". branp branp branp branp branp branp branp branp branp branp ."
-        ". . . tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 . . ."
+        ". . tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 . ."
         ". branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 ."
-        ". colors colors colors colors colors colors clogos clogos clogos clogos . "
-        ". clogo clogo clogo clogo clogo clogo clogos clogos clogos clogos ."
+        ". colors colors colors colors colors colors colors colors colors colors . "
+        ". clogo clogo clogo clogo clogo clogo clogo clogo clogo clogo ."
         ". . . . stylec stylec stylec stylec . . . ."
         ". . wirep wirep wirep wirep wirep wirep wirep wirep . ."
         "wires wires wires wires wires wires wires wires wires wires wires wires"
@@ -771,7 +830,7 @@ ul  {
     }
     
      .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-     .peets p, .cbtl p, .mcnt p, .stylec {
+     .peets p, .cbtl p, .mcnt p, .stylec, .wires p, wires2 p {
        line-height: 150%;
        font-size: 14px;
     }
@@ -829,10 +888,10 @@ ul  {
         "flow3 flow3 flow3 flow3 flow3 flow3 flow2 flow2 flow2 flow2 flow2 flow2"
         ". . bran bran bran bran bran bran bran bran . ."
         ". branp branp branp branp branp branp branp branp branp branp ."
-        ". . . tsk1 tsk1 tsk1 tsk2 tsk2 tsk2 . . ."
+        ". tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 ."
         ". branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 branp2 ."
-        ". colors colors colors colors colors colors clogos clogos clogos clogos . "
-        ". clogo clogo clogo clogo clogo clogo clogos clogos clogos clogos ."
+        ". colors colors colors colors colors colors colors colors colors colors . "
+        ". clogo clogo clogo clogo clogo clogo clogo clogo clogo clogo ."
         ". . . . stylec stylec stylec stylec . . . ."
         ". . wirep wirep wirep wirep wirep wirep wirep wirep . ."
         "wires wires wires wires wires wires wires wires wires wires wires wires"
