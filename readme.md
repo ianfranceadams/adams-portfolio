@@ -1,3 +1,2 @@
-# adams-portfolio
- https://ianfranceadams.github.io/adams-portfolio/
-Ian Adams Portfolio
+# This is the repository for my portfolio website:
+# www.ianadamsdesign.com

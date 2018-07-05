@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -189,7 +190,7 @@
      
      <div class="flow">
        <img src="images/SmallFlowBancha.png">
-         <p> Sample user flow.&nbsp; <a href="DragonwellFlows.pdf" target="new" style="border-bottom: 1px #523F6E solid">Click here</a> to open more flows as a PDF file in a new tab. </p>
+         <p id="croc"> Sample user flow.&nbsp; <a href="DragonwellFlows.pdf" target="new" style="border-bottom: 1px #523F6E solid">Click here</a> to open more flows as a PDF file in a new tab. </p>
     </div>
     
      
@@ -420,7 +421,7 @@
         
               function scrollProj3(x) {
     if (x.matches) { // If screen is small
-        document.querySelector('.flow3').scrollIntoView({ 
+        document.getElementById('croc').scrollIntoView({ 
               behavior: 'smooth', block: 'center'  
           });
     

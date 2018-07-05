@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">     
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -62,24 +63,25 @@
      <div class="csnav">    
        <ul>
          <li>
-             <a onclick="scrollProj()">
+             <a onclick="scrollProj(x)">
                <span>Overview</span>
              </a>
          </li><li>
-              <a onclick="scrollProj2()">
+              <a onclick="scrollProj2(x)">
                <span>Process</span>
              </a>
          </li><li>
-             <a onclick="scrollProj3()">
+             <a onclick="scrollProj3(x)">
                <span>Branding</span>
              </a>
            </li><li>
-             <a onclick="scrollProj4()">
+             <a onclick="scrollProj4(x)">
                <span>Conclusion</span>
              </a>
          </li>
        </ul>     
-     </div>    
+     </div> 
+     
      
      <div class="ban"> 
          
@@ -87,7 +89,7 @@
      
      </div>
      
-     <p class="position"> “&nbsp; asd” </p>
+     <p class="position"> The goal with Orion was to create a premium storage app for notes, images, and links.&nbsp; Thanks to user research, I designed (and partially coded up) an app that would emphasize simplicity and ease of organization. </p>
      
      <a class="resume" href="https://invis.io/ENC1E4KAG" target="new">
          Click to view InVision prototype 
@@ -107,11 +109,11 @@
      
      <h3 class="chal"> The Challenge </h3>
      
-     <p class="chalp"> The goal wasasing to use as possible.&nbsp; easily diulating to the senses. </p>
+     <p class="chalp"> Using a brief survey sent to my network and strategically posted on forums like Reddit and Slack, noticeable patterns emerged from the responses to questions regarding existing note taking, image saving, and link bookmarking methods.&nbsp; While some respondents expressed satisfaction with the basic utility of current methods, many also complained about the tendency to lose notes and inability to better organize or edit bookmarked links or saved images.  </p>
 
        <h3 class="sol"> The Solution </h3>
      
-     <p class="solp">  mixture of parameters, such as dark roast coffees from Asia or all flavored green teas.&nbsp; The cessprocess.  </p>
+     <p class="solp">  The solution was a fairly clean and open dashboard design on which users could easily lay out their various content items.&nbsp; A left-side drawer menu would enable easy toggling between either all of their items, just notes, just images, or just links.&nbsp; An easily visible add button with a dropdown menu would make adding new content quick and simple.&nbsp; This menu also has a “Boxes” section where users can create categories for more thorough organization of their various items.  </p>
      
      <a class="prot" href="https://invis.io/ENC1E4KAG" target="new">
          Click to view InVision prototype 
@@ -149,18 +151,18 @@
     
      <div class="peets">
        <img src="images/Ogoogledrive.png">
-         <p> lkjf;lkasdjf;laskdfj;akl </p>
+         <p> Google Drive is a major player in this space.  </p>
     </div>
 
   
      <div class="cbtl">
        <img src="images/Onotes.png">
-         <p> asdflkjadlfkasd;fklaj </p>
+         <p> The trusty, workaday Notes app on many smartphones seems to meet many users' basic need for taking down a quick note, but ultimate it has little to offer in the way of organization or aesthetic appeal. </p>
     </div>
     
      <div class="mcnt">
        <img src="images/Opadpaper.png">
-         <p> sldkfna;sdlfkjas;lkfja </p>
+         <p> It's worth noting the value of this formidable player from the analog world.&nbsp; Haphazard as it is, wouldn't it be great if an app like Orion could nonetheless mimic its satisfying tactile spontaneity?  </p>
     </div>
      
 
@@ -352,29 +354,136 @@
     <script>
         document.addEventListener("touchstart", function() {},false);
         
-         function scrollProj() {
-             document.querySelector('.chal').scrollIntoView({ 
-              behavior: 'smooth', block: 'start' 
-                  
-          });
-        } 
+        //Sticky Nav
         
-        function scrollProj2() {
-             document.querySelector('.pro').scrollIntoView({ 
-              behavior: 'smooth', block: 'start'  
-                 
-          });
-        } 
         
-        function scrollProj3() {
-             document.querySelector('.bran').scrollIntoView({ 
-              behavior: 'smooth', block: 'start'  
-          });
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.querySelector('.csnav');
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+         if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+         navbar.classList.remove("sticky");
         } 
+       }
         
-        function scrollProj4() {
-             document.querySelector('.conc').scrollIntoView({ 
-              behavior: 'smooth', block: 'start'  
+        
+        
+    
+        
+        
+                           //Menu Click and Scrolls:
+        
+        
+        
+        
+//Responsive Overview Section     
+
+        
+       
+              function scrollProj(x) {
+    if (x.matches) { // If screen is small
+        document.querySelector('.home').scrollIntoView({ 
+              behavior: 'smooth', block: 'center'  
+          });
+    
+    } else {  // normal size
+        document.querySelector('.solp').scrollIntoView({ 
+              behavior: 'smooth', block: 'center'  
+          });
+    
+       }
+        
+   }
+
+        var x = window.matchMedia("(max-width: 670px)");
+        x.addListener(scrollProj); // Attach listener function on state changes
+        
+        
+        
+        
+        
+//Responsive Process Section       
+        
+        
+        function scrollProj2(x) {
+    if (x.matches) { // If screen is small
+        document.querySelector('.ethi').scrollIntoView({   
+              behavior: 'smooth', block: 'center'  
+          });
+    
+    } else {  // normal size
+        document.querySelector('.prop').scrollIntoView({ 
+              behavior: 'smooth', block: 'center'  
+          });
+    
+       }
+        
+   }
+
+        var x = window.matchMedia("(max-width: 670px)");
+        x.addListener(scrollProj2); // Attach listener function on state changes
+        
+        
+        
+        
+        
+        
+//Responsive Branding Section       
+        
+        
+              function scrollProj3(x) {
+    if (x.matches) { // If screen is small
+        document.querySelector('.flow2').scrollIntoView({ 
+              behavior: 'smooth', block: 'center'  
+          });
+    
+    } else {  // normal size
+        document.querySelector('.branp').scrollIntoView({ 
+              behavior: 'smooth', block: 'center'  
+          });
+    
+       }
+        
+   }
+
+        var x = window.matchMedia("(max-width: 670px)");
+        x.addListener(scrollProj3); // Attach listener function on state changes
+        
+        
+        
+        
+//Responsive Conclusion Section      
+        
+        
+              function scrollProj4(x) {
+    if (x.matches) { // If screen is small
+        document.querySelector('.utest').scrollIntoView({ 
+              behavior: 'smooth', block: 'center'  
+          });
+    
+    } else {  // normal size
+        document.querySelector('.concp').scrollIntoView({ 
+              behavior: 'smooth', block: 'center'  
+          });
+    
+       }
+        
+   }
+
+        var x = window.matchMedia("(max-width: 670px)");
+        x.addListener(scrollProj4); // Attach listener function on state changes
+        
+        
+        
+//Back to top   
+        
+        function scrollProj5() {
+             document.querySelector('.logo').scrollIntoView({ 
+              behavior: 'smooth', block: 'end'  
           });
         }
     </script>
