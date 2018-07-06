@@ -192,7 +192,7 @@ ul  {
     width: 100vw;
     text-align: center;
     background: white;
-    padding: 17px 0px 20px;
+    padding: 4px 0px 7px;
     opacity: .95;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
@@ -267,7 +267,7 @@ ul  {
     line-height: 160%;
     letter-spacing: .4px;
     text-align: center;
-    margin: 100px 0px 70px;
+    margin: 100px 0px 60px;
 }
 
 .chalp {  
@@ -288,7 +288,7 @@ ul  {
     line-height: 160%;
     letter-spacing: .4px;
     text-align: center;
-    margin: 100px 0px 70px;
+    margin: 100px 0px 60px;
 }
 
 .solp {  
@@ -328,9 +328,8 @@ ul  {
 
 }
 
-.coffee1 img {
-    margin: 50px 10% 0px;
-    width: 80%;
+.coffee1 p {
+    padding: 0 20%;
 }
 
 .flow img {
@@ -369,21 +368,31 @@ ul  {
     grid-area: mcnt;
 }
 
-
-.peets img, .mcnt img, .flow2 img, .flow3 img, .tsk2 img,
-.colors img, .clogo img, .clogos img, .wires img, .abpic img, .utest img {
+.flow2 img, .flow3 img, .tsk2 img,
+.colors img, .clogo img, .clogos img, .wires img, 
+.abpic img, .utest img {
      width: 100%;
 }
 
-.peets p, .cbtl p, .mcnt p {
-    font-size: 20px;
-    
+
+
+.peets img {
+    width: 50%;
+    margin: 0 25% 10px;
 }
 
 .cbtl img {
-    width: 70%;
-    margin: 0 15%;
+    width: 34%;
+    margin: 0 33% 10px;
 }
+
+.mcnt img {
+    width: 50%;
+    margin: 0 25% 10px;
+}
+
+
+
 
 .comp {
     grid-area: comp;
@@ -414,7 +423,7 @@ ul  {
     line-height: 160%;
     letter-spacing: .4px;
     text-align: center;
-    margin: 100px 0px 70px;
+    margin: 100px 0px 60px;
 }
 
 .prop {  
@@ -463,7 +472,7 @@ ul  {
     line-height: 160%;
     letter-spacing: .4px;
     text-align: center;
-    margin: 0px 0px 70px;
+    margin: 30px 0px 60px
 }
 
 .bran {
@@ -602,8 +611,8 @@ ul  {
 }
 
  .abpic img:nth-child(4) {
-        width: 80%; 
-        margin: 5% 10% 0%;
+        width: 100%; 
+        margin: 5% 0% 0%;
     }
     
 
@@ -1111,9 +1120,8 @@ ul  {
        font-size: 14px;
     }
     
-    .coffee1 img {
-    margin: 0;
-    width: 100%;
+  .coffee1 p {
+       padding: 0;
 }
     
     .home2 img, .coffee1 img, .ethi img, .surv img, .pers img {
@@ -1122,20 +1130,18 @@ ul  {
     }
     
     .peets, .cbtl, .mcnt, .wires {
-        margin: 20px 0px;
+        margin: 30px 0px;
     }
     
     .abpic {
-        margin: 50px 0px;
+        margin: 40px 0px;
     }
     
-    .peets {
-        margin-top: 40px;
+    .peets p, .cbtl p, .mcnt p {
+        margin-top: 10px;
     }
+   
     
-    .mcnt {
-        margin-bottom: 50px;
-    }
     
     .pers p {
         margin-bottom: 40px;

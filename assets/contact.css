@@ -99,7 +99,6 @@ input, textarea, .send-button {
      padding-left: 20px;
      font-size: 24px;
      resize: none;
-     -webkit-appearance: none;
 }
 
 ::placeholder {
@@ -107,6 +106,7 @@ input, textarea, .send-button {
     font-weight: 200;
     color: black;
     opacity: 1; 
+    letter-spacing: .4px;
 }
 
 ::-moz-placeholder {
