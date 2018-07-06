@@ -5,9 +5,7 @@ html {
 }
 
 body {
-    
     font-family: "helvetica neue", helvetica, arial, sans-serif;
-
 }
 
 a {
@@ -524,11 +522,13 @@ ul  {
 .clogo {
     grid-area: clogo;
     margin-left: 2%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 
 .clogos img {
     margin-top: -2px;
+    
 }
 
 .stylec {
@@ -547,6 +547,7 @@ ul  {
 
 .wires img {
     margin: 0 1%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .wires img:nth-child(1) {
@@ -571,6 +572,7 @@ ul  {
 
 .wires2 img {
    margin: 0 1%;
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .wires2 img:nth-child(1) {
@@ -592,7 +594,7 @@ ul  {
 .wires3 img {
    margin: 2%;
     width: 45%;
-     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -775,7 +777,7 @@ ul  {
         "surv surv surv surv pers pers pers pers pers pers pers pers" 
         ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
         ". flow flow flow flow flow flow flow flow flow flow ." 
-        "flow3 flow3 flow3 flow3 flow3 flow3 flow2 flow2 flow2 flow2 flow2 flow2"
+        "flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2"
         ". . bran bran bran bran bran bran bran bran . ."
         ". branp branp branp branp branp branp branp branp branp branp ."
         ". . tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 . ."
@@ -883,7 +885,8 @@ ul  {
     }
     
      .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-     .peets p, .cbtl p, .mcnt p, .stylec, .wires p, .wires2 p, .wires3 p, .abpic p {
+     .peets p, .cbtl p, .mcnt p, .stylec, .wires p, .wires2 p, 
+     .wires3 p, .abpic p, .flow2 p {
        line-height: 130%;
        font-size: 14px;
     }

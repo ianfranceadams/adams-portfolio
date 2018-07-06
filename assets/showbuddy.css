@@ -244,7 +244,9 @@ ul  {
 
 
 
-
+.mhome img {
+    display: none;
+}
 
 .home img {
     margin: 30px 3% -100px;
@@ -327,7 +329,7 @@ ul  {
 
 .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
 .peets p, .cbtl p, .mcnt p, .stylec, .wires p, .abpic p, 
-.change1 p, .change2 p, .marq p {
+.change1 p, .change2 p, .marq p, .flow2 p {
     margin-top: 20px;
     text-align: center;
     line-height: 140%;
@@ -395,6 +397,10 @@ ul  {
 .wires img {
     width: 100%;
    
+}
+
+.wires img:nth-child(2) {
+    display: none;
 }
 
 #sbwire2 {
@@ -851,7 +857,8 @@ ul  {
     }
     
      .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-     .peets p, .cbtl p, .mcnt p, .stylec, .wires p, .change1 p, .change2 p {
+     .peets p, .cbtl p, .mcnt p, .stylec, .wires p, .change1 p, 
+     .change2 p, .flow2 p {
        line-height: 150%;
        font-size: 14px;
     }
@@ -1079,8 +1086,16 @@ ul  {
     
     
    .home img {
-   
+        display: none;
         margin: -10px 3% 0px;
+       
+    }
+    
+    .mhome img {
+        display: inline;
+        width: 94%;
+        margin: -10px 3% 0px;
+        
     }
     
     .position {
@@ -1110,7 +1125,8 @@ ul  {
     }
     
    .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-   .peets p, .cbtl p, .mcnt p, .stylec, .wires p, .abpic p, .change1 p, .change2 p {
+   .peets p, .cbtl p, .mcnt p, .stylec, .wires p, .abpic p, 
+    .change1 p, .change2 p, .flow2 p {
        line-height: 130%;
        font-size: 14px;
     }
@@ -1148,6 +1164,10 @@ ul  {
         margin-bottom: 40px;
     }
     
+    .flow {
+       display: none;
+    }
+    
     .flow2, .flow, .flow img {
         margin-top: -10px;
         margin-bottom: 0px;
@@ -1180,8 +1200,18 @@ ul  {
     
     .wires p, .abpic p, .change1 p, .change2 p {
         padding: 0;
-        
+
     }
+    
+    .wires img:nth-child(1) {
+    display: none;
+        
+}
+    
+    .wires img:nth-child(2) {
+    display: initial;
+        
+}
     .utest {
         margin: 50px 0px 0px;
     }
