@@ -676,8 +676,8 @@ ul  {
         "ban ban ban . case case case case . . . ."
         "ban ban ban dlogo dlogo dlogo dlogo dlogo dlogo . . ."
         "ban ban ban . . . . . . . . ."
-        ". csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav ."
-        ". . . position position position position position position . . ."
+        "csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav"
+        ". . position position position position position position position position . ."
         ". . resume resume resume resume resume resume resume resume . ."
         ". chal chal chal chal . . sol sol sol sol ."
         "chalp chalp chalp chalp chalp chalp solp solp solp solp solp solp"
@@ -831,11 +831,11 @@ ul  {
         "ban ban ban dlogo dlogo dlogo dlogo dlogo dlogo . . ."
         "ban ban ban . . . . . . . . ."
         "csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav"
-        ". . position position position position position position position position . ."
-        ". . resume resume resume resume resume resume resume resume . ."
+        ". position position position position position position position position position position ."
+        ". resume resume resume resume resume resume resume resume resume resume ."
         "chal chal chal chal chal chal sol sol sol sol sol sol"
         "chalp chalp chalp chalp chalp chalp solp solp solp solp solp solp"
-        ". . prot prot prot prot prot prot prot prot . ."
+        ". prot prot prot prot prot prot prot prot prot prot ."
         "home2 home2 home2 home2 coffee1 coffee1 coffee1 coffee1 ethi ethi ethi ethi" 
         ". . pro pro pro pro pro pro pro pro . ."
         ". prop prop prop prop prop prop prop prop prop prop ."
@@ -866,12 +866,17 @@ ul  {
     
      }
     
+    .csnav {
+        margin: 40px 0px 30px;
+    }
+    
     .csnav li {
-        margin: 40px 25px;
+        margin: 40px 17px;
     }
     
     .sticky {
         padding: 3px 0px 6px;
+            top: -40px;
     
     }
     

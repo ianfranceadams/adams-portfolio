@@ -92,7 +92,7 @@ ul  {
         "peets peets peets peets cbtl cbtl cbtl cbtl mcnt mcnt mcnt mcnt" 
         ". . . comp comp comp comp comp comp . . ."
         "surv surv surv pers pers pers pers pers pers pers pers pers" 
-        ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
+        ". . . flowp flowp flowp flowp flowp flowp . . ."
         "flow flow flow flow flow flow flow flow flow flow flow flow" 
         "flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2" 
         ". . bran bran bran bran bran bran bran bran . ."
@@ -338,11 +338,17 @@ ul  {
 }
 
 .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-.peets p, .cbtl p, .mcnt p, .stylec, .wires p, .wires2 p, .wires3 p, .abpic p {
+.peets p, .cbtl p, .mcnt p, .stylec, .wires p, .wires2 p, 
+.wires3 p, .abpic p, .flow2 p {
     margin-top: 20px;
     text-align: center;
     line-height: 140%;
     font-size: 18px;
+}
+
+
+.pers p {
+    padding: 0 15%;
 }
 
 .ethi {
@@ -435,14 +441,14 @@ ul  {
 
 .flowp {
     grid-area: flowp;
-    margin: 180px 0px 80px;
+    margin: 140px 0px 80px;
     
 }
 
 
 .flow2 {
     grid-area: flow2;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 .flow3 {
@@ -754,10 +760,10 @@ ul  {
         "ban ban ban . case case case case . . . ."
         "ban ban ban dlogo dlogo dlogo dlogo dlogo dlogo . . ."
         "ban ban ban . . . . . . . . ."
-        ". csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav ."
-        ". . . position position position position position position . . ."
+        "csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav"
+        ". . position position position position position position position position . ."
         ". . resume resume resume resume resume resume resume resume . ."
-        ". chal chal chal chal . . sol sol sol sol ."
+        "chal chal chal chal chal chal sol sol sol sol sol sol"
         "chalp chalp chalp chalp chalp chalp solp solp solp solp solp solp"
         ". . prot prot prot prot prot prot prot prot . ."
          "home2 home2 home2 home2 home2 home2 ethi ethi ethi ethi ethi ethi" 
@@ -918,12 +924,12 @@ ul  {
         "ban ban ban . case case case case . . . ."
         "ban ban ban dlogo dlogo dlogo dlogo dlogo dlogo . . ."
         "ban ban ban . . . . . . . . ."
-        ". csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav ."
-        ". . . position position position position position position . . ."
-        ". . resume resume resume resume resume resume resume resume . ."
-        ". chal chal chal chal . . sol sol sol sol ."
+        "csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav csnav"
+        ". position position position position position position position position position position ."
+        ". resume resume resume resume resume resume resume resume resume resume ."
+        "chal chal chal chal chal chal sol sol sol sol sol sol"
         "chalp chalp chalp chalp chalp chalp solp solp solp solp solp solp"
-        ". . prot prot prot prot prot prot prot prot . ."
+        ". prot prot prot prot prot prot prot prot prot prot ."
         "home2 home2 home2 home2 home2 home2 ethi ethi ethi ethi ethi ethi" 
         "coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1"      
         ". . pro pro pro pro pro pro pro pro . ."
@@ -956,9 +962,20 @@ ul  {
         "footnav footnav footnav contact contact contact contact contact contact contact . footlogo"
     
      }
+    .ban img {
+        margin-left: -30px;
+    }
+    
+    .csnav {
+        margin: 40px 0px 30px;
+    }
+    .csnav li {
+    margin: 40px 17px;
+}
     
     .sticky {
         padding: 3px 0px 6px;
+        top: -40px;
     
     }
     
@@ -1115,7 +1132,7 @@ ul  {
     }
     
    .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-   .peets p, .cbtl p, .mcnt p, .stylec {
+   .peets p, .cbtl p, .mcnt p, .stylec, .flow2 p {
        line-height: 130%;
        font-size: 14px;
     }
@@ -1123,6 +1140,10 @@ ul  {
   .coffee1 p {
        padding: 0;
 }
+    
+    .flow2 p {
+        margin-top: 0;
+    }
     
     .home2 img, .coffee1 img, .ethi img, .surv img, .pers img {
        margin-top: 50px;
@@ -1150,6 +1171,10 @@ ul  {
     .flow3, .flow2, .flow, .flow img {
         margin-top: 30px;
         margin-bottom: 0px;
+    }
+    
+    .flow2 img {
+        display: none;
     }
     
     .tsk1 {
