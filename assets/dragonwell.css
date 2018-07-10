@@ -185,7 +185,7 @@ ul  {
 
 .sticky {
     position: fixed;
-    top: -60px;
+    top: -61px;
     left: 0px;
     width: 100vw;
     text-align: center;
@@ -240,11 +240,20 @@ ul  {
     transition: .2s ease;
 }
 
-.resume:hover, .prot:hover, .prot2:hover {
+.prot2 {
+    border: 2px solid #405824;
+    color: #405824;
+}
+
+.resume:hover, .prot:hover {
   background: #571200;
   color: white;
 }
 
+.prot2:hover {
+  background: #405824;
+  color: white;
+}
 
 
     
@@ -368,6 +377,14 @@ ul  {
 .peets img, .cbtl img, .mcnt img, .flow2 img, .flow3 img, .tsk2 img,
 .colors img, .clogo img, .clogos img, .wires img, .abpic img, .utest img {
      width: 100%;
+}
+
+.abpic img:nth-child(2) {
+    display: none;
+}
+
+.utest img:nth-child(2) {
+    display: none;
 }
 
 .peets p, .cbtl p, .mcnt p {
@@ -803,14 +820,14 @@ ul  {
     }
     
      .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-     .peets p, .cbtl p, .mcnt p, .stylec {
+     .peets p, .cbtl p, .mcnt p, .stylec, .flow p {
        line-height: 150%;
        font-size: 14px;
     }
     
     
     .wires {
-        margin: 40px -30px;
+        margin: 40px 0px 40px 20px;
             
     }
     
@@ -853,7 +870,7 @@ ul  {
         "home2 home2 home2 home2 coffee1 coffee1 coffee1 coffee1 ethi ethi ethi ethi" 
         ". . pro pro pro pro pro pro pro pro . ."
         ". prop prop prop prop prop prop prop prop prop prop ."
-        "peets peets peets cbtl cbtl cbtl cbtl cbtl mcnt mcnt mcnt mcnt" 
+        "peets peets peets peets cbtl cbtl cbtl cbtl mcnt mcnt mcnt mcnt" 
         ". . comp comp comp comp comp comp comp comp . ."
         "surv surv surv surv pers pers pers pers pers pers pers pers" 
         ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
@@ -896,6 +913,15 @@ ul  {
     
     .sticky ul {
         font-size: 16px;
+    }
+    
+       .prot2 {
+    margin-bottom: 70px;
+    margin-top: 40px;
+}
+    
+    .back {
+       margin-bottom: 80px;
     }
 
 }
@@ -1007,11 +1033,11 @@ ul  {
 }
     
     .chal {
-        margin: 20px 0px 30px; 
+        margin: 40px 0px 30px; 
     }
     
     .sol, .pro, .conc, .bran {
-        margin: 40px 0px 30px;
+        margin: 70px 0px 30px;
         line-height: 120%;
     }
     
@@ -1071,6 +1097,21 @@ ul  {
     .abpic {
         margin: 30px 0px 25px
     }
+    
+    
+    .abpic img:nth-child(1) {
+    display: none;
+}
+    .abpic img:nth-child(2) {
+    display: initial;
+}   
+    
+    .utest img:nth-child(1) {
+    display: none;
+}
+    .utest img:nth-child(2) {
+    display: initial;
+}
     
     .peets {
         margin-top: 40px;
@@ -1150,7 +1191,7 @@ ul  {
 
 @media (max-width: 375px) {
     .csnav ul {
-        margin-left: 15px;
+        margin-left: 35px;
     }
     
     .sticky ul {

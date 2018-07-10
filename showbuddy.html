@@ -105,6 +105,7 @@
     
     <div class="mhome">
          <img src="images/ShowBuddyMobileScreens.png">
+        <p id="deer" style="opacity: 0"> deer deer deer deer deer deer deer deer deer deer deer deer deer deer deer deer deer deer </p>
      </div>  
     
     
@@ -141,7 +142,7 @@
         
      <div class="ethi">
        <img src="images/sbprofileedit.png">  
-         <p id="cow">Profile screen for users with an account to edit their basic info and location preferences using <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/switches/" target="new" style="border-bottom: 1px #141414 solid">switches</a>.&nbsp; Also a switch for users needing to filter out 21+ shows. </p>
+         <p id="cow">Profile screen for users with an account to edit their basic info and location preferences using switches.&nbsp; Also a switch for users needing to filter out 21+ shows. </p>
      </div>
      
      
@@ -159,18 +160,18 @@
     
      <div class="peets">
        <img src="images/bandsintown.jpg">
-         <p> <a href="https://www.bandsintown.com/" target="new" style="border-bottom: 1px #141414 solid">Most significant competitor</a> that syncs with social media and users' own music libraries.&nbsp; Best for users focused on particular artists rather than on making more open, spontaneous plans.&nbsp; Some app reviews complained about search complexity.  </p>
+         <p> Most significant competitor that syncs with social media and users' own music libraries.&nbsp; Best for users focused on particular artists rather than on making more open, spontaneous plans.&nbsp; Some app reviews complained about search complexity.  </p>
     </div>
 
   
      <div class="cbtl">
        <img src="images/songkick.jpg">
-         <p> <a href="https://www.songkick.com/" target="new" style="border-bottom: 1px #141414 solid">Songkick</a> is another attractive app with personalization features.&nbsp; Calendar search option is rather clunky though and searching by musical genre is not an option at all.&nbsp; No map, either. </p>
+         <p> Songkick is another attractive app with personalization features.&nbsp; Calendar search option is rather clunky though and searching by musical genre is not an option at all.&nbsp; No map, either. </p>
     </div>
     
      <div class="mcnt">
        <img src="images/loudie.png">
-         <p> <a href="https://www.loudie.com/" target="new" style="border-bottom: 1px #141414 solid">Loudie</a> is very socially oriented and successfully emphasizes spontaneity, although at the expense of search precision.&nbsp; It appears to only be set up for a couple major cities at this point. </p>
+         <p> Loudie is very socially oriented and successfully emphasizes spontaneity, although at the expense of search precision.&nbsp; It appears to only be set up for a couple major cities at this point. </p>
     </div>
      
 
@@ -200,7 +201,7 @@
      
     <div class="flow2">
        <img src="images/SBWireScreens.png">
-        <p><a href="ShowBuddyUserFlows.pdf" target="new" style="border-bottom: 1px #141414 solid">Click here</a> to open user flows as a PDF in a new tab </p>
+        <p id="crow"><a href="ShowBuddyUserFlows.pdf" target="new" style="border-bottom: 1px #141414 solid">Click here</a> to open user flows as a PDF in a new tab </p>
     </div>
     
    
@@ -248,9 +249,11 @@
        <img src="images/SBMobileLofi.png">
          <p> <a href="ShowBuddyLoFi.pdf" target="new" style="border-bottom: 1px #141414 solid">Click here</a> to open low fidelity wireframes as a PDF in a new tab </p>
        <img id="sbwire2" src="images/SB1st6UIScreens.png">   
-         <p> First user interface design iteration featuring appropriate navigation bars and toolbars. <a href="ShowBuddyLoFi.pdf" target="new" style="border-bottom: 1px #141414 solid">Click here</a> to open more screens as a PDF in a new tab. </p>
+       <img id="sbwire2" src="images/SB1st6mobile.png">   
+         <p> First user interface design iteration featuring appropriate navigation bars and toolbars. <a href="SB1st6UIScreens.pdf" target="new" style="border-bottom: 1px #141414 solid">Click here</a> to open more screens as a PDF in a new tab. </p>
        <img id="sbwire3" src="images/SBSearchUpdates.png">
-         <p> Further progress featuring a stepper control for easily setting one's distance radius and switches (rather than check boxes) for clearly turning on and off various preferences. <a href="ShowBuddyLoFi.pdf" target="new" style="border-bottom: 1px #141414 solid">Click here</a> to open more screens as a PDF in a new tab. </p>
+       <img id="sbwire3" src="images/SBSearchMobile.png">
+         <p> Further progress featuring a stepper control for easily setting one's distance radius and switches (rather than check boxes) for clearly turning on and off various preferences. <a href="SBSearchUpdates.pdf" target="new" style="border-bottom: 1px #141414 solid">Click here</a> to open more screens as a PDF in a new tab. </p>
     </div>
      
     <p class="abtest"> During this stage, <span>A / B tests</span> on UsabilityHub and in person <span>user testing</span> refined elements like the list view and the ideal shape for map pins.&nbsp; White backgrounds were preferable in browsing settings for readability.   
@@ -383,13 +386,13 @@
         
               function scrollProj(x) {
     if (x.matches) { // If screen is small
-        document.querySelector('.home').scrollIntoView({ 
+        document.getElementById('deer').scrollIntoView({ 
               behavior: 'smooth', block: 'center'  
           });
     
     } else {  // normal size
-        document.querySelector('.prot').scrollIntoView({ 
-              behavior: 'smooth', block: 'end'  
+        document.querySelector('.chalp').scrollIntoView({ 
+              behavior: 'smooth', block: 'center'  
           });
     
        }
@@ -434,7 +437,7 @@
         
               function scrollProj3(x) {
     if (x.matches) { // If screen is small
-        document.querySelector('.flow2').scrollIntoView({ 
+        document.getElementById('crow').scrollIntoView({ 
               behavior: 'smooth', block: 'center'  
           });
     

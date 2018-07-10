@@ -337,7 +337,7 @@ ul  {
 
 .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
 .peets p, .cbtl p, .mcnt p, .stylec, .wires p, .wires2 p, 
-.wires3 p, .abpic p, .flow2 p {
+.wires3 p, .abpic p, .flow2 p, .utest p {
     margin-top: 20px;
     text-align: center;
     line-height: 140%;
@@ -533,7 +533,7 @@ ul  {
 
 .stylec {
     grid-area: stylec;
-    margin: -30px 0px 90px;
+    margin: 30px 0px 90px;
 }
 
 .wirep {
@@ -560,7 +560,7 @@ ul  {
     width: 23%;
 }
 
-.wires p, .wires2 p, .wires3 p, .abpic p {
+.wires p, .wires2 p, .wires3 p, .abpic p, .utest p {
     margin-top: 35px;
     padding: 0px 20%;
 }
@@ -631,6 +631,22 @@ ul  {
 .utest {
     grid-area: utest;
     margin: 100px 0px;
+}
+
+.utest img {
+    margin: 0 3%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.utest img:nth-child(1) {
+    width: 27%;
+    margin-left: 2%;
+} 
+.utest img:nth-child(2) {
+    width: 27%;
+}
+.utest img:nth-child(3) {
+    width: 28%;
 }
 
 .conc {
@@ -807,7 +823,9 @@ ul  {
          
      }
     
-    
+    .ban img {
+        margin-left: -20%;
+    }
     
     .name {
          margin-top: 40px;
@@ -821,9 +839,9 @@ ul  {
     }
 
     .sticky {
-        padding: 10px 0px 12px;
+        top: -61px;
+    padding: 3px 0px 6px;
     }
-    
     .position {
          margin: 10px 0px 10px;
          font-size: 20px;
@@ -886,7 +904,7 @@ ul  {
     
      .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
      .peets p, .cbtl p, .mcnt p, .stylec, .wires p, .wires2 p, 
-     .wires3 p, .abpic p, .flow2 p {
+     .wires3 p, .abpic p, .flow2 p, .utest p {
        line-height: 130%;
        font-size: 14px;
     }
@@ -897,12 +915,28 @@ ul  {
             
     }
     
+    .wires img:nth-child(1) {
+    width: 34%;
+}
+    
+.wires2 img:nth-child(1) {
+    width: 22%;
+}
     .abpic {
         margin: 50px 0px 40px
     } 
     
     .utest {
         margin: 60px 0px 20px;
+    }
+    
+    .utest img:nth-child(1) {
+    width: 27%;
+    margin-left: 30px;
+}
+.utest img {
+    margin: 0px 2%;
+    
     }
     
     .prot2 {
@@ -984,6 +1018,15 @@ ul  {
     
     .sticky ul {
         font-size: 16px;
+    }
+    
+       .prot2 {
+    margin-bottom: 70px;
+    margin-top: 40px;
+}
+    
+    .back {
+       margin-bottom: 80px;
     }
     
 }
@@ -1113,11 +1156,11 @@ ul  {
     }
     
     .chal {
-        margin: 20px 0px 30px; 
+        margin: 40px 0px 30px; 
     }
     
     .sol, .pro, .conc, .bran {
-        margin: 40px 0px 30px;
+        margin: 70px 0px 30px;
         line-height: 120%;
     }
     
@@ -1135,7 +1178,7 @@ ul  {
     }
     
    .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-   .peets p, .cbtl p, .mcnt p, .stylec, .flow2 p {
+   .peets p, .cbtl p, .mcnt p, .stylec, .flow2 p, .utest p {
        line-height: 130%;
        font-size: 14px;
     }
@@ -1155,6 +1198,10 @@ ul  {
     
     .peets, .cbtl, .mcnt, .wires {
         margin: 30px 0px;
+    }
+    
+    .mcnt {
+        margin-bottom: 60px;
     }
     
     .abpic {
@@ -1233,7 +1280,7 @@ ul  {
 }
     
     
-    .wires p, .wires2 p, .wires3 p, .abpic p {
+    .wires p, .wires2 p, .wires3 p, .abpic p, .utest p {
         padding: 0;
         margin-top: 0;
     }
@@ -1249,9 +1296,25 @@ ul  {
     }
     
     .utest {
-        margin: 50px 0px 0px;
+        margin: 20px 0px 0px;
     }
     
+    .utest img {
+    margin: 7% 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.utest img:nth-child(1) {
+    width: 100%;
+    margin-left: 0;
+   
+} 
+.utest img:nth-child(2) {
+    width: 100%;
+}
+.utest img:nth-child(3) {
+    width: 100%;
+}
     .prot2 {
         margin-bottom: 50px;
         

@@ -262,7 +262,7 @@ ul  {
     line-height: 160%;
     letter-spacing: .4px;
     text-align: center;
-    margin: 100px 0px 70px;
+    margin: 100px 0px 60px;
 }
 
 .chalp {  
@@ -283,7 +283,7 @@ ul  {
     line-height: 160%;
     letter-spacing: .4px;
     text-align: center;
-    margin: 100px 0px 70px;
+    margin: 100px 0px 60px;
 }
 
 .solp {  
@@ -400,6 +400,14 @@ ul  {
 }
 
 .wires img:nth-child(2) {
+    display: none;
+}
+
+.wires img:nth-child(5) {
+    display: none;
+}
+
+.wires img:nth-child(8) {
     display: none;
 }
 
@@ -752,7 +760,7 @@ ul  {
         ". . comp comp comp comp comp comp comp comp . ."
         "surv surv surv surv pers pers pers pers pers pers pers pers" 
         ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
-        ". flow flow flow flow flow flow flow flow flow flow ." 
+        "flow flow flow flow flow flow flow flow flow flow flow flow" 
         "flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2"
         ". . bran bran bran bran bran bran bran bran . ."    
         ". branp branp branp branp branp branp branp branp branp branp ."
@@ -801,7 +809,8 @@ ul  {
     }
     
     .sticky {
-        padding: 10px 0px 12px;
+        top: -61px;
+        padding: 3px 0px 6px;
     }
 
     .position {
@@ -854,6 +863,10 @@ ul  {
     .flow2, .flow, .flow img {
         margin-top: 0px;
         margin-bottom: 10px;
+    }
+    
+    .flow2 {
+        margin-top: -18%;
     }
     
      .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
@@ -961,7 +974,7 @@ ul  {
     margin-top: 40px;
 }
     .back {
-       margin-bottom: 90px;
+       margin-bottom: 80px;
     }
     
 }
@@ -1111,6 +1124,10 @@ ul  {
         line-height: 120%;
     }
     
+    .bran {
+        margin-top: 70px;
+    }
+    
     
    .chalp, .solp, .prop, .flowp, .comp, .wirep, .abtest, .mockp, .branp, .concp, .branp2  {
         font-size: 18px;
@@ -1142,6 +1159,11 @@ ul  {
     
     .peets, .cbtl, .mcnt, .wires {
         margin: 20px 0px;
+    }
+    
+    .wires  {
+        
+        margin-bottom: 30px;
     }
     
     .abpic {
@@ -1191,7 +1213,7 @@ ul  {
     }
     
     .clogos, .colors {
-        margin-top: 20px;
+        margin-top: 40px;
     }
     
     .stylec {
@@ -1209,6 +1231,26 @@ ul  {
 }
     
     .wires img:nth-child(2) {
+    display: initial;
+        
+}
+    
+    .wires img:nth-child(4) {
+    display: none;
+        
+}
+    
+    .wires img:nth-child(5) {
+    display: initial;
+        
+}
+    
+    .wires img:nth-child(7) {
+    display: none;
+        
+}
+    
+    .wires img:nth-child(8) {
     display: initial;
         
 }

@@ -233,6 +233,10 @@ p {
    
 }
 
+.hovtext img {
+    display: none;
+}
+
 .hovtext ul {
    
     font-size: 20px;
@@ -324,7 +328,9 @@ p {
     margin: 25%;
 }
 
-
+.dragmob, .budmob, .orionmob {
+    display: none;
+}
 
 
 
@@ -618,60 +624,61 @@ p {
     
     .drag img {
        height: 70px;
+        z-index: 0;
        
      }
     
      .bud img {
        height: 80px;
        margin: 35%;
+         z-index: 0;
      }
     
     .orion img {
        height: 60px;
        margin: 40% 0%;
+        z-index: 0;
      }
     
     
     
     
+    
     .dragoverlay, .budoverlay, .orionoverlay {
-       height: 89%;
+       opacity: 1;
     }
     
-    .drag:click .dragoverlay {
-       opacity: .9;
-   
-   
-    }
-
-  
+    .drag:hover img, .bud:hover img, .orion:hover img {
+    filter: none;
+       
+}
     
-    .bud:click .budoverlay {
-    opacity: .9;
-   
-    }
-
-    .bud:click img {
-    filter: blur(3px);
-    
-    } 
-    
-    .orion:click .orionoverlay {
-    opacity: .9;
-   
-    }
-
-  /* .drag:click img {
-    filter: blur(3px);
-    
-    }  */
-    
-    
-    
-    .dragoverlay:click .dragoverlay {
+    #bye {
         opacity: 0;
     }
     
+    #hidrag{
+       margin: -7% 0 10% 18%;
+    }
+    
+    #hibud{
+        margin: -5% 0 10% 33%;
+    }
+     
+    #hiorion{
+        margin: -10% 0 10% 29%;
+    }
+
+    .hovtext ul {
+        display: none;
+    }
+  
+   .hovtext img {
+    display: initial;
+   
+}
+    
+
     .hovtext p, .hovtext ul {
         font-size: 16px;
     }
@@ -681,17 +688,17 @@ p {
         
     }
     
-    .hovbutton:active {
+    .hovbutton:click {
     background: white;
     color: #384B21;
 }
     
-    .orion-button:active {
+    .orion-button:click {
     background: white;
     color: #001B4C;
 } 
     
-    .bud-button:active {
+    .bud-button:click {
     background: white;
     color: #141414;
 }
@@ -699,12 +706,11 @@ p {
     
     
     .hovtext p {
-        margin-top: -10%;
+        margin-top: 0%;
+        margin-bottom: 8%;
     }
     
-    .hovtext ul {
-    margin: 5% 0% 7%;
-}
+  
     .hovbutton {
         margin: 0px 25%;
         padding: 10px 0% 11px;
@@ -748,14 +754,23 @@ p {
      }
     
      
-    .hovtext p {
-        margin-top: -1%;
-        margin-bottom: 0;
+   #hidrag {
+    margin: -2% 0 10% 14%;
     }
     
-    .hovtext ul {
-        margin: 2% 0% 3%;
+    #hibud {
+    margin: -2% 0 5% 30%;
     }
+    
+    #hiorion {
+    margin: -3% 0 10% 27%;
+    }
+        
+    
+    .hovtext p {
+   
+    margin-bottom: 6%;
+}
     
     
     .contact li {
