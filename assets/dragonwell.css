@@ -820,7 +820,7 @@ ul  {
     }
     
      .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-     .peets p, .cbtl p, .mcnt p, .stylec, .flow p {
+     .peets p, .cbtl p, .mcnt p, .stylec, .flow p, .wires p {
        line-height: 150%;
        font-size: 14px;
     }
@@ -829,6 +829,10 @@ ul  {
     .wires {
         margin: 40px 0px 40px 20px;
             
+    }
+    
+    .wires p, .flow p {
+        margin-top: 20px;
     }
     
     .abpic {

@@ -251,6 +251,7 @@
     <div class="utest">
        <img src="images/utest.png">
        <img src="images/utestmobile.png">
+         <p id="deer" style="opacity: 0"> deer deer deer deer deer deer deer deer deer deer deer deer deer deer deer deer deer deer </p>
     </div>
     
    
@@ -450,7 +451,7 @@
         
               function scrollProj4(x) {
     if (x.matches) { // If screen is small
-        document.querySelector('.utest').scrollIntoView({ 
+        document.getElementById('deer').scrollIntoView({ 
               behavior: 'smooth', block: 'center'  
           });
     
