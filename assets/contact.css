@@ -123,6 +123,10 @@ textarea {
     padding: 15px 20px;
     color: #2C1352;
     resize: none;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 textarea::placeholder {
