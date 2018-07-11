@@ -536,6 +536,16 @@ p {
     filter: none;
        
 }
+    .drag:hover .dragoverlay {
+    opacity: 1;
+}
+    .bud:hover .budoverlay {
+    opacity: 1;
+}
+    .orion:hover .orionoverlay {
+    opacity: 1;
+}
+
     
     #bye {
         opacity: 0;
@@ -779,15 +789,15 @@ p {
     }
     
     #hidrag{
-       margin: -7% 0 10% 18%;
+       margin: -4% 0 10% 18%;
     }
     
     #hibud{
-        margin: -5% 0 10% 33%;
+        margin: -1% 0 10% 33%;
     }
      
     #hiorion{
-        margin: -10% 0 10% 29%;
+        margin: -5% 0 10% 29%;
     }
 
     .hovtext ul {
