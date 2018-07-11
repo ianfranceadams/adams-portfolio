@@ -524,7 +524,8 @@ p {
     
     .subname {
       line-height: 130%;
-    }
+      margin: 1px 0px;
+     }
     
     .position {
         margin-top: -60px;
