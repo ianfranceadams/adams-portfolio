@@ -511,7 +511,7 @@ p {
     
     
     .drag img {
-       height: 45px;
+       height: 50px;
        margin: 35%;
      }
     
@@ -524,9 +524,47 @@ p {
        height: 50px;
      }
     
-    .dragoverlay, .budoverlay, .orionoverlay {
-        height: 80%
+    
+    
+    
+    
+   .dragoverlay, .budoverlay, .orionoverlay {
+       opacity: 1;
     }
+    
+    .drag:hover img, .bud:hover img, .orion:hover img {
+    filter: none;
+       
+}
+    
+    #bye {
+        opacity: 0;
+    }
+    
+    #hidrag{
+       margin: -5% 0 25% 13%;
+    }
+    
+    #hibud{
+        margin: -5% 0 22% 31%;
+    }
+     
+    #hiorion{
+        margin: -8% 0 22% 25%
+    }
+
+    .hovtext ul {
+        display: none;
+    }
+  
+   .hovtext img {
+    display: initial;
+   
+}
+    
+    
+    
+    
     
     .hovtext ul, .hovtext p, .hovbutton {
         font-size: 12px;
@@ -539,12 +577,18 @@ p {
     
     .hovtext p {
         margin-top: -15%;
-        margin-bottom: 2%;
+        margin-bottom: 9%;
+    }
+    
+    .budoverlay p {
+        margin-bottom: 6%;
+    
     }
     
     .hovbutton {
         margin: 0 20%;
         padding: 8px 0px;
+        border-width: 2px;
     }
     
      .footlogo img {
@@ -558,7 +602,7 @@ p {
 /* ------------------ Landscape phones ------------------------*/
 
 
-@media (max-width: 640px) {
+@media (max-width: 670px) {
     
     .container {
         grid-gap: 0px 20px;
@@ -573,11 +617,88 @@ p {
     
      }   
     
+    .subname {
+       line-height: 130%;
+    }
+    
+    #hidrag{
+        margin: -6% 0 25% 9%;
+    }
+    
+    #hibud{
+        margin: -5% 0 20% 29%;
+    }
+     
+    #hiorion{
+            margin: -7% 0 25% 20%;
+    }
+    .hovtext p {
+        font-size: 10px;
+    }
+    
+    .dragoverlay p {
+        margin-bottom: 8%;
+    }
+
+    .hovbutton {
+        margin: 0 15%;
+    }
+    .bud img {
+        height: 55px;
+    }
+    
     .drag img {
-       height: 45px;
+       height: 50px;
      }
 }
 
+    
+    @media (max-width: 568px) {
+        
+        
+        #hidrag{
+        margin: -8% 0 20% 9%;
+    }
+    
+    #hibud{
+        margin: -7% 0 20% 29%;
+    }
+     
+    #hiorion{
+            margin: -8% 0 23% 20%;
+    }
+    .hovtext p {
+        font-size: 10px;
+    }
+    
+    .dragoverlay p {
+        margin-bottom: 5%;
+    }
+        
+    .orionoverlay p {
+        margin-bottom: 6%;
+    }
+
+    .hovbutton {
+        margin: 0 7%;
+    }
+    .bud img {
+        height: 45px;
+    }
+    
+    .drag img {
+       height: 44px;
+     }
+        
+        .orion img {
+            height: 40px;
+        }    
+        
+        
+        
+        
+        
+}    
 
 /* ------------------ Bigger phones ------------------------*/
 
@@ -611,7 +732,7 @@ p {
     
     .subname {
         margin: 10px 0px 15px;
-        line-height: 130%;
+        
     }
     
     .background {
@@ -771,7 +892,9 @@ p {
    
     margin-bottom: 6%;
 }
-    
+    .hovbutton {
+        margin: 0px 20%;
+    }
     
     .contact li {
        margin: 0px 8px;

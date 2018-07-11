@@ -464,6 +464,9 @@ p {
          
      }
     
+    .bloc {
+        margin-top: 4px;
+    }
     .skills, .exp, .work {
         margin: 20px 0px;
     }
@@ -519,6 +522,17 @@ p {
     
 @media (max-width: 731px) {
     
+    .subname {
+      line-height: 130%;
+    }
+    
+    .position {
+        margin-top: -60px;
+    }
+    
+    .rescontact {
+        margin-top: -125px;
+    }
      .exp {
         margin-left: 99px;
   }
@@ -560,10 +574,12 @@ p {
     
     .name {
         margin-top: 50px;
+        margin-bottom: 0px;
     }
     
     .subname {
         margin: 5px 0px;
+        line-height: 130%;
     }
     
     .rescontact {
@@ -579,8 +595,13 @@ p {
     
     .edu {
         margin-top: 68px;
+        margin-bottom: 0px;
+        margin-left: -1px;
     }
     
+    .bloc {
+            margin-top: 12px;
+    }
    .skills, .exp, .work {
         margin: 20px 0px;
     }
@@ -633,6 +654,16 @@ p {
     .edu {
         margin-top: 116px;
   }
+    
+    .resume {
+        padding: 12px 20px 14px;
+            margin: 50px 0px 60px;
+    }
+    .contact {
+       margin-left: 7px;
+    }
+    .contact li {
+        margin: 0px 8px;
     
 }
 
