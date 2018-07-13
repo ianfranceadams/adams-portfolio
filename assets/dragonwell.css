@@ -1088,7 +1088,9 @@ ul  {
     
     
     .pers {
-       margin-top: 12%;
+       margin: 10% 0 12%;
+       background-color: #E2EBD9;
+        padding: 6% 8% 7% 8%;
     }
     
     
@@ -1096,8 +1098,11 @@ ul  {
        display: none;
     }
     
+   
+    
     .mobilepers {
       display: initial;
+        
 }
     
     .mobilepers img {
@@ -1123,7 +1128,7 @@ ul  {
     }
     
     #quote {
-        margin: -6% 12% 10% 18%;
+        margin: 0% 9% 8% 13%;
         font-weight: normal;
         letter-spacing: -.4px;
         color: #405824;
@@ -1185,9 +1190,7 @@ ul  {
         margin-bottom: 50px;
     }
     
-    .pers p {
-        margin-bottom: 40px;
-    }
+    
     
     .flow3, .flow2, .flow, .flow img {
         margin-top: 30px;
