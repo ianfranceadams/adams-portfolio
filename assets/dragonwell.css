@@ -194,7 +194,6 @@ ul  {
     padding: 4px 0px 7px;
     opacity: .95;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-   
     transition: all .2s linear;
 }
 
@@ -428,6 +427,9 @@ ul  {
     
 }
 
+.mobilepers {
+    display: none;
+}
 
 .flow {
     grid-area: flow;
@@ -1083,6 +1085,53 @@ ul  {
     .peets, .cbtl, .mcnt, .wires {
         margin: 20px 0px;
     }
+    
+    
+    .pers {
+       margin-top: 12%;
+    }
+    
+    
+    .pers img {
+       display: none;
+    }
+    
+    .mobilepers {
+      display: initial;
+}
+    
+    .mobilepers img {
+      display: initial;
+      width: 70%;
+      margin-top: 7%;
+}
+    
+    
+    .mobilepers h3 {
+        color: #405824;
+        font-weight: bold;
+        font-size: 26px;
+        letter-spacing: -.4px;
+    }
+    
+    .mobilepers p {
+        text-align: left;
+        letter-spacing: .4px;
+        font-size: 20px;
+        margin-top: 6%;
+        
+    }
+    
+    #quote {
+        margin: -6% 12% 10% 18%;
+        font-weight: normal;
+        letter-spacing: -.4px;
+        color: #405824;
+        
+    }
+    
+    
+    
     
     .wires img {
         margin: 5% 0;
