@@ -91,6 +91,7 @@ ul  {
         ". peets peets peets peets cbtl cbtl cbtl mcnt mcnt mcnt ." 
         ". . . comp comp comp comp comp comp . . ."
         "surv surv surv surv surv surv pers pers pers pers pers pers" 
+         ". . . . . . persp persp persp persp persp persp"   
         ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
         "flow flow flow flow flow flow flow flow flow flow flow flow" 
         ". flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 .    "
@@ -215,7 +216,7 @@ ul  {
 
 .ban img {
     width: 140%;
-    opacity: .5;
+    opacity: .3;
     margin-top: 0px
 }
 
@@ -334,7 +335,7 @@ ul  {
 
 .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
 .peets p, .cbtl p, .mcnt p, .stylec, .wires p, .abpic p, 
-.change1 p, .change2 p, .marq p, .flow2 p {
+.change1 p, .change2 p, .marq p, .flow2 p, .persp {
     margin-top: 20px;
     text-align: center;
     line-height: 140%;
@@ -449,6 +450,13 @@ ul  {
     
 }
 
+.mobilepers {
+    display: none;
+}
+
+.persp {
+    grid-area: persp;
+}
 
 .flow {
     grid-area: flow;
@@ -764,6 +772,8 @@ ul  {
         "peets peets peets peets cbtl cbtl cbtl cbtl mcnt mcnt mcnt mcnt" 
         ". . comp comp comp comp comp comp comp comp . ."
         "surv surv surv surv pers pers pers pers pers pers pers pers" 
+        ". . . . persp persp persp persp persp persp persp persp"   
+
         ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
         "flow flow flow flow flow flow flow flow flow flow flow flow" 
         "flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2"
@@ -797,7 +807,7 @@ ul  {
     
     .ban img {
          width: 140%;
-         opacity: .5;
+        
          margin-left: -10%;
          margin-top: 0px;
     }
@@ -876,7 +886,7 @@ ul  {
     
      .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
      .peets p, .cbtl p, .mcnt p, .stylec, .wires p, .change1 p, 
-     .change2 p, .flow2 p {
+     .change2 p, .flow2 p, .persp {
        line-height: 150%;
        font-size: 14px;
     }
@@ -931,6 +941,7 @@ ul  {
         "peets peets peets peets cbtl cbtl cbtl cbtl mcnt mcnt mcnt mcnt" 
         ". . comp comp comp comp comp comp comp comp . ."
         "surv surv surv surv surv pers pers pers pers pers pers pers" 
+         ". . . . . persp persp persp persp persp persp persp"   
         ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
         "flow flow flow flow flow flow flow flow flow flow flow flow" 
         "flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2"
@@ -1021,6 +1032,7 @@ ul  {
         "comp comp comp comp comp comp"
         "surv surv surv surv surv surv"
         "pers pers pers pers pers pers" 
+        "persp persp persp persp persp persp"
         "flowp flowp flowp flowp flowp flowp"
         "flow flow flow flow flow flow" 
         "flow2 flow2 flow2 flow2 flow2 flow2"     
@@ -1057,7 +1069,7 @@ ul  {
       
     .ban img {
         width: 90%;
-        opacity: .5;
+        
         margin-left: -15%;
         margin-top: -10px;
     }
@@ -1148,7 +1160,7 @@ ul  {
     
    .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
    .peets p, .cbtl p, .mcnt p, .stylec, .wires p, .abpic p, 
-    .change1 p, .change2 p, .flow2 p {
+    .change1 p, .change2 p, .flow2 p, .persp {
        line-height: 130%;
        font-size: 14px;
     }
@@ -1165,6 +1177,64 @@ ul  {
     .peets, .cbtl, .mcnt, .wires {
         margin: 20px 0px;
     }
+    
+    
+    .pers {
+    margin: 10% 0 0%;
+    border-radius: 8px;
+    background-color: #e5e5e5;
+    padding: 6% 8% 7% 8%;
+}
+    
+    
+    .persp {
+        margin-bottom: 25%;
+        padding: 0 3%;
+    }
+    
+    .pers img {
+       display: none;
+    }
+    
+    .mobilepers {
+      display: initial;
+        
+}
+    
+    .mobilepers img {
+      display: initial;
+      width: 70%;
+      margin: 7% 15% 0%;
+        box-shadow: none;
+}
+    
+    
+    .mobilepers h3 {
+        color: #141414;
+        font-weight: bold;
+        font-size: 26px;
+        letter-spacing: -.4px;
+        text-align: center;
+    }
+    
+    .mobilepers p {
+        
+        letter-spacing: .4px;
+        font-size: 18px;
+        margin-top: 6%;
+        
+    }
+    
+    #quote {
+        margin: 0% -3% 0% -3%;
+        font-weight: normal;
+        letter-spacing: -.4px;
+        color: #141414;
+        font-size: 24px;
+    }
+    
+    
+    
     
     .wires  {
         
@@ -1187,9 +1257,7 @@ ul  {
         margin-bottom: 50px;
     }
     
-    .pers p {
-        margin-bottom: 40px;
-    }
+   
     
     .flow {
        display: none;

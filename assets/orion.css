@@ -90,6 +90,7 @@ ul  {
         "peets peets peets peets cbtl cbtl cbtl cbtl mcnt mcnt mcnt mcnt" 
         ". . . comp comp comp comp comp comp . . ."
         "surv surv surv pers pers pers pers pers pers pers pers pers" 
+        ". . . persp persp persp persp persp persp persp persp persp"    
         ". . . flowp flowp flowp flowp flowp flowp . . ."
         "flow flow flow flow flow flow flow flow flow flow flow flow" 
         "flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2" 
@@ -343,7 +344,7 @@ ul  {
 
 .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
 .peets p, .cbtl p, .mcnt p, .stylec, .wires p, .wires2 p, 
-.wires3 p, .abpic p, .flow2 p, .utest p {
+.wires3 p, .abpic p, .flow2 p, .utest p, .persp {
     margin-top: 20px;
     text-align: center;
     line-height: 140%;
@@ -351,9 +352,6 @@ ul  {
 }
 
 
-.pers p {
-    padding: 0 15%;
-}
 
 .ethi {
     grid-area: ethi;
@@ -418,6 +416,15 @@ ul  {
 .pers {
     grid-area: pers;
     
+}
+
+.persp {
+    grid-area: persp;
+    padding: 0 10%;
+}
+
+.mobilepers {
+    display: none;
 }
 
 
@@ -794,9 +801,10 @@ ul  {
         "coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1"
         ". . pro pro pro pro pro pro pro pro . ."
         ". prop prop prop prop prop prop prop prop prop prop ."
-        "peets peets peets cbtl cbtl cbtl cbtl cbtl mcnt mcnt mcnt mcnt" 
+        "peets peets peets peets cbtl cbtl cbtl cbtl mcnt mcnt mcnt mcnt" 
         ". . comp comp comp comp comp comp comp comp . ."
-        "surv surv surv surv pers pers pers pers pers pers pers pers" 
+        "surv surv surv pers pers pers pers pers pers pers pers pers" 
+        ". . . persp persp persp persp persp persp persp persp persp"    
         ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
         ". flow flow flow flow flow flow flow flow flow flow ." 
         "flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2"
@@ -877,7 +885,7 @@ ul  {
     }
     
     .cbtl {
-        margin-top: 35px;
+        margin-top: 0px;
     }
     
     .comp {
@@ -910,7 +918,7 @@ ul  {
     
      .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
      .peets p, .cbtl p, .mcnt p, .stylec, .wires p, .wires2 p, 
-     .wires3 p, .abpic p, .flow2 p, .utest p {
+     .wires3 p, .abpic p, .flow2 p, .utest p, .persp {
        line-height: 130%;
        font-size: 14px;
     }
@@ -977,12 +985,13 @@ ul  {
         "coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1 coffee1"      
         ". . pro pro pro pro pro pro pro pro . ."
         ". prop prop prop prop prop prop prop prop prop prop ."
-        "peets peets peets cbtl cbtl cbtl cbtl cbtl mcnt mcnt mcnt mcnt" 
+        "peets peets peets peets cbtl cbtl cbtl cbtl mcnt mcnt mcnt mcnt" 
         ". . comp comp comp comp comp comp comp comp . ."
-        "surv surv surv surv pers pers pers pers pers pers pers pers" 
+        "surv surv surv pers pers pers pers pers pers pers pers pers" 
+        ". . . persp persp persp persp persp persp persp persp persp"    
         ". . flowp flowp flowp flowp flowp flowp flowp flowp . ."
         ". flow flow flow flow flow flow flow flow flow flow ." 
-        "flow3 flow3 flow3 flow3 flow3 flow3 flow2 flow2 flow2 flow2 flow2 flow2"
+        "flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2 flow2"
         ". . bran bran bran bran bran bran bran bran . ."
         ". branp branp branp branp branp branp branp branp branp branp ."
         ". tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 tsk1 ."
@@ -1026,6 +1035,9 @@ ul  {
         font-size: 16px;
     }
     
+    .flow2 img {
+        display: none;
+    }
        .prot2 {
     margin-bottom: 70px;
     margin-top: 40px;
@@ -1074,6 +1086,7 @@ ul  {
         "comp comp comp comp comp comp"
         "surv surv surv surv surv surv"
         "pers pers pers pers pers pers" 
+        "persp persp persp persp persp persp"    
         "flowp flowp flowp flowp flowp flowp"
         "flow flow flow flow flow flow" 
         "flow2 flow2 flow2 flow2 flow2 flow2"     
@@ -1184,7 +1197,7 @@ ul  {
     }
     
    .home2 p, .coffee1 p, .ethi p, .surv p, .pers p,
-   .peets p, .cbtl p, .mcnt p, .stylec, .flow2 p, .utest p {
+   .peets p, .cbtl p, .mcnt p, .stylec, .flow2 p, .utest p, .persp {
        line-height: 130%;
        font-size: 14px;
     }
@@ -1218,11 +1231,61 @@ ul  {
         margin-top: 10px;
     }
    
+    .pers {
+    margin: 10% 0 0%;
+    border-radius: 8px;
+    background-color: #e5e5e5;
+    padding: 6% 8% 7% 8%;
+}
     
     
-    .pers p {
-        margin-bottom: 40px;
+    .persp {
+        margin-bottom: 15%;
+        padding: 0 3%;
     }
+    
+    .pers img {
+       display: none;
+    }
+    
+    .mobilepers {
+      display: initial;
+        
+}
+    
+    .mobilepers img {
+      display: initial;
+      width: 70%;
+      margin: 7% 15% 0%;
+}
+    
+    
+    .mobilepers h3 {
+        color: #001b4c;
+        font-weight: bold;
+        font-size: 26px;
+        letter-spacing: -.4px;
+        text-align: center;
+    }
+    
+    .mobilepers p {
+        
+        letter-spacing: .4px;
+        font-size: 18px;
+        margin-top: 6%;
+        
+    }
+    
+    #quote {
+        margin: 0% -5% 0% -5%;
+        font-weight: normal;
+        letter-spacing: -.4px;
+        color: #001b4c;
+        font-size: 24px;
+    }
+    
+    
+    
     
     .flow3, .flow2, .flow, .flow img {
         margin-top: 30px;
