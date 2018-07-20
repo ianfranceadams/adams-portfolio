@@ -144,7 +144,7 @@ p {
     font-weight: 200;
     letter-spacing: .4px;
     line-height: 140%;
-    margin: 8px 0px 15px;
+    margin: 7px 0px 15px;
     
 }
 
@@ -406,12 +406,39 @@ p {
 /* ------------------ iPad and landscape phones ------------------------*/
 
 @media (max-width: 1200px) {
+    
+    .container {
+        grid-gap: 0px 30px;
+        grid-template-areas: 
+        "logo . . . . . . . . nav nav nav"
+        "name name name name name edu edu edu . . . ."
+        "subname subname subname subname subname bloc bloc bloc bloc bloc bloc ."
+        "position position position position position umn umn umn umn umn umn ."
+        "rescontact rescontact rescontact rescontact rescontact ncsa ncsa ncsa ncsa ncsa ncsa ."
+        ". . . . . skl skl skl skl skl exp exp"
+        ". . . . . sklist sklist sklist sklist sklist elist elist"
+        ". . . . . work work work work work . ."
+        ". . . . . inst inst inst inst inst inst ."
+        ". . . . . trk trk trk trk trk trk trk"
+        ". . . . . trms trms trms trms trms trms trms"
+        ". . . . . harv harv harv harv harv harv harv"
+        ". . . . . other other other other other other ."  
+        ". . . . . int int int int int int int"    
+        ". . . res res res res res res . . ."
+        "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
+    
+     }
+    
     .position {
         margin-top: -90px;
     }
     
     .rescontact {
         margin-top: -120px;
+    }
+    
+    .exp, .elist {
+        margin-left: -100px;
     }
     
     
@@ -447,16 +474,18 @@ p {
     
     .subname {
         font-size: 24px;
+        line-height: 125%;
+        margin-top: 0;
     }
     
     .position {
         font-size: 22px;
-        margin-top: -90px;
+        margin-top: -33%;
     }
     
     .rescontact {
         font-size: 18px;
-        margin-top: -150px;
+        margin-top: -55%;
     }
     
     .logo img {
@@ -476,16 +505,14 @@ p {
     }
     
      .elist {
-        margin-left: -10px;
+        margin-left: 10px;
     }  
     
-     .sklist {
-      margin-top: -30px;
-    }
+     
     
     .exp {
         
-        margin-left: 114px;
+        margin-left: 133px;
     }
     
 
@@ -495,7 +522,9 @@ p {
         
     }
 
-
+    .resume {
+        margin: 90px 0px 100px;
+    }
     
      .footlogo img {
         height: 40px;
@@ -507,16 +536,27 @@ p {
 @media (max-width: 768px) {
     
      .exp {
-        margin-left: 105px;
-  
-    
+        margin-left: 124px;
+    }
+     .position {
+        margin-top: -25%;
+     }
+    .rescontact {
+        margin-top: -50%;
+    }
 }
 
  @media (max-width: 736px) {
     
      .exp {
-        margin-left: 100px;
+        margin-left: 119px;
   }
+     .position {
+        margin-top: -28%;
+     }
+     .rescontact {
+    margin-top: -55%;
+}
     
 }   
     
@@ -532,10 +572,10 @@ p {
     }
     
     .rescontact {
-        margin-top: -125px;
+        margin-top: -120px;
     }
      .exp {
-        margin-left: 99px;
+        margin-left: 118px;
   }
     
 }
@@ -584,10 +624,10 @@ p {
     }
     
     .rescontact {
-        margin-top: -90px;
+        margin-top: -110px;
     }
     .position {
-        margin-top: -45px;
+        margin-top: -65px;
         margin-bottom: 5px;
     }
     .rescontact, .bloc, .umn, .ncsa, .sklist, .elist, .inst, .trk, .trms, .harv, .int {
@@ -608,7 +648,7 @@ p {
     }
     
     .sklist {
-      margin-top: -30px;
+      margin-top:   0px;
     }
     
    .exp {
@@ -624,7 +664,7 @@ p {
     }
     
     .resume {
-        margin: 50px 20px 60px;
+        margin: 50px 0px 60px;
     }
     
 }
@@ -632,24 +672,38 @@ p {
 @media (max-width: 667px) {
     
      .exp {
-        margin-left: 86px;
+        margin-left: 105px;
+        
   }
-    
+    .position {
+            margin-top: -45px;
+}
+    .rescontact {
+    margin-top: -90px;
+}
 }    
     
     @media (max-width: 640px) {
     
      .exp {
-        margin-left: 81px;
+        margin-left: 100px;
   }
     
+        
+        
 }
 
 
 @media (max-width: 568px) {
-    
+    .position {
+        margin-top: -65px;
+    }
+
+    .rescontact {
+    margin-top: -110px;
+}
      .exp {
-        margin-left: 69px;
+        margin-left: 86px;
   }
     
     .edu {
