@@ -546,7 +546,7 @@ ul  {
 
 .stylec {
     grid-area: stylec;
-    margin: 30px 0px 90px;
+    margin: 30px 0px 80px;
 }
 
 .wirep {
@@ -574,7 +574,7 @@ ul  {
 }
 
 .wires p, .wires2 p, .wires3 p, .abpic p, .utest p {
-    margin-top: 35px;
+    margin-top: 30px;
     padding: 0px 20%;
 }
 
@@ -897,7 +897,8 @@ ul  {
     }
     
     .stylec {
-        margin-top: 10px;
+        margin-top: 30px;
+        margin-bottom: 50px;
     }
        
 
