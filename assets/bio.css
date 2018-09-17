@@ -121,13 +121,13 @@ p {
 
 .position span {
     padding-bottom: 0px;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
     transition: border .2s cubic-bezier(1, 0.04, 1, 1);
 }
 
 .position span:hover {
     padding-bottom: 0px;
-    border-bottom: 2px solid #00b8aa;
+    border-bottom: 3px solid #00b8aa;
 }
 
 
