@@ -104,7 +104,7 @@ p {
     margin: 5px 0px;
     font-size: 28px;
     font-weight: 200;
-    letter-spacing: .4px;
+    letter-spacing: .2px;
     grid-area: subname;
     text-align: right;
     
@@ -115,7 +115,7 @@ p {
     font-size: 24px;
     font-weight: 200;
     line-height: 140%;
-    letter-spacing: .4px;
+    letter-spacing: .2px;
     grid-area: position;
     margin-top: -60px;
     text-align: right;
@@ -142,7 +142,7 @@ p {
     grid-area: bloc;
     font-size: 20px;
     font-weight: 200;
-    letter-spacing: .4px;
+    letter-spacing: .2px;
     line-height: 140%;
     margin: 7px 0px 15px;
     
@@ -152,7 +152,7 @@ p {
     grid-area: umn;
     font-size: 20px;
     font-weight: 200;
-    letter-spacing: .4px;
+    letter-spacing: .2px;
     line-height: 140%;
     margin-bottom: 15px;
 }
@@ -161,7 +161,7 @@ p {
     grid-area: ncsa;
     font-size: 20px;
     font-weight: 200;
-    letter-spacing: .4px;
+    letter-spacing: .2px;
     line-height: 140%;
     margin-bottom: 10px;
 }
@@ -183,7 +183,7 @@ p {
     font-weight: 200;
     font-size: 20px;
     line-height: 140%;
-    letter-spacing: .4px;
+    letter-spacing: .2px;
     margin-bottom: 10px;
     
 }
@@ -201,7 +201,7 @@ p {
     font-weight: 200;
     font-size: 20px;
     line-height: 140%;
-    letter-spacing: .4px;
+    letter-spacing: .2px;
     margin-left: -50px;
     margin-bottom: 10px;
 }
@@ -223,7 +223,7 @@ p {
     grid-area: inst;
     font-size: 20px;
     font-weight: 200;
-    letter-spacing: .4px;
+    letter-spacing: .2px;
     line-height: 140%;
     margin-bottom: 15px;
 }
@@ -238,7 +238,7 @@ p {
     grid-area: trk;
     font-size: 20px;
     font-weight: 200;
-    letter-spacing: .4px;
+    letter-spacing: .2px;
     line-height: 140%;
     margin-bottom: 15px;
 }
@@ -247,7 +247,7 @@ p {
     grid-area: trms;
     font-size: 20px;
     font-weight: 200;
-    letter-spacing: .4px;
+    letter-spacing: .2px;
     line-height: 140%;
     margin-bottom: 15px;
 }
@@ -256,7 +256,7 @@ p {
     grid-area: harv;
     font-size: 20px;
     font-weight: 200;
-    letter-spacing: .4px;
+    letter-spacing: .2px;
     line-height: 140%;
     margin-bottom: 10px;
   
@@ -280,7 +280,7 @@ p {
     font-weight: 200;
     font-size: 20px;
     line-height: 140%;
-    letter-spacing: .4px;
+    letter-spacing: .2px;
 }
 
 .int li {

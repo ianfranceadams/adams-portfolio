@@ -106,7 +106,7 @@ p {
     margin: 10px 0px;
     font-size: 28px;
     font-weight: 200;
-    letter-spacing: .4px;
+    letter-spacing: .2px;
     grid-area: subname;
 
 }
@@ -115,7 +115,7 @@ p {
     font-size: 24px;
     font-weight: 200;
     line-height: 140%;
-    letter-spacing: .4px;
+    letter-spacing: .2px;
     grid-area: position;
     margin: 20px 0px 120px;
 }
