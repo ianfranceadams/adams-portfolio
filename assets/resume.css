@@ -223,7 +223,7 @@ p {
     grid-area: inst;
     font-size: 20px;
     font-weight: 200;
-    letter-spacing: .2px;
+    letter-spacing: .4px;
     line-height: 140%;
     margin-bottom: 15px;
 }
@@ -238,7 +238,7 @@ p {
     grid-area: trk;
     font-size: 20px;
     font-weight: 200;
-    letter-spacing: .2px;
+    letter-spacing: .4px;
     line-height: 140%;
     margin-bottom: 15px;
 }
@@ -247,7 +247,7 @@ p {
     grid-area: trms;
     font-size: 20px;
     font-weight: 200;
-    letter-spacing: .2px;
+    letter-spacing: .4px;
     line-height: 140%;
     margin-bottom: 15px;
 }
@@ -256,7 +256,7 @@ p {
     grid-area: harv;
     font-size: 20px;
     font-weight: 200;
-    letter-spacing: .2px;
+    letter-spacing: .4px;
     line-height: 140%;
     margin-bottom: 10px;
   
