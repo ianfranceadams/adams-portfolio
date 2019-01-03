@@ -75,6 +75,7 @@ ul  {
         ". . . . . skl skl skl exp exp exp ."
         ". . . . . sklist sklist sklist elist elist elist ."
         ". . . . . work work work work . . ."
+        ". . . . . veo veo veo veo veo veo ."
         ". . . . . inst inst inst inst inst inst ."
         ". . . . . trk trk trk trk trk trk ."
         ". . . . . trms trms trms trms trms trms ."
@@ -219,6 +220,15 @@ p {
     margin: 20px 0px;
 }
 
+.veo {
+    grid-area: veo;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: .4px;
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+
 .inst {
     grid-area: inst;
     font-size: 20px;
@@ -262,7 +272,7 @@ p {
   
 }
 
-.inst span, .trk span, .trms span, .harv span {
+.veo span, .inst span, .trk span, .trms span, .harv span {
     font-weight: normal;
     letter-spacing: -.5px;
     border-bottom: 2px #523F6E solid;
@@ -418,6 +428,7 @@ p {
         ". . . . . skl skl skl skl skl exp exp"
         ". . . . . sklist sklist sklist sklist sklist elist elist"
         ". . . . . work work work work work . ."
+        ". . . . . veo veo veo veo veo veo ."    
         ". . . . . inst inst inst inst inst inst ."
         ". . . . . trk trk trk trk trk trk trk"
         ". . . . . trms trms trms trms trms trms trms"
@@ -461,6 +472,7 @@ p {
         ". . . . . skl skl exp exp exp exp exp"
         ". . . . . sklist sklist sklist sklist elist elist elist"
         ". . . . . work work work work work . ."
+        ". . . . . veo veo veo veo veo veo ."    
         ". . . . . inst inst inst inst inst inst ."
         ". . . . . trk trk trk trk trk trk trk"
         ". . . . . trms trms trms trms trms trms trms"
@@ -601,6 +613,7 @@ p {
         ". . . . skl skl skl skl skl exp exp exp"
         ". . . . sklist sklist sklist sklist sklist sklist elist elist"
         ". . . . work work work work work work work ."
+        ". . . . veo veo veo veo veo veo veo veo"    
         ". . . . inst inst inst inst inst inst inst inst"
         ". . . . trk trk trk trk trk trk trk trk"
         ". . . . trms trms trms trms trms trms trms trms"
@@ -630,7 +643,7 @@ p {
         margin-top: -65px;
         margin-bottom: 5px;
     }
-    .rescontact, .bloc, .umn, .ncsa, .sklist, .elist, .inst, .trk, .trms, .harv, .int {
+    .rescontact, .bloc, .umn, .ncsa, .sklist, .elist, .veo, .inst, .trk, .trms, .harv, .int {
         font-size: 16px;
     }
     
@@ -655,7 +668,7 @@ p {
         margin-left: 81px;
     }
     
-    .inst, .trk, .trms {
+    .veo, .inst, .trk, .trms {
         margin-bottom: 10px;
     }
     
@@ -750,6 +763,7 @@ p {
         "exp exp exp exp exp exp"
         "elist elist elist elist elist elist"
         "work work work work work work"
+        "veo veo veo veo veo veo"    
         "inst inst inst inst inst inst"
         "trk trk trk trk trk trk"
         "trms trms trms trms trms trms"
@@ -851,6 +865,7 @@ p {
         "exp exp exp exp exp exp"
         "elist elist elist elist elist elist"
         "work work work work work work"
+        "veo veo veo veo veo veo"    
         "inst inst inst inst inst inst"
         "trk trk trk trk trk trk"
         "trms trms trms trms trms trms"
