@@ -5,8 +5,7 @@ html {
 body {
     margin: 90px 100px 50px;
     font-family: "helvetica neue", helvetica, arial, sans-serif;
-
-}
+} 
 
 a {
     color: black;
@@ -71,6 +70,7 @@ ul  {
         "logo . . . . . . . . nav nav nav"
         ". . headshot headshot headshot . . . . . . ."
         ". . position position position position position position . . . ."
+        ". . veolist veolist veolist veolist veolist veolist . . . ."
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
         
 }
@@ -116,7 +116,7 @@ p {
     line-height: 160%;
     letter-spacing: .4px;
     grid-area: position;
-    margin: 20px 0px 200px;
+    margin: 20px 0px 0px;
 }
 
 .position span {
@@ -130,7 +130,32 @@ p {
     border-bottom: 3px solid #00b8aa; 
 }
 
+.veolist {
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 160%;
+    letter-spacing: .4px;
+    grid-area: veolist;
+    margin: 20px 0px 200px;
+}
 
+.veolist ul {
+    list-style-type: disc; 
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 160%;
+    letter-spacing: .4px;
+    margin-left: 7%;
+    grid-area: veolist;
+    
+}
+
+.veolist span {
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    color: #2c4e6d;
+    font-size: 23px;
+}
 
 
 .footnav {
@@ -227,6 +252,7 @@ p {
         "logo . . . . . . . . nav nav nav"
         ". headshot headshot headshot headshot . . . . . . ."
         ". position position position position position position position position position . ."
+        ". veolist veolist veolist veolist veolist veolist veolist veolist veolist . ."
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
     
      }
@@ -247,7 +273,7 @@ p {
     }
 
     .position {
-         margin: 10px 0px 110px;
+         margin: 10px 0px 0px;
          font-size: 20px;
  
      }
@@ -271,6 +297,7 @@ p {
         "logo . . . . . . . . nav nav nav"
         ". headshot headshot headshot headshot . . . . . . ."
         ". position position position position position position position position position position ."
+        ". veolist veolist veolist veolist veolist veolist veolist veolist veolist veolist ."
         "footnav footnav footnav contact contact contact contact contact contact contact . footlogo"
     
      }
@@ -296,6 +323,7 @@ p {
         "logo nav nav nav nav nav"
         "headshot headshot headshot headshot . . "
         "position position position position position position"
+        "veolist veolist veolist veolist veolist veolist"
         "contact contact contact contact contact contact"
         ". . footlogo footlogo . ."
     
@@ -306,7 +334,7 @@ p {
     }  
     
     .position {
-         margin: 10px 0px 50px;
+         margin: 10px 0px 0px;
         
     }
     
