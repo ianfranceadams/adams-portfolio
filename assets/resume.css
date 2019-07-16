@@ -68,18 +68,20 @@ ul  {
     grid-template-rows: auto;
     grid-template-areas: 
         "logo . . . . . . . . nav nav nav"
-        ". name name name name edu edu edu . . . ."
-        "subname subname subname subname subname bloc bloc bloc bloc bloc bloc ."
-        ". position position position position umn umn umn umn umn umn ."
-        "rescontact rescontact rescontact rescontact rescontact ncsa ncsa ncsa ncsa ncsa ncsa ."
-        ". . . . . skl skl skl exp exp exp ."
-        ". . . . . sklist sklist sklist elist elist elist ."
+        ". name name name name skl skl skl exp exp exp ."
+        "subname subname subname subname subname sklist sklist sklist elist elist elist ."
+        ". position position position position . . . . . . ."
+        "rescontact rescontact rescontact rescontact rescontact . . . . . . ."
         ". . . . . work work work work . . ."
         ". . . . . veo veo veo veo veo veo ."
         ". . . . . inst inst inst inst inst inst ."
         ". . . . . trk trk trk trk trk trk ."
         ". . . . . trms trms trms trms trms trms ."
         ". . . . . harv harv harv harv harv harv ."
+        ". . . . . edu edu edu edu edu edu ."
+        ". . . . . bloc bloc bloc bloc bloc bloc ."
+        ". . . . . umn umn umn umn umn umn ."
+        ". . . . . ncsa ncsa ncsa ncsa ncsa ncsa ."
         ". . . . . other other other other . . ."
         ". . . . . int int int int int int ."
         ". . . res res res res res res . . ."
@@ -102,7 +104,7 @@ p {
 }   
 
 .subname {
-    margin: 5px 0px;
+    margin: 3px 0px;
     font-size: 28px;
     font-weight: 200;
     letter-spacing: .2px;
@@ -118,7 +120,7 @@ p {
     line-height: 140%;
     letter-spacing: .2px;
     grid-area: position;
-    margin-top: -60px;
+    margin-top: -388px;
     text-align: right;
     
 }
@@ -129,14 +131,14 @@ p {
     font-size: 20px;
     text-align: right;
     line-height: 150%;
-    margin-top: -89px;
+    margin-top: -350px;
 }
 
 .edu {
     grid-area: edu;
     font-size: 28px;
     letter-spacing: -.5px;
-    margin: 118px 0px 10px;
+    margin: 20px 0px;
 }
 
 .bloc {
@@ -145,7 +147,7 @@ p {
     font-weight: 200;
     letter-spacing: .2px;
     line-height: 140%;
-    margin: 7px 0px 15px;
+    margin-bottom: 15px;
     
 }
 
@@ -176,7 +178,7 @@ p {
     grid-area: skl;
     font-size: 28px;
     letter-spacing: -.5px;
-    margin: 20px 0px;
+    margin: 118px 0px 0px;
 }
 
 .sklist {
@@ -193,7 +195,7 @@ p {
     grid-area: exp;
     font-size: 28px;
     letter-spacing: -.5px;
-    margin: 20px 0px;
+    margin: 118px 0px 0px;
     margin-left: -50px;
 }
 
@@ -415,16 +417,16 @@ p {
 
 /* ------------------ iPad and landscape phones ------------------------*/
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
     
     .container {
         grid-gap: 0px 30px;
         grid-template-areas: 
-        "logo . . . . . . . . nav nav nav"
-        "name name name name name edu edu edu . . . ."
-        "subname subname subname subname subname bloc bloc bloc bloc bloc bloc ."
-        "position position position position position umn umn umn umn umn umn ."
-        "rescontact rescontact rescontact rescontact rescontact ncsa ncsa ncsa ncsa ncsa ncsa ."
+        "logo . . . . . . . nav nav nav nav"
+        "name name name name name skl skl skl exp exp exp ."
+        "subname subname subname subname subname sklist sklist sklist elist elist elist ."
+        "position position position position position . . . . . . ."
+        "rescontact rescontact rescontact rescontact rescontact . . . . . . ."
         ". . . . . skl skl skl skl skl exp exp"
         ". . . . . sklist sklist sklist sklist sklist elist elist"
         ". . . . . work work work work work . ."
@@ -433,6 +435,10 @@ p {
         ". . . . . trk trk trk trk trk trk trk"
         ". . . . . trms trms trms trms trms trms trms"
         ". . . . . harv harv harv harv harv harv harv"
+        ". . . . . edu edu edu edu edu edu ."
+        ". . . . . bloc bloc bloc bloc bloc bloc ."
+        ". . . . . umn umn umn umn umn umn ."
+        ". . . . . ncsa ncsa ncsa ncsa ncsa ncsa ."    
         ". . . . . other other other other other other ."  
         ". . . . . int int int int int int int"    
         ". . . res res res res res res . . ."
@@ -441,15 +447,15 @@ p {
      }
     
     .position {
-        margin-top: -90px;
+        margin-top: -163%;
     }
     
     .rescontact {
-        margin-top: -120px;
+        margin-top: -115%;
     }
     
     .exp, .elist {
-        margin-left: -100px;
+        margin-left: 0px;
     }
     
     
@@ -464,19 +470,21 @@ p {
     .container {
         grid-gap: 0px 30px;
         grid-template-areas: 
-        "logo . . . . . . . . nav nav nav"
-        "name name name name name edu edu edu . . . ."
-        "subname subname subname subname subname bloc bloc bloc bloc bloc bloc ."
-        "position position position position position umn umn umn umn umn umn ."
-        "rescontact rescontact rescontact rescontact rescontact ncsa ncsa ncsa ncsa ncsa ncsa ."
-        ". . . . . skl skl exp exp exp exp exp"
-        ". . . . . sklist sklist sklist sklist elist elist elist"
-        ". . . . . work work work work work . ."
+        "logo . . . . . . . nav nav nav nav"
+        "name name name name name skl skl skl exp exp exp ."
+        "subname subname subname subname subname sklist sklist sklist elist elist elist ."
+        "position position position position position . . . . . . ."
+        "rescontact rescontact rescontact rescontact rescontact . . . . . . ."
+        ". . . . . work work work work work work work"
         ". . . . . veo veo veo veo veo veo ."    
         ". . . . . inst inst inst inst inst inst ."
         ". . . . . trk trk trk trk trk trk trk"
         ". . . . . trms trms trms trms trms trms trms"
         ". . . . . harv harv harv harv harv harv harv"
+        ". . . . . edu edu edu edu edu edu ."
+        ". . . . . bloc bloc bloc bloc bloc bloc ."
+        ". . . . . umn umn umn umn umn umn ."
+        ". . . . . ncsa ncsa ncsa ncsa ncsa ncsa ."      
         ". . . . . other other other other other other ."  
         ". . . . . int int int int int int int"    
         ". . . res res res res res res . . ."
@@ -487,17 +495,17 @@ p {
     .subname {
         font-size: 24px;
         line-height: 125%;
-        margin-top: 0;
+        margin-top: -3px;
     }
     
     .position {
         font-size: 22px;
-        margin-top: -33%;
+        margin-top: -171%;
     }
     
     .rescontact {
         font-size: 18px;
-        margin-top: -55%;
+        margin-top: -157%;
     }
     
     .logo img {
@@ -505,32 +513,35 @@ p {
          
      }
     
-    .bloc {
-        margin-top: 4px;
-    }
-    .skills, .exp, .work {
+   
+    .work {
         margin: 20px 0px;
     }
     
+    .harv {
+        margin-bottom: 0px;
+    }
+    
+    .skills, .exp {
+        margin: 126px 0px 20px;
+    }
+    
     .edu {
-        margin-top: 80px;
+        margin: 20px 0px;
     }
     
      .elist {
-        margin-left: 10px;
+        margin-left: 0px;
     }  
     
      
     
-    .exp {
-        
-        margin-left: 133px;
-    }
+  
     
 
     
     .name {
-         margin-top: 60px;
+         margin-top: 108px;
         
     }
 
@@ -545,29 +556,33 @@ p {
 }
 
 
+@media (max-width: 823px) and (min-width: 813px) {
+    .subname {
+    margin-top: -5px;
+    }
+        
+    .position {
+    margin-top: -170%;
+    }
+}
+
 @media (max-width: 768px) {
     
      .exp {
-        margin-left: 124px;
+        margin-left: 0px;
     }
-     .position {
-        margin-top: -25%;
-     }
-    .rescontact {
-        margin-top: -50%;
-    }
+    
+    
 }
 
  @media (max-width: 736px) {
     
-     .exp {
-        margin-left: 119px;
-  }
+ 
      .position {
-        margin-top: -28%;
+        margin-top: -178%;
      }
      .rescontact {
-    margin-top: -55%;
+        margin-top: -162%;
 }
     
 }   
@@ -575,20 +590,16 @@ p {
 @media (max-width: 731px) {
     
     .subname {
-      line-height: 130%;
-      margin: 1px 0px;
+       margin-top: -3px;
      }
     
     .position {
-        margin-top: -60px;
-    }
-    
-    .rescontact {
-        margin-top: -120px;
-    }
-     .exp {
-        margin-left: 118px;
-  }
+        margin-top: -190%;
+     }
+     .rescontact {
+        margin-top: -174%;
+}
+     
     
 }
 
@@ -602,24 +613,22 @@ p {
         grid-gap: 0px 20px;
         grid-template-areas: 
         "logo . . . . . . . . nav nav nav"
-        "name name name name name edu edu edu . . . ."
-        "subname subname subname subname subname bloc bloc bloc bloc bloc bloc ."
-        "position position position position position umn umn umn umn umn umn ."
-        "rescontact rescontact rescontact rescontact rescontact ncsa ncsa ncsa ncsa ncsa ncsa ."
-        ". . . . edu edu edu edu . . . ."
-        ". . . . bloc bloc bloc bloc bloc bloc bloc bloc"
-        ". . . . umn umn umn umn umn umn umn umn"
-        ". . . . ncsa ncsa ncsa ncsa ncsa ncsa ncsa ncsa"
-        ". . . . skl skl skl skl skl exp exp exp"
-        ". . . . sklist sklist sklist sklist sklist sklist elist elist"
-        ". . . . work work work work work work work ."
-        ". . . . veo veo veo veo veo veo veo veo"    
-        ". . . . inst inst inst inst inst inst inst inst"
-        ". . . . trk trk trk trk trk trk trk trk"
-        ". . . . trms trms trms trms trms trms trms trms"
-        ". . . . harv harv harv harv harv harv harv harv"
-        ". . . . other other other other other other other other"  
-        ". . . . int int int int int int int int"
+        "name name name name name skl skl skl exp exp exp ."
+        "subname subname subname subname subname sklist sklist sklist elist elist elist ."
+        "position position position position position . . . . . . ."
+        "rescontact rescontact rescontact rescontact rescontact . . . . . . ."
+        ". . . . . work work work work work work ."
+        ". . . . . veo veo veo veo veo veo veo"    
+        ". . . . . inst inst inst inst inst inst inst"
+        ". . . . . trk trk trk trk trk trk trk"
+        ". . . . . trms trms trms trms trms trms trms"
+        ". . . . . harv harv harv harv harv harv harv"
+        ". . . . . edu edu edu edu edu edu edu"
+        ". . . . . bloc bloc bloc bloc bloc bloc bloc"
+        ". . . . . umn umn umn umn umn umn umn"
+        ". . . . . ncsa ncsa ncsa ncsa ncsa ncsa ncsa"          
+        ". . . . . other other other other other other other"  
+        ". . . . . int int int int int int int"
         ". . res res res res res res res res . ."
         "footnav footnav footnav contact contact contact contact contact contact contact . footlogo"
     
@@ -627,20 +636,20 @@ p {
     
     
     .name {
-        margin-top: 50px;
+        margin-top: 98px;
         margin-bottom: 0px;
     }
     
     .subname {
-        margin: 5px 0px;
+        margin-top: -7px;
         line-height: 130%;
     }
     
-    .rescontact {
-        margin-top: -110px;
-    }
+   .rescontact {
+    margin-top: -137%;
+}
     .position {
-        margin-top: -65px;
+        margin-top: -153%;
         margin-bottom: 5px;
     }
     .rescontact, .bloc, .umn, .ncsa, .sklist, .elist, .veo, .inst, .trk, .trms, .harv, .int {
@@ -648,29 +657,28 @@ p {
     }
     
     .edu {
-        margin-top: 68px;
-        margin-bottom: 0px;
-        margin-left: -1px;
+        margin: 20px 0px;
     }
     
-    .bloc {
-            margin-top: 12px;
+   
+   .skills, .exp  {
+        margin: 115px 0px 20px;
     }
-   .skills, .exp, .work {
+    
+    .work {  
         margin: 20px 0px;
     }
     
     .sklist {
-      margin-top:   0px;
+      margin-top: 0px;
     }
     
-   .exp {
-        margin-left: 81px;
-    }
     
     .veo, .inst, .trk, .trms {
         margin-bottom: 10px;
     }
+    
+    
     
     .disc {
         font-size: 16px;
@@ -684,23 +692,24 @@ p {
     
 @media (max-width: 667px) {
     
-     .exp {
-        margin-left: 105px;
-        
-  }
-    .position {
-            margin-top: -45px;
-}
-    .rescontact {
-    margin-top: -90px;
-}
+  
+  
+ 
 }    
     
     @media (max-width: 640px) {
     
      .exp {
-        margin-left: 100px;
+        margin-left: 0px;
   }
+        
+    .position {
+    margin-top: -158%;
+        }
+        
+        .rescontact {
+    margin-top: -139%;
+}
     
         
         
@@ -709,18 +718,16 @@ p {
 
 @media (max-width: 568px) {
     .position {
-        margin-top: -65px;
-    }
-
-    .rescontact {
-    margin-top: -110px;
-}
-     .exp {
-        margin-left: 86px;
+        margin-top: -206%;
   }
     
-    .edu {
-        margin-top: 116px;
+
+    .rescontact {
+      margin-top: -185%;
+  }
+     
+  .skills, .exp {
+    margin: 164px 0px 20px;
   }
     
     .resume {
@@ -733,8 +740,9 @@ p {
     .contact li {
         margin: 0px 12px;
     
-}
+   }
 
+}
 
 /* ------------------ Bigger phones ------------------------*/
 
@@ -754,10 +762,6 @@ p {
         "subname subname subname subname subname subname"
         "position position position position position position"
         "rescontact rescontact rescontact rescontact rescontact rescontact"
-        "edu edu edu edu edu edu"
-        "bloc bloc bloc bloc bloc bloc"
-        "umn umn umn umn umn umn"
-        "ncsa ncsa ncsa ncsa ncsa ncsa"
         "skl skl skl skl skl skl"
         "sklist sklist sklist sklist sklist sklist"
         "exp exp exp exp exp exp"
@@ -768,6 +772,10 @@ p {
         "trk trk trk trk trk trk"
         "trms trms trms trms trms trms"
         "harv harv harv harv harv harv"
+        "edu edu edu edu edu edu"
+        "bloc bloc bloc bloc bloc bloc"
+        "umn umn umn umn umn umn"
+        "ncsa ncsa ncsa ncsa ncsa ncsa"
         "other other other other other other"       
         "int int int int int int"    
         "res res res res res res"    
@@ -787,7 +795,7 @@ p {
     }
     
     .subname {
-        margin: 5px 0px;
+        margin: 10px 0px 5px;
     }
     
     .rescontact {
@@ -799,8 +807,10 @@ p {
         margin-bottom: 5px;
     }
     
-    .edu {
-    margin-top: 30px;
+    
+    
+    .skills, .exp  {
+        margin: 20px 0px;
     }
     
     .sklist, .elist, .int {
@@ -819,6 +829,8 @@ p {
         display: inline;
         margin-right: 15px;
     }
+    
+    
     
     .footnav {
         display: none;
@@ -852,14 +864,10 @@ p {
         grid-gap: 0px 20px;
         grid-template-areas: 
         "logo nav nav nav nav nav"
-         "name name name name name name"
+        "name name name name name name"
         "subname subname subname subname subname subname"
         "position position position position position position"
         "rescontact rescontact rescontact rescontact rescontact rescontact"
-        "edu edu edu edu edu edu"
-        "bloc bloc bloc bloc bloc bloc"
-        "umn umn umn umn umn umn"
-        "ncsa ncsa ncsa ncsa ncsa ncsa"
         "skl skl skl skl skl skl"
         "sklist sklist sklist sklist sklist sklist"
         "exp exp exp exp exp exp"
@@ -870,6 +878,10 @@ p {
         "trk trk trk trk trk trk"
         "trms trms trms trms trms trms"
         "harv harv harv harv harv harv"
+        "edu edu edu edu edu edu"
+        "bloc bloc bloc bloc bloc bloc"
+        "umn umn umn umn umn umn"
+        "ncsa ncsa ncsa ncsa ncsa ncsa"
         "other other other other other other"  
         "int int int int int int"
         "res res res res res res"    

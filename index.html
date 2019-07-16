@@ -63,7 +63,14 @@
     
     <h2 class="subname">User Experience Designer in Chicago</h2>
     
-    <h3 class="position">The steady, spiral-like process of research, discovery, and iteration continuously fascinates me. See how it leads to designs that enhance the lives of users. <br> <a class="see" onclick="scrollProj()"> <span>View work</span> (not under NDA protection) </a> </h3>
+    <h3 class="position">The steady, spiral-like process of research, discovery, and iteration continuously fascinates me. See how it leads to designs that enhance the lives of users. <br> <a class="see" onclick="scrollProj()"> <span>View work</span> (not under NDA protection) </a> 
+     
+     <br>
+        
+             Read about my most recent experience <a class="see" href="bio.html#list" onclick="scrollBio()"><span>here</span>
+        </a>
+        
+</h3>
     
   
 
@@ -204,6 +211,13 @@
           });
         } 
             
+        
+        function scrollBio() {
+             document.querySelector('.veolist').scrollIntoView({ 
+              behavior: 'smooth', block: 'start' 
+                  
+          });
+        } 
    // function toggleIt1() {    
   //         var x = document.querySelector(".dragoverlay");
  //          var y = document.querySelector(".drag");
