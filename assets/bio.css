@@ -68,9 +68,9 @@ ul  {
     grid-template-rows: auto;
     grid-template-areas: 
         "logo . . . . . . . . nav nav nav"
-        ". . headshot headshot headshot . . . . . . ."
-        ". . position position position position position position . . . ."
-        ". . veolist veolist veolist veolist veolist veolist . . . ."
+        ". . headshot headshot headshot position position position position position . ."
+    /*    ". . position position position position position position . . . ." */
+        ". . . . . veolist veolist veolist veolist veolist . ."
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
         
 }
@@ -82,7 +82,7 @@ ul  {
 
 .headshot img {
     margin-top: 100px;
-    width: 100%;
+    width: 90%;
 }
 
 .resume {
@@ -116,7 +116,7 @@ p {
     line-height: 160%;
     letter-spacing: .4px;
     grid-area: position;
-    margin: 20px 0px 0px;
+    margin: 90px 0px 0px;
 }
 
 .position span {
@@ -258,8 +258,9 @@ p {
      }
     
     .headshot img {
-         margin-top: 100px;
-
+         margin-top: 70px;
+         width: 80%;
+ 
     }
     
     .logo img {
