@@ -82,7 +82,7 @@ ul  {
     
     grid-area: header;
     text-align: center;
-    font-size: 60px;
+    font-size: 48px;
     margin-top: 150px;
 }
 .headshot {
@@ -99,6 +99,7 @@ ul  {
 .mocks {
     margin-top: 100px;
     grid-area: mocks;
+    overflow: hidden;
     
 }
 
