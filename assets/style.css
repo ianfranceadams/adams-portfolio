@@ -152,7 +152,7 @@ p {
     justify-content: start;
     margin: 36px 0px 2px;
     height: 450px;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .veo {
