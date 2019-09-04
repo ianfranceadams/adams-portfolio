@@ -91,13 +91,13 @@ ul  {
 }
 
 .headshot img {
-    margin-top: 40px;
+    margin-top: 30px;
     width: 110%;
     margin-left: -5%;
 }
 
 .mocks {
-    margin-top: 100px;
+    margin-top: 60px;
     grid-area: mocks;
     overflow: hidden;
     
