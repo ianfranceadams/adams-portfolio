@@ -107,7 +107,7 @@ p {
     margin: 3px 0px;
     font-size: 28px;
     font-weight: 200;
-    letter-spacing: .2px;
+    letter-spacing: .4px;
     grid-area: subname;
     text-align: right;
     
@@ -118,7 +118,7 @@ p {
     font-size: 24px;
     font-weight: 200;
     line-height: 140%;
-    letter-spacing: .2px;
+    letter-spacing: .4px;
     grid-area: position;
     margin-top: -388px;
     text-align: right;
@@ -145,7 +145,7 @@ p {
     grid-area: bloc;
     font-size: 20px;
     font-weight: 200;
-    letter-spacing: .2px;
+    letter-spacing: .4px;
     line-height: 140%;
     margin-bottom: 15px;
     
@@ -155,7 +155,7 @@ p {
     grid-area: umn;
     font-size: 20px;
     font-weight: 200;
-    letter-spacing: .2px;
+    letter-spacing: .4px;
     line-height: 140%;
     margin-bottom: 15px;
 }
@@ -164,7 +164,7 @@ p {
     grid-area: ncsa;
     font-size: 20px;
     font-weight: 200;
-    letter-spacing: .2px;
+    letter-spacing: .4px;
     line-height: 140%;
     margin-bottom: 10px;
 }
@@ -186,7 +186,7 @@ p {
     font-weight: 200;
     font-size: 20px;
     line-height: 140%;
-    letter-spacing: .2px;
+    letter-spacing: .4px;
     margin-bottom: 10px;
     
 }
@@ -204,7 +204,7 @@ p {
     font-weight: 200;
     font-size: 20px;
     line-height: 140%;
-    letter-spacing: .2px;
+    letter-spacing: .4px;
     margin-left: -50px;
     margin-bottom: 10px;
 }
@@ -292,7 +292,7 @@ p {
     font-weight: 200;
     font-size: 20px;
     line-height: 140%;
-    letter-spacing: .2px;
+    letter-spacing: .4px;
 }
 
 .int li {
