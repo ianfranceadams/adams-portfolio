@@ -89,6 +89,7 @@ ul  {
         "drag drag drag drag drag drag drag drag drag drag drag drag"
         "bud bud bud bud bud bud bud bud bud bud bud bud"
         "orion orion orion orion orion orion orion orion orion orion orion orion"
+        "other other other other other other other other other other other other"
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
         
 }
@@ -155,6 +156,39 @@ p {
     height: 450px;
     overflow-x: scroll;
     overflow-y: hidden;
+}
+
+
+.other {
+    display: none;
+    grid-area: other;
+ /* display: block; */
+    text-align: center;
+    background-color: white;
+    color: white;
+    font-size: 36px;
+    border: 3px solid black;
+    box-sizing: border-box;
+    padding: 140px;
+/*  margin-bottom: 4%; */
+}
+
+.other h2 {
+    color: black;
+    margin-bottom: 5%;
+
+}
+
+.other ul {
+    font-weight: normal;
+    font-size: 18px;
+    
+}
+
+.other li span {
+    border-bottom: 2px solid #523F6E;
+ 
+
 }
 
 .veo {
@@ -407,6 +441,7 @@ p {
     grid-area: orion;
     background-color: #001b4c;
     margin-bottom: 4%;
+    
 }
 
 .orion img {
@@ -594,6 +629,7 @@ p {
         "drag drag drag drag drag drag drag drag drag drag drag drag"
         "bud bud bud bud bud bud bud bud bud bud bud bud"
         "orion orion orion orion orion orion orion orion orion orion orion orion"
+        "other other other other other other other other other other other other"
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
     
      }
@@ -654,6 +690,7 @@ p {
         "drag drag drag drag drag drag drag drag drag drag drag drag"
         "bud bud bud bud bud bud bud bud bud bud bud bud"
         "orion orion orion orion orion orion orion orion orion orion orion orion"
+        "other other other other other other other other other other other other"
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
     
      }
@@ -813,6 +850,7 @@ p {
         "drag drag drag drag drag drag drag drag drag drag drag drag"
         "bud bud bud bud bud bud bud bud bud bud bud bud"
         "orion orion orion orion orion orion orion orion orion orion orion orion"
+        "other other other other other other other other other other other other"
         "footnav footnav footnav contact contact contact contact contact contact contact . footlogo"
     
      }   
@@ -920,6 +958,7 @@ p {
         "drag drag drag drag drag drag"
         "bud bud bud bud bud bud"
         "orion orion orion orion orion orion"
+        "other other other other other other"
         "contact contact contact contact contact contact"
         ". . footlogo footlogo . ."
     
@@ -1102,7 +1141,7 @@ p {
     margin-bottom: 6%;
 }
     .hovbutton {
-        margin: 0px 20%;
+        
     }
     
     .contact li {
