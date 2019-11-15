@@ -160,9 +160,8 @@ p {
 
 
 .other {
-    display: none;
     grid-area: other;
- /* display: block; */
+    display: block; 
     text-align: center;
     background-color: white;
     color: white;
@@ -170,7 +169,7 @@ p {
     border: 3px solid black;
     box-sizing: border-box;
     padding: 140px;
-/*  margin-bottom: 4%; */
+    margin-bottom: 4%; 
 }
 
 .other h2 {
@@ -211,7 +210,7 @@ p {
 .veo h2 {
     font-size: 40px;
    margin: 12% 12% 18% 12%;
-    
+    letter-spacing: -1px;
 }
 
 .veo img:nth-child(2) {
@@ -440,7 +439,7 @@ p {
 .orion {
     grid-area: orion;
     background-color: #001b4c;
-    margin-bottom: 4%;
+    
     
 }
 
@@ -718,7 +717,6 @@ p {
     } 
     
     .orion {
-        margin-bottom: 18px;
     }
     
     
@@ -752,7 +750,11 @@ p {
      }
     
     
+    .other {
+        margin-bottom: 18px;
+        padding: 9%;
     
+    }
     
     
    .dragoverlay, .budoverlay, .orionoverlay {
@@ -886,6 +888,10 @@ p {
     .drag img {
        height: 50px;
      }
+    
+    .other {
+            padding: 11%;
+        }
 }
 
     
@@ -927,11 +933,18 @@ p {
             margin: 6% 11% 17% 12%;
         }    
         
+        .other {
+            padding: 14%;
+        }
         
         .hovbutton {
         margin: 11% 1%;
         
         }
+        
+        .contact li {
+        margin: 0px 9px;
+    }
         
         
 }    
@@ -1009,7 +1022,9 @@ p {
         
      }
     
-    
+     .other {
+        padding: 12% 8%;
+    }
     
     
     

@@ -972,7 +972,7 @@ ul  {
     }
     
     .csnav li {
-        margin: 40px 17px;
+        margin: 40px 16px;
     }
     
     .sticky {
@@ -991,6 +991,10 @@ ul  {
 }
     .back {
        margin-bottom: 80px;
+    }
+    
+     .contact li {
+        margin: 0px 9px;
     }
     
 }
@@ -1082,7 +1086,7 @@ ul  {
             margin: 35px 0px 20px;
     }
     .csnav li {
-        margin: 40px 30px;
+        margin: 40px 25px;
     }
     
     
@@ -1100,7 +1104,7 @@ ul  {
     
     .sticky li {
         margin-left: 0px;
-        margin-right: 70px;
+        margin-right: 68px;
         margin-bottom: 0px;
         margin-top: 0px;
         font-size: 16px;
@@ -1380,7 +1384,7 @@ ul  {
     }
     
     .csnav li {
-       margin: 30px 25px;
+       margin: 30px 22px;
      }
     
     

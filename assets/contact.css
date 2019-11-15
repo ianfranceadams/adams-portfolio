@@ -334,6 +334,10 @@ p {
     .drag img {
        height: 45px;
      }
+    
+    .contact li {
+        margin: 0px 8px;
+    }
 }
 
 
