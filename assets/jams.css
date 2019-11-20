@@ -1,0 +1,395 @@
+html {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+} 
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav {
+    grid-area: nav;
+    justify-self: end;
+    margin-top: -8px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+
+ul  {
+    list-style-type: none;
+    line-height: 170%;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li span {
+    padding-bottom: 3px;
+    border-bottom: 3px solid transparent;
+    transition: border .2s cubic-bezier(1, 0.04, 1, 1);
+    
+}
+
+
+.nav li span:hover {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #523F6E;
+    
+}
+
+.nav li span:active {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #523F6E;
+    
+}
+
+/* FFE794 523F6E */
+
+
+
+
+
+
+
+
+
+.container {
+    margin: 90px 100px 50px;
+    display: grid;
+    grid-gap: 0px 40px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo . . . . . . . . nav nav nav"
+        ". header header header header header header header header header header ."
+        ". . . position position position position position position . . ."
+        ". . . . resume resume resume resume . . . ."
+        "headshot headshot headshot headshot headshot headshot headshot headshot headshot headshot headshot headshot"
+       
+        "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
+        
+}
+
+.header {
+    
+    grid-area: header;
+    line-height: 120%;
+    color: rgb(58,23,63);
+    text-align: center;
+    font-size: 48px;
+    margin-top: 100px;
+    letter-spacing: -1px;
+}
+
+
+
+
+.headshot img {
+    margin: 20px 0 0px;
+    width: 100%;
+    
+}
+
+
+
+
+
+p {
+    margin: 0;
+}
+
+
+.position {  
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 160%;
+    letter-spacing: .4px;
+    grid-area: position;
+    margin: 70px 0px 0px;
+}
+
+.position span {
+    padding-bottom: 0px;
+    border-bottom: 3px solid transparent;
+    transition: border .2s cubic-bezier(1, 0.04, 1, 1);
+}
+
+.position span:hover {
+    padding-bottom: 0px;
+    border-bottom: 3px solid #00b8aa; 
+}
+
+.resume {
+    grid-area: resume;
+}
+
+.resume {
+    border: 3px solid rgb(233,50,117);
+    border-radius: 8px;
+    background-color: white;
+    color: rgb(58,23,63);
+    font-size: 18px;
+    font-family: helvetica neue;    
+    font-weight: bold;
+    text-align: center;
+    line-height: 160%;
+    padding: 15px 15px 17px;
+   margin: 70px 5% 0px;
+    transition: .2s ease;
+}
+
+
+.resume:hover {
+
+    background-color: rgb(58,23,63);
+    color: #fff;
+}
+
+
+
+
+.footnav {
+     grid-area: footnav;
+     justify-self: start;
+}
+
+.footnav li span {
+    padding-bottom: 3px;
+    border-bottom: 3px solid transparent;
+    transition: border .2s cubic-bezier(1, 0.04, 1, 1);
+}
+
+.footnav li span:hover {
+    padding-bottom: 3px;    
+    border-bottom: 3px solid #523F6E;
+
+}
+
+.footnav li span:active {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #523F6E;
+    
+}
+
+.contact {
+    grid-area: contact;
+    justify-self: center;
+    align-self: center;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: -.5px;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contact li {
+    font-weight: normal;
+    display: inline;
+    margin: 0px 11px;
+}
+
+.contact a {
+    transition: all .15s ease;
+}
+
+.contact a:hover {
+
+    
+    color: #523F6E; 
+   /*  text-shadow: 0px 1px 6px #5F4881; */
+}
+
+/*FFE794   FFF3C7     523F6E   3F2A5E  2C1352 */
+
+.footlogo {
+     grid-area: footlogo;
+     justify-self: end;
+     align-self: center;
+}
+
+.footlogo img {
+    
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------ iPad and landscape phones ------------------------*/
+
+
+
+@media (max-width: 1200px) {
+    
+    
+    
+    .container {
+        margin: 50px 50px 30px;
+        grid-gap: 0px 20px;
+        grid-template-areas: 
+        "logo . . . . . . . . nav nav nav"
+        ". header header header header header header header header header header ."
+        ". . position position position position position position position position . ."
+        ". . resume resume resume resume resume resume resume resume . ."
+        "headshot headshot headshot headshot headshot headshot headshot headshot headshot headshot headshot headshot"
+     
+        "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
+    
+     }
+ 
+    
+  
+    
+    .logo img {
+         height: 50px
+         
+     }
+    
+    .name {
+         margin-top: 40px;
+        
+    }
+
+    .position {
+         margin: 60px 0px -30px;
+         font-size: 20px;
+ 
+     }
+    
+    .resume {
+        margin: 70px 22% 0px;
+    }
+
+    
+     .footlogo img {
+        height: 40px;
+     }
+
+}
+
+
+/* ------------------ Landscape smaller phones ------------------------*/
+
+
+@media (max-width: 670px) {
+    
+    .container {
+        grid-gap: 0px 20px;
+        grid-template-areas: 
+        "logo . . . . . . . . nav nav nav"
+        "header header header header header header header header header header header header"
+
+        ". position position position position position position position position position position ."
+        ". resume resume resume resume resume resume resume resume resume resume ."
+        "headshot headshot headshot headshot headshot headshot headshot headshot headshot headshot headshot headshot"
+      
+        "footnav footnav footnav contact contact contact contact contact contact contact . footlogo"
+    
+     }
+    
+    
+    
+    .header {
+        margin: 60px 0px 40px;
+    }
+    
+    
+    .position {
+        margin-top: 0;
+    }
+    
+   
+    
+
+    
+}
+
+
+
+/* ------------------ Bigger phones ------------------------*/
+
+
+@media (max-width: 414px) {
+    
+    
+    
+     .container {
+        margin: 25px 25px 75px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 0px 20px;
+        grid-template-areas: 
+        "logo nav nav nav nav nav"
+        "header header header header header header"
+        "position position position position position position"
+            "resume resume resume resume resume resume"
+        "headshot headshot headshot headshot headshot headshot "
+     
+        "contact contact contact contact contact contact"
+        ". . footlogo footlogo . ."
+    
+     }
+    
+    
+    
+    .headshot img {
+        margin: -20px 0 50px;
+    }  
+    
+    .position {
+         margin: 10px 0px 0px;
+        
+    }
+    
+    .resume {
+        margin: 14% 10% 0;
+    }
+    
+     .footnav {
+        display: none;
+    }
+    
+    .footlogo {
+        margin-top: 60px;
+        justify-self: center;
+    }
+
+}
+
+
+/* ------------------ Galaxy S5 & iPhone 6, etc ------------------------*/
+
+
+
+
+
+/* ------------------ iPhone 5 / SE ------------------------*/
+
+
+@media (max-width: 320px) {
+    
+    
+    
+    .contact li {
+       margin: 0px 8px;
+   }
+    
+}

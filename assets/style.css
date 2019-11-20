@@ -168,7 +168,7 @@ p {
     font-size: 36px;
     border: 3px solid black;
     box-sizing: border-box;
-    padding: 140px;
+    padding: 130px;
     margin-bottom: 4%; 
 }
 
@@ -752,7 +752,7 @@ p {
     
     .other {
         margin-bottom: 18px;
-        padding: 9%;
+        padding: 7%;
     
     }
     
@@ -890,7 +890,7 @@ p {
      }
     
     .other {
-            padding: 11%;
+            padding: 9%;
         }
 }
 
@@ -1023,7 +1023,8 @@ p {
      }
     
      .other {
-        padding: 12% 8%;
+        padding: 12% 6%;
+        overflow-y: scroll;
     }
     
     
