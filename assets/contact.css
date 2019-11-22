@@ -385,6 +385,11 @@ p {
         margin: 0px 0px 60px 0px;
     }
     
+      .contact li {
+
+    margin: 0px 12px;
+}
+    
     .footlogo {
         margin-top: 56px;
         justify-self: center;

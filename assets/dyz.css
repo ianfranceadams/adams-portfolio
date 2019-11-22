@@ -462,7 +462,7 @@ p {
     
     
      .container {
-        margin: 25px 25px 75px;
+        margin: 35px 35px 75px;
         grid-template-columns: repeat(6, 1fr);
         grid-gap: 0px 20px;
         grid-template-areas: 
@@ -524,6 +524,9 @@ p {
         margin-bottom: 60px;
     }
     
+    .contact li {
+    margin: 0px 12px;
+}
      .footnav {
         display: none;
     }
@@ -547,7 +550,9 @@ p {
 
 @media (max-width: 320px) {
     
-    
+    .container {
+        margin: 25px 25px 75px;
+    }
     
     .contact li {
        margin: 0px 8px;

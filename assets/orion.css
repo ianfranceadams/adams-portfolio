@@ -1398,7 +1398,10 @@ ul  {
     
     }
     
+  .contact li {
 
+    margin: 0px 12px;
+}
     
     .footnav {
         display: none;

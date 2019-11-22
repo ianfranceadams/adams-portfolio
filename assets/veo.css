@@ -530,6 +530,11 @@ p {
             margin: 2% 0 0;
     }
     
+      .contact li {
+
+    margin: 0px 12px;
+}
+    
      .footnav {
         display: none;
     }
