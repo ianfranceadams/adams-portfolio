@@ -456,7 +456,7 @@ p {
 @media (max-width: 568px) {
     
     .contact li {
-        margin: 0px 9px;
+        margin: 0px 11px;
     }
 }
 
@@ -467,7 +467,7 @@ p {
 @media (max-width: 414px) {
     
     body {
-        margin: 25px 25px 75px;
+        margin: 35px 35px 75px;
      }
     
      .container {
@@ -558,10 +558,10 @@ p {
 
 @media (max-width: 320px) {
     
-   
+    body {
+        margin: 25px 25px 75px;
+     }
     
-    .contact li {
-       margin: 0px 8px;
-   }
+    
     
 }
