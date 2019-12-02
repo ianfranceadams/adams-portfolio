@@ -224,7 +224,7 @@ p {
         grid-gap: 0px 20px;
         grid-template-areas: 
         "logo . . . . . . . . nav nav nav"
-        ". headshot headshot headshot headshot . . . . . . ."
+        ". headshot headshot headshot headshot headshot . . . . . ."
         ". position position position position position position position position position . ."
         ". veolist veolist veolist veolist veolist veolist veolist veolist veolist . ."
         "footnav footnav footnav contact contact contact contact contact contact . . footlogo"
@@ -233,7 +233,7 @@ p {
     
     .headshot img {
          margin-top: 70px;
-         width: 80%;
+         width: 85%;
  
     }
     
@@ -270,7 +270,7 @@ p {
         grid-gap: 0px 20px;
         grid-template-areas: 
         "logo . . . . . . . . nav nav nav"
-        ". headshot headshot headshot headshot . . . . . . ."
+        ". headshot headshot headshot headshot headshot headshot . . . . ."
         ". position position position position position position position position position position ."
         ". veolist veolist veolist veolist veolist veolist veolist veolist veolist veolist ."
         "footnav footnav footnav contact contact contact contact contact contact contact . footlogo"
@@ -300,7 +300,7 @@ p {
         grid-gap: 0px 20px;
         grid-template-areas: 
         "logo nav nav nav nav nav"
-        "headshot headshot headshot headshot . . "
+        "headshot headshot headshot headshot headshot ."
         "position position position position position position"
         "veolist veolist veolist veolist veolist veolist"
         "contact contact contact contact contact contact"

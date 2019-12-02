@@ -156,7 +156,9 @@ p {
     height: 450px;
     overflow-x: scroll;
     overflow-y: hidden;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 
 .other {
